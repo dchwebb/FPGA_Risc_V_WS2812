@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ippackgerproject version="1.0">
+    <filegroups>
+        <filegroup filetype="metadata">
+            <file path="metadata.xml"/>
+        </filegroup>
+        <filegroup filetype="rtl">
+            <file lib="" encryption="0" type="" path="rtl/gpio0.v"/>
+            <file lib="" encryption="0" type="" path="rtl/gpio0_bb.v"/>
+        </filegroup>
+        <filegroup filetype="testbench">
+            <file path="testbench/dut_inst.v"/>
+            <file path="testbench/dut_params.v"/>
+            <file path="testbench/lscc_lmmi2apb.v"/>
+            <file path="testbench/tb_top.v"/>
+        </filegroup>
+        <filegroup filetype="driver">
+            <file path="driver/gpio.c"/>
+            <file path="driver/gpio.h"/>
+            <file path="driver/gpio.xml"/>
+            <file path="driver/gpio_regs.h"/>
+        </filegroup>
+        <filegroup filetype="key">
+            <file path="C:/lscc/propel/2.0/builder/rtf/ispfpga/data/key.txt"/>
+        </filegroup>
+    </filegroups>
+</ippackgerproject>

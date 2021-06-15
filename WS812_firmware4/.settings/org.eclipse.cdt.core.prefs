@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/DEVICE/delimiter=;
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/DEVICE/operation=replace
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/DEVICE/value=0
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/PORT/delimiter=;
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/PORT/operation=replace
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/PORT/value=FTUSB-0
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/TCKDIV/delimiter=;
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/TCKDIV/operation=replace
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/TCKDIV/value=1
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/append=true
+environment/project/ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.1085288099/appendContributed=true

@@ -1,0 +1,640 @@
+---------------------------------------------------
+Report for cell HelloWorld_Top
+   Instance path: HelloWorld_Top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1811.00        100.0
+                                 IOLGC	      10.00        100.0
+                                  LUT4	    3100.00        100.0
+                               DISTRAM	      42.00        100.0
+                                 IOREG	         10        100.0
+                                 IOBUF	         13        100.0
+                                PFUREG	       1864        100.0
+                                RIPPLE	        205        100.0
+                                   EBR	         20        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xo2chub	          1         1.5
+                                SOC_IP	          1        98.5
+---------------------------------------------------
+Report for cell SOC_IP
+   Instance path: HelloWorld_Top/HelloWorld_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1784.33        98.5
+                                  LUT4	    3087.00        99.6
+                               DISTRAM	      40.00        95.2
+                                 IOBUF	          8        61.5
+                                PFUREG	       1813        97.3
+                                RIPPLE	        188        91.7
+                                   EBR	         20        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 uart0	          1         6.8
+                         sysmem0_1_0_2	          1         4.5
+                                 gpio0	          1         3.2
+cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z12	          1        69.9
+apb0_32s_1s_33792_1024_32768_1024_34816_1024	          1         0.4
+                         ahbl2apb0_32s	          1         5.3
+                              ahbl0_Z6	          1         2.3
+                         WS2812_module	          1         6.0
+---------------------------------------------------
+Report for cell uart0
+   Instance path: HelloWorld_Top/HelloWorld_inst/uart0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     123.50         6.8
+                                  LUT4	     192.00         6.2
+                                PFUREG	        146         7.8
+                                RIPPLE	         23        11.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             uart0_ipgen_lscc_uart_Z20	          1         6.8
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_Z20
+   Instance path: HelloWorld_Top/HelloWorld_inst/uart0_inst/lscc_uart_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     123.50         6.8
+                                  LUT4	     192.00         6.2
+                                PFUREG	        146         7.8
+                                RIPPLE	         23        11.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64	          1         2.4
+uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D	          1         2.6
+     uart0_ipgen_lscc_uart_intface_Z19	          1         1.8
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64
+   Instance path: HelloWorld_Top/HelloWorld_inst/uart0_inst/lscc_uart_inst/u_txmitt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      43.50         2.4
+                                  LUT4	      65.00         2.1
+                                PFUREG	         42         2.3
+                                RIPPLE	          9         4.4
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D
+   Instance path: HelloWorld_Top/HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.00         2.6
+                                  LUT4	      71.00         2.3
+                                PFUREG	         56         3.0
+                                RIPPLE	         14         6.8
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_intface_Z19
+   Instance path: HelloWorld_Top/HelloWorld_inst/uart0_inst/lscc_uart_inst/u_intface
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.00         1.8
+                                  LUT4	      56.00         1.8
+                                PFUREG	         48         2.6
+---------------------------------------------------
+Report for cell sysmem0_1_0_2
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      82.28         4.5
+                                  LUT4	     190.50         6.1
+                                PFUREG	         36         1.9
+                                   EBR	         16        80.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+        sysmem0_ipgen_lscc_sys_mem_Z17	          1         4.5
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_sys_mem_Z17
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      82.28         4.5
+                                  LUT4	     190.50         6.1
+                                PFUREG	         36         1.9
+                                   EBR	         16        80.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+            sysmem0_ipgen_lscc_mem_Z15	          1         3.2
+sysmem0_ipgen_lscc_ahblmem_slave_Z18_0	          1         1.2
+sysmem0_ipgen_lscc_ahblmem_slave_Z18_1	          1         0.1
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_mem_Z15
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      58.67         3.2
+                                  LUT4	     130.00         4.2
+                                PFUREG	          8         0.4
+                                   EBR	         16        80.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17	          1         3.2
+---------------------------------------------------
+Report for cell pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp_true_be.u_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      58.27         3.2
+                                  LUT4	     128.50         4.1
+                                PFUREG	          8         0.4
+                                   EBR	         16        80.0
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z18_0
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/bridge_s1.bridge_s1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.42         1.2
+                                  LUT4	      56.00         1.8
+                                PFUREG	         25         1.3
+---------------------------------------------------
+Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z18_1
+   Instance path: HelloWorld_Top/HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/bridge_s0.bridge_s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.20         0.1
+                                  LUT4	       4.50         0.1
+                                PFUREG	          3         0.2
+---------------------------------------------------
+Report for cell gpio0
+   Instance path: HelloWorld_Top/HelloWorld_inst/gpio0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      58.73         3.2
+                                  LUT4	     102.00         3.3
+                                 IOBUF	          8        61.5
+                                PFUREG	         97         5.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             gpio0_ipgen_lscc_gpio_Z13	          1         3.2
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_Z13
+   Instance path: HelloWorld_Top/HelloWorld_inst/gpio0_inst/lscc_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      58.73         3.2
+                                  LUT4	     102.00         3.3
+                                 IOBUF	          8        61.5
+                                PFUREG	         97         5.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+        gpio0_ipgen_lscc_gpio_lmmi_Z14	          1         2.7
+gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s	          1         0.5
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s
+   Instance path: HelloWorld_Top/HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.50         0.5
+                                  LUT4	       9.00         0.3
+                                PFUREG	         25         1.3
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_lmmi_Z14
+   Instance path: HelloWorld_Top/HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.23         2.7
+                                  LUT4	      93.00         3.0
+                                 IOBUF	          8        61.5
+                                PFUREG	         72         3.9
+---------------------------------------------------
+Report for cell apb0_32s_1s_33792_1024_32768_1024_34816_1024
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.25         0.4
+                                  LUT4	      14.00         0.5
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+   apb0_ipgen_lscc_apb_interconnect_Z8	          1         0.4
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_interconnect_Z8
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.25         0.4
+                                  LUT4	      14.00         0.5
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+           apb0_ipgen_lscc_apb_bus_Z10	          1         0.4
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_bus_Z10
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.25         0.4
+                                  LUT4	      14.00         0.5
+                                PFUREG	          4         0.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s	          1         0.1
+        apb0_ipgen_lscc_apb_decoder_Z9	          1         0.3
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_multiplexor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.50         0.1
+                                  LUT4	       3.00         0.1
+                                PFUREG	          4         0.2
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_Z9
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.75         0.3
+                                  LUT4	      11.00         0.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024	          1         0.0
+apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                  LUT4	       1.00         0.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[2].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                  LUT4	       1.00         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[1].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                  LUT4	       1.00         0.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[1].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                  LUT4	       1.00         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[0].u_lscc_apb_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.0
+                                  LUT4	       2.00         0.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s	          1         0.0
+---------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s
+   Instance path: HelloWorld_Top/HelloWorld_inst/apb0_inst/lscc_apb_interconnect_inst/apb_bus.u_lscc_apb_bus/u_lscc_apb_decoder/genblk1[0].u_lscc_apb_decoder_sel/genblk1[0].u_lscc_apb_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.0
+                                  LUT4	       2.00         0.1
+---------------------------------------------------
+Report for cell ahbl2apb0_32s
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl2apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      95.33         5.3
+                                  LUT4	     173.00         5.6
+                                PFUREG	        131         7.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+      ahbl2apb0_ipgen_lscc_ahbl2apb_Z7	          1         5.3
+---------------------------------------------------
+Report for cell ahbl2apb0_ipgen_lscc_ahbl2apb_Z7
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      95.33         5.3
+                                  LUT4	     173.00         5.6
+                                PFUREG	        131         7.0
+---------------------------------------------------
+Report for cell ahbl0_Z6
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      42.00         2.3
+                                  LUT4	      86.00         2.8
+                                PFUREG	          6         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ ahbl0_ipgen_lscc_ahbl_interconnect_Z1	          1         2.3
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_interconnect_Z1
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      42.00         2.3
+                                  LUT4	      86.00         2.8
+                                PFUREG	          6         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+          ahbl0_ipgen_lscc_ahbl_bus_Z5	          1         2.3
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_bus_Z5
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      42.00         2.3
+                                  LUT4	      86.00         2.8
+                                PFUREG	          6         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s	          1         2.0
+ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3	          1         0.1
+      ahbl0_ipgen_lscc_ahbl_decoder_Z2	          1         0.3
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_default_slv
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.25         0.1
+                                  LUT4	       2.00         0.1
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_multiplexor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      35.57         2.0
+                                  LUT4	      72.00         2.3
+                                PFUREG	          4         0.2
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z2
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.18         0.3
+                                  LUT4	      12.00         0.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3	          1         0.2
+ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[1].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.20         0.1
+                                  LUT4	       3.00         0.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s	          1         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[1].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.20         0.1
+                                  LUT4	       3.00         0.1
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.98         0.2
+                                  LUT4	       9.00         0.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s	          1         0.2
+---------------------------------------------------
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s
+   Instance path: HelloWorld_Top/HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc_ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel/genblk1[0].u_lscc_ahbl_decoder_comp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.98         0.2
+                                  LUT4	       9.00         0.3
+---------------------------------------------------
+Report for cell WS2812_module
+   Instance path: HelloWorld_Top/HelloWorld_inst/WS2812_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     109.25         6.0
+                                  LUT4	     117.00         3.8
+                               DISTRAM	      36.00        85.7
+                                PFUREG	         80         4.3
+                                RIPPLE	         15         7.3
+---------------------------------------------------
+Report for cell cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z12
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1265.98        69.9
+                                  LUT4	    2212.50        71.4
+                               DISTRAM	       4.00         9.5
+                                PFUREG	       1313        70.4
+                                RIPPLE	        150        73.2
+                                   EBR	          4        20.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             cpu0_ipgen_riscvsmall_Z11	          1        69.9
+---------------------------------------------------
+Report for cell cpu0_ipgen_riscvsmall_Z11
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1265.65        69.9
+                                  LUT4	    2211.50        71.3
+                               DISTRAM	       4.00         9.5
+                                PFUREG	       1313        70.4
+                                RIPPLE	        150        73.2
+                                   EBR	          4        20.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   cpu0_ipgen_timer_32	          1         6.8
+ cpu0_ipgen_vex_debug_0s_MachXO3LF_14s	          1         4.6
+            cpu0_ipgen_pic_3s_0_4_8_12	          1         0.8
+cpu0_ipgen_lscc_cpu_ahbl_mux_4294901760	          1         1.9
+               cpu0_ipgen_Riscv_Dbg_IC	          1        55.8
+---------------------------------------------------
+Report for cell cpu0_ipgen_Riscv_Dbg_IC
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1009.72        55.8
+                                  LUT4	    1794.50        57.9
+                                PFUREG	        958        51.4
+                                RIPPLE	         84        41.0
+                                   EBR	          4        20.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+cpu0_ipgen_StreamFifoLowLatency_Dbg_IC	          1         8.4
+---------------------------------------------------
+Report for cell cpu0_ipgen_StreamFifoLowLatency_Dbg_IC
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimplePlugin_rspJoin_rspBuffer_c
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     151.83         8.4
+                                  LUT4	     365.83        11.8
+                                PFUREG	         33         1.8
+---------------------------------------------------
+Report for cell cpu0_ipgen_vex_debug_0s_MachXO3LF_14s
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      84.17         4.6
+                                  LUT4	     111.00         3.6
+                               DISTRAM	       4.00         9.5
+                                PFUREG	        194        10.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+cpu0_ipgen_vex_jtag_bridge_0s_MachXO3LF_14s	          1         0.3
+                 cpu0_ipgen_JtagBridge	          1         2.9
+             cpu0_ipgen_SystemDebugger	          1         1.3
+---------------------------------------------------
+Report for cell cpu0_ipgen_SystemDebugger
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/systemDebugger_1_
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.40         1.3
+                                  LUT4	      27.00         0.9
+                               DISTRAM	       4.00         9.5
+                                PFUREG	         58         3.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_JtagBridge
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      53.02         2.9
+                                  LUT4	      76.00         2.5
+                                PFUREG	        122         6.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+             cpu0_ipgen_FlowCCByToggle	          1         0.2
+---------------------------------------------------
+Report for cell cpu0_ipgen_FlowCCByToggle
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_/flowCCByToggle_1_
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.75         0.2
+                                  LUT4	       2.00         0.1
+                                PFUREG	          9         0.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                cpu0_ipgen_BufferCC_1_	          1         0.0
+---------------------------------------------------
+Report for cell cpu0_ipgen_BufferCC_1_
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_/flowCCByToggle_1_/bufferCC_4_
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_vex_jtag_bridge_0s_MachXO3LF_14s
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.17         0.3
+                                  LUT4	       7.00         0.2
+                                PFUREG	          9         0.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+cpu0_ipgen_d_ff_plain_rst_we_t_2s_0_0_0	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_6	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_we_t_1s_0_0_0_1	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_we_t_1s_0_0_0_2	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_7	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_8	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_3	          1         0.0
+cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_5	          1         0.0
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_8
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/shift_delay_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_5
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/shift_delay2_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_7
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/jce_delay_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_3
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/jce_delay2_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_we_t_1s_0_0_0_2
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TMS_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_we_t_1s_0_0_0_1
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TDI_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0_6
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TDI_reg2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.0
+                                PFUREG	          1         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_d_ff_plain_rst_we_t_2s_0_0_0
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK_counter_reg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_timer_32
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     122.58         6.8
+                                  LUT4	     166.50         5.4
+                                PFUREG	        137         7.3
+                                RIPPLE	         66        32.2
+---------------------------------------------------
+Report for cell cpu0_ipgen_pic_3s_0_4_8_12
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_pic.i_pic
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.02         0.8
+                                  LUT4	      32.50         1.0
+                                PFUREG	         21         1.1
+---------------------------------------------------
+Report for cell cpu0_ipgen_lscc_cpu_ahbl_mux_4294901760
+   Instance path: HelloWorld_Top/HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_multiplexor.b_dbus
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      34.17         1.9
+                                  LUT4	     107.00         3.5
+                                PFUREG	          3         0.2
+---------------------------------------------------
+Report for cell xo2chub
+   Instance path: HelloWorld_Top/xo2chub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.67         1.5
+                                  LUT4	      12.00         0.4
+                                PFUREG	         51         2.7
+                                RIPPLE	         17         8.3

@@ -1,0 +1,29 @@
+#
+# Logical Preferences generated for Lattice by Synplify map202003lat, Build 172R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "sys_clk" 38.0 MHz;
+#FREQUENCY NET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK" 100.0 MHz;
+#FREQUENCY NET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK" 100.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK" TO CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK";
+#BLOCK PATH FROM CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK" TO CLKNET "sys_clk";
+#BLOCK PATH FROM CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK" TO CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK";
+#BLOCK PATH FROM CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK" TO CLKNET "sys_clk";
+#BLOCK PATH FROM CLKNET "sys_clk" TO CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK";
+#BLOCK PATH FROM CLKNET "sys_clk" TO CLKNET "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

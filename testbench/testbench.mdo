@@ -1,0 +1,17 @@
+if {![file exists "D:/docs/FPGA/SOC_IP/testbench/testbench.mpf"]} { 
+	project new "D:/docs/FPGA/SOC_IP/testbench" testbench
+	project addfile "D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v"
+	project addfile "D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/docs/FPGA/WS2812_IP/rtl  -work work  "D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v"
+	vlog  +incdir+D:/docs/FPGA/SOC_IP/SOC_IP  -work work  "D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v"
+} else {
+	project open "D:/docs/FPGA/SOC_IP/testbench/testbench"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo3l  testbench
+view wave
+add wave /*
+run 1000ns

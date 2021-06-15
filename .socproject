@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<propelProject>
+    <builder-resource>
+        <socProject sbxfile="./SOC_IP/SOC_IP.sbx"/>
+        <verifyProject sbxfile="./verification/SOC_IP_v.sbx"/>
+    </builder-resource>
+    <builderInfo version="2.0"/>
+</propelProject>

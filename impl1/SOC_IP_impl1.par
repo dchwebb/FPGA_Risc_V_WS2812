@@ -1,0 +1,300 @@
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Jun 14 18:20:59 2021
+
+C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f SOC_IP_impl1.p2t
+SOC_IP_impl1_map.ncd SOC_IP_impl1.dir SOC_IP_impl1.prf -gui -msgset
+D:/docs/FPGA/SOC_IP/promote.xml
+
+
+Preference file: SOC_IP_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            4.008        0            0.142        0            28           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 28 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Lattice Place and Route Report for Design "SOC_IP_impl1_map.ncd"
+Mon Jun 14 18:20:59 2021
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/docs/FPGA/SOC_IP/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 SOC_IP_impl1_map.ncd SOC_IP_impl1.dir/5_1.ncd SOC_IP_impl1.prf
+Preference file: SOC_IP_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file SOC_IP_impl1_map.ncd.
+Design name: HelloWorld_Top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: 6
+Loading device for application par from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.16.
+Performance Hardware Data Status:   Preliminary    Version 37.5.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   13+4(JTAG)/336     5% used
+                  13+4(JTAG)/207     8% bonded
+   IOLOGIC           10/336           2% used
+
+   SLICE           1811/3432         52% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+   JTAG               1/1           100% used
+   EBR               20/26           76% used
+
+
+Number of Signals: 5694
+Number of Connections: 17435
+
+Pin Constraint Summary:
+   13 out of 13 pins locked (100% locked).
+
+The following 3 signals are selected to use the primary clock routing resources:
+    HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/TCK (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/genblk2.TCK_buff, clk load #: 44)
+    sys_clk (driver: OSCH_inst, clk load #: 1085)
+    jtaghub16_jtck (driver: xo2chub/genblk7.jtagf_u, clk load #: 35)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    HelloWorld_inst/cpu0_inst_system_resetn_o_net (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1888, clk load #: 0, sr load #: 394, ce load #: 0)
+    HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1888, clk load #: 0, sr load #: 134, ce load #: 0)
+    HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_arbitration_isStuck_i (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/SLICE_1700, clk load #: 0, sr load #: 0, ce load #: 105)
+    HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory_arbitration_haltItself4_i (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/SLICE_1699, clk load #: 0, sr load #: 0, ce load #: 43)
+    HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/N_222_i (driver: HelloWorld_inst/SLICE_1149, clk load #: 0, sr load #: 0, ce load #: 34)
+    jtaghub16_jrstn (driver: xo2chub/genblk7.jtagf_u, clk load #: 0, sr load #: 34, ce load #: 0)
+    HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/mem1_req_arb_w (driver: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/SLICE_1152, clk load #: 0, sr load #: 0, ce load #: 33)
+    HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_reg_2_sqmuxa_i (driver: HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1862, clk load #: 0, sr load #: 0, ce load #: 33)
+
+Signal rstn_i_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 5 secs 
+
+Starting Placer Phase 1.
+........................
+Placer score = 1582160.
+Finished Placer Phase 1.  REAL time: 12 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  1554794
+Finished Placer Phase 2.  REAL time: 13 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 1 out of 8 (12%)
+
+Global Clocks:
+  PRIMARY "sys_clk" from OSC on comp "OSCH_inst" on site "OSC", clk load = 1085
+  PRIMARY "jtaghub16_jtck" from JTCK on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 35
+  PRIMARY DCC "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/TCK" from comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/genblk2.TCK_buff" on DCC site "DCC0", total # of clk loads = 44
+     - DCC input "jtaghub16_jtck" from JTCK on comp "xo2chub/genblk7.jtagf_u" on site "JTAG"
+  SECONDARY "HelloWorld_inst/cpu0_inst_system_resetn_o_net" from Q1 on comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1888" on site "R14C18A", clk load = 0, ce load = 0, sr load = 394
+  SECONDARY "HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset" from Q0 on comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1888" on site "R14C18A", clk load = 0, ce load = 0, sr load = 134
+  SECONDARY "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_arbitration_isStuck_i" from F0 on comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/SLICE_1700" on site "R14C20B", clk load = 0, ce load = 105, sr load = 0
+  SECONDARY "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory_arbitration_haltItself4_i" from F0 on comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/SLICE_1699" on site "R14C20C", clk load = 0, ce load = 43, sr load = 0
+  SECONDARY "HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/N_222_i" from F1 on comp "HelloWorld_inst/SLICE_1149" on site "R14C20D", clk load = 0, ce load = 34, sr load = 0
+  SECONDARY "jtaghub16_jrstn" from JRSTN on comp "xo2chub/genblk7.jtagf_u" on site "JTAG", clk load = 0, ce load = 0, sr load = 34
+  SECONDARY "HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/mem1_req_arb_w" from F1 on comp "HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/SLICE_1152" on site "R21C18A", clk load = 0, ce load = 33, sr load = 0
+  SECONDARY "HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_reg_2_sqmuxa_i" from F0 on comp "HelloWorld_inst/cpu0_inst/riscvsmall_inst/SLICE_1862" on site "R14C18D", clk load = 0, ce load = 33, sr load = 0
+
+  PRIMARY  : 3 out of 8 (37%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   13 + 4(JTAG) out of 336 (5.1%) PIO sites used.
+   13 + 4(JTAG) out of 207 (8.2%) bonded PIO sites used.
+   Number of PIO comps: 13; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 4 / 51 (  7%) | 3.3V       | -         |
+| 1        | 8 / 52 ( 15%) | 3.3V       | -         |
+| 2        | 1 / 52 (  1%) | 3.3V       | -         |
+| 3        | 0 / 16 (  0%) | -          | -         |
+| 4        | 0 / 16 (  0%) | -          | -         |
+| 5        | 0 / 20 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 12 secs 
+
+Dumping design to file SOC_IP_impl1.dir/5_1.ncd.
+
+0 connections routed; 17435 unrouted.
+Starting router resource preassignment
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=HelloWorld_inst/gpio0_inst/lscc_gpio_inst/lmmi_rdata_valid_w loads=4 clock_loads=4
+
+Completed router resource preassignment. Real time: 16 secs 
+
+Start NBR router at 18:21:15 06/14/21
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 18:21:16 06/14/21
+
+Start NBR section for initial routing at 18:21:16 06/14/21
+Level 1, iteration 1
+1(0.00%) conflict; 13938(79.94%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.519ns/0.000ns; real time: 17 secs 
+Level 2, iteration 1
+1(0.00%) conflict; 13913(79.80%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 2.846ns/0.000ns; real time: 18 secs 
+Level 3, iteration 1
+20(0.01%) conflicts; 13584(77.91%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.740ns/0.000ns; real time: 18 secs 
+Level 4, iteration 1
+1099(0.29%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.532ns/0.000ns; real time: 20 secs 
+
+Info: Initial congestion level at 75% usage is 4
+Info: Initial congestion area  at 75% usage is 44 (4.40%)
+
+Start NBR section for normal routing at 18:21:19 06/14/21
+Level 1, iteration 1
+7(0.00%) conflicts; 1677(9.62%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.540ns/0.000ns; real time: 20 secs 
+Level 4, iteration 1
+350(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.422ns/0.000ns; real time: 22 secs 
+Level 4, iteration 2
+188(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.530ns/0.000ns; real time: 23 secs 
+Level 4, iteration 3
+106(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.284ns/0.000ns; real time: 23 secs 
+Level 4, iteration 4
+56(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.284ns/0.000ns; real time: 23 secs 
+Level 4, iteration 5
+33(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 6
+19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 7
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 8
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 9
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 10
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 24 secs 
+Level 4, iteration 11
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 25 secs 
+Level 4, iteration 12
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 25 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 18:21:24 06/14/21
+
+Start NBR section for re-routing at 18:21:24 06/14/21
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.008ns/0.000ns; real time: 25 secs 
+
+Start NBR section for post-routing at 18:21:24 06/14/21
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 4.008ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=HelloWorld_inst/gpio0_inst/lscc_gpio_inst/lmmi_rdata_valid_w loads=4 clock_loads=4
+
+WARNING - par: General routing is found on clock path to DCS/DCC input pin HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/genblk2.TCK_buff.CLKI on signal jtaghub16_jtck and may suffer from excessive delay and/or skew.
+Total CPU time 26 secs 
+Total REAL time: 28 secs 
+Completely routed.
+End of route.  17435 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file SOC_IP_impl1.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 4.008
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.142
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 27 secs 
+Total REAL time to completion: 28 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.

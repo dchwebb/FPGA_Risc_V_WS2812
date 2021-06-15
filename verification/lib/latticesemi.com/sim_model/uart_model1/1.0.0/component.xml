@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>sim_model</ipxact:library>
+    <ipxact:name>uart_model1</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:model>
+        <ipxact:instantiations>
+            <ipxact:componentInstantiation>
+                <ipxact:name>uart_model1</ipxact:name>
+            </ipxact:componentInstantiation>
+            <ipxact:designInstantiation>
+                <ipxact:name>uart_model1_design</ipxact:name>
+                <ipxact:designRef library="sim_model" name="uart_model1" vendor="latticesemi.com" version="1.0.0"/>
+            </ipxact:designInstantiation>
+        </ipxact:instantiations>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>clk</ipxact:name>
+                <ipxact:displayName>clk</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>rstn</ipxact:name>
+                <ipxact:displayName>rstn</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_rxd</ipxact:name>
+                <ipxact:displayName>uart_rxd</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_txd</ipxact:name>
+                <ipxact:displayName>uart_txd</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_rx_data_debug</ipxact:name>
+                <ipxact:displayName>uart_rx_data_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_rx_valid_debug</ipxact:name>
+                <ipxact:displayName>uart_rx_valid_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_rx_break_debug</ipxact:name>
+                <ipxact:displayName>uart_rx_break_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_tx_data_debug</ipxact:name>
+                <ipxact:displayName>uart_tx_data_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                    <ipxact:vectors>
+                        <ipxact:vector>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:vector>
+                    </ipxact:vectors>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_tx_en_debug</ipxact:name>
+                <ipxact:displayName>uart_tx_en_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>uart_tx_busy_debug</ipxact:name>
+                <ipxact:displayName>uart_tx_busy_debug</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <ipxact:fileSets>
+        <ipxact:fileSet>
+            <ipxact:name>ipx_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>rtl/uart_model1_bb.v</ipxact:name>
+                <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>uart_model1.cfg</ipxact:name>
+                <ipxact:fileType user="cfg">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/uart_model1_tmpl.v</ipxact:name>
+                <ipxact:fileType user="template_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/uart_model1_tmpl.vhd</ipxact:name>
+                <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/uart_model1.v</ipxact:name>
+                <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>design.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_design">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/uart_model.v</ipxact:name>
+                <ipxact:fileType user="core_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/uart_rx.v</ipxact:name>
+                <ipxact:fileType user="core_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/uart_tx.v</ipxact:name>
+                <ipxact:fileType user="core_verilog">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <ipxact:vendorExtensions>
+        <lsccip:moduleRef lsccip:library="sim_model" lsccip:name="UART_Model" lsccip:vendor="latticesemi.com" lsccip:version="1.0.0"/>
+        <lsccip:deviceInfo>
+            <lsccip:architecture>MachXO3L</lsccip:architecture>
+            <lsccip:device>LCMXO3L-9400C</lsccip:device>
+            <lsccip:package>CABGA256</lsccip:package>
+            <lsccip:performanceGrade>5</lsccip:performanceGrade>
+        </lsccip:deviceInfo>
+        <lsccip:generationInfo>
+            <lsccip:fileVersion>20180929</lsccip:fileVersion>
+            <lsccip:createdTimestamp>2021 03 26 11:49:38</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2.0.2103172220</lsccip:radiantBuild>
+        </lsccip:generationInfo>
+    </ipxact:vendorExtensions>
+</ipxact:component>

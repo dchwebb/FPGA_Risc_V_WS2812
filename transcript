@@ -1,0 +1,410 @@
+# Reading pref.tcl
+# do {D:/docs/FPGA/SOC_IP/testbench/testbench.mdo}
+# Loading project testbench
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 16:20:46 on Jun 12,2021
+# vlog -reportprogress 300 "+incdir+D:/docs/FPGA/WS2812_IP/rtl" -work work D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v 
+# -- Compiling module WS2812_module
+# 
+# Top level modules:
+# 	WS2812_module
+# End time: 16:20:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 16:20:46 on Jun 12,2021
+# vlog -reportprogress 300 "+incdir+D:/docs/FPGA/SOC_IP/SOC_IP" -work work D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:20:46 on Jun 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L work -L pmi_work -L ovi_machxo3l testbench 
+# Start time: 16:20:46 on Jun 12,2021
+# //  ModelSim - Lattice FPGA Edition 2020.3 Oct 14 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.testbench
+# Loading work.WS2812_module
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position end  sim:/testbench/WS2812_inst/SM_Led
+add wave -position end  sim:/testbench/WS2812_inst/SM_APB
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+run
+run
+run
+add wave -position end  sim:/testbench/WS2812_inst/led_counter
+add wave -position end  sim:/testbench/WS2812_inst/led_bit_counter
+add wave -position end  sim:/testbench/WS2812_inst/clock_counter
+restart
+run
+add wave -position end  sim:/testbench/WS2812_inst/led_colour
+restart
+run
+add wave -position end  sim:/testbench/WS2812_inst/colours_updated
+restart
+run
+add wave -position end  sim:/testbench/WS2812_inst/running
+restart
+run
+add wave -position end  sim:/testbench/WS2812_inst/CLOCK_DIVIDER
+restart
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+restart
+run
+# Break in Module WS2812_module at D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v line 140
+step
+step
+step
+step
+step
+step
+step
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench/control'. 
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Break in Module WS2812_module at D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v line 140
+step -out -current
+# Requested step location(s) not found!
+step -over
+run
+# Compile of WS2812_IP.v failed with 2 errors.
+# Compile of testbench.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+restart
+run
+restart
+run
+# Break in Module WS2812_module at D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v line 151
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+restart
+run
+# Break in Module WS2812_module at D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v line 151
+step
+step
+step
+run -continue
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+restart
+run
+run
+# Compile of WS2812_IP.v failed with 2 errors.
+# Compile of testbench.v was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench/WS2812_inst/running'. 
+run
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+# Warning in wave window restart: (vish-4014) No objects found matching '/testbench/WS2812_inst/colours_updated'. 
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WS2812_module
+run
+restart
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+restart
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+add wave -position end  sim:/testbench/WS2812_inst/auto_send
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# Compile of WS2812_IP.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.testbench
+# Loading work.WS2812_module
+run
+# End time: 21:28:58 on Jun 14,2021, Elapsed time: 53:08:12
+# Errors: 0, Warnings: 1

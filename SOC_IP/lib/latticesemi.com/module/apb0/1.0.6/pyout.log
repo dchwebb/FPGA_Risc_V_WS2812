@@ -1,0 +1,91 @@
+Call _item_descriptor_abc::__init_subclass__(_immutable_item_descriptor_abc, {'readonly': True})
+Call _item_descriptor_abc::__init_subclass__(_context_item_descriptor, {})
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': False, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B71648>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B71648>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+WARNING: missing driver HDL files.
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\rtl\apb0_bb.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\apb0.cfg 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\misc\apb0_tmpl.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\misc\apb0_tmpl.vhd 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\rtl\apb0.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2.0/builder/rtf/ip/common/apb_interconnect)
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\testbench\dut_params.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\testbench\dut_inst.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\design.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\component.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\apb0.ipx 
+"C:/lscc/propel/2.0/builder/rtf/ispfpga\data\python\nt64\bin\python" "D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\module\apb0\1.0.6\testbench/create_apb_interconnect_top.py"
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': True, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x00000000155379A8>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x00000000155379A8>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\rtl\WS2812_bb.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\WS2812.cfg 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\misc\WS2812_tmpl.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\misc\WS2812_tmpl.vhd 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\rtl\WS2812.v 
+Warning: No directory "ldc" in IP module(C:/Users/Dominic/PropelIPLocal/Mountjoy Modular_WS2812_IP_WS2812_IP_1.1)
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\design.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\component.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.1\WS2812.ipx 
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': True, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B71FA8>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B71FA8>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': True, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B879A8>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015B879A8>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\rtl\WS2812_bb.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\WS2812.cfg 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\misc\WS2812_tmpl.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\misc\WS2812_tmpl.vhd 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\rtl\WS2812.v 
+Warning: No directory "ldc" in IP module(C:/Users/Dominic/PropelIPLocal/Mountjoy Modular_WS2812_IP_WS2812_IP_1.2)
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\design.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\component.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.2\WS2812.ipx 
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': True, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015ECA9A8>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015ECA9A8>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\rtl\WS2812_bb.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\WS2812.cfg 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\misc\WS2812_tmpl.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\misc\WS2812_tmpl.vhd 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\rtl\WS2812.v 
+Warning: No directory "ldc" in IP module(C:/Users/Dominic/PropelIPLocal/Mountjoy Modular_WS2812_IP_WS2812_IP_1.3)
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\design.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\component.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\Mountjoy Modular\WS2812_IP\WS2812\1.3\WS2812.ipx 
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': False, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015552C48>})
+Call _context_item_abc::__init_subclass__(__context_item, {'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015552C48>}), __class__:_context_item_abc
+_context_proxy_abc::__prepare__ is called
+_context_proxy_abc::__new__ is called
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+WARNING: missing driver HDL files.
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\rtl\sysmem0_bb.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\sysmem0.cfg 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\misc\sysmem0_tmpl.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\misc\sysmem0_tmpl.vhd 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\rtl\sysmem0.v 
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2.0/builder/rtf/ip/common/system_memory)
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\testbench\dut_params.v 
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\testbench\dut_inst.v 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\design.xml 
+path:  none lib_dir:  D:/docs/FPGA/SOC_IP/SOC_IP/.lib
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\component.xml 
+Writing D:\docs\FPGA\SOC_IP\SOC_IP\.lib\latticesemi.com\ip\sysmem0\1.0.2\sysmem0.ipx 
+Call _item_descriptor_abc::__init_subclass__(__context_item, {'readonly': False, 'context': <ipengine.ip_instance.instance.EvalSettings object at 0x0000000015EECD08>})

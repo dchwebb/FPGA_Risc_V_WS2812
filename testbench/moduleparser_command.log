@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.12/bin/nt64/moduleparser.exe -PROJ testbench -pf C:/lscc/diamond/3.12/cae_library/synthesis/vhdl/machxo3l.vhd -lib machxo3l -pf C:/lscc/diamond/3.12/cae_library/synthesis/verilog/machxo3l.v -pkg C:/lscc/diamond/3.12/cae_library/vhdl_packages/vdbs -lst D:/docs/FPGA/SOC_IP/testbench/source_files.lst

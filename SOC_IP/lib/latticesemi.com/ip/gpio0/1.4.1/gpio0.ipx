@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3L" date="2021 03 26 11:35:04" device="LCMXO3L-9400C" generator="ipgen" library="ip" module="gpio" name="gpio0" package="CABGA256" source_format="Verilog" speed="5" vendor="latticesemi.com" version="1.4.1">
+ <Package>
+  <File modified="2021 03 26 11:35:04" name="rtl/gpio0_bb.v" type="black_box_verilog"/>
+  <File modified="2021 03 26 11:35:04" name="gpio0.cfg" type="cfg"/>
+  <File modified="2021 03 26 11:35:04" name="misc/gpio0_tmpl.v" type="template_verilog"/>
+  <File modified="2021 03 26 11:35:04" name="misc/gpio0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 03 26 11:35:04" name="rtl/gpio0.v" type="top_level_verilog"/>
+  <File modified="2021 03 26 11:35:04" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2021 03 26 11:35:04" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2021 03 26 11:35:04" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 03 26 11:35:04" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 02 09 00:35:01" name="testbench/lscc_lmmi2apb.v" type="testbench_verilog"/>
+  <File modified="2021 02 09 00:35:01" name="testbench/tb_top.v" type="testbench_verilog"/>
+  <File modified="2021 02 09 00:35:01" name="driver/gpio.c" type="driver_source"/>
+  <File modified="2021 02 09 00:35:01" name="driver/gpio.h" type="driver_header"/>
+  <File modified="2021 02 09 00:35:01" name="driver/gpio.xml" type="driver_metadata"/>
+  <File modified="2021 02 09 00:35:01" name="driver/gpio_regs.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

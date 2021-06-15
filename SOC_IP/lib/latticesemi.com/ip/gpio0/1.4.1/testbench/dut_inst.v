@@ -1,0 +1,12 @@
+    gpio0 u_gpio0(.gpio_io(gpio_io),
+        .clk_i(clk_i),
+        .resetn_i(resetn_i),
+        .apb_penable_i(apb_penable_i),
+        .apb_psel_i(apb_psel_i),
+        .apb_pwrite_i(apb_pwrite_i),
+        .apb_paddr_i(apb_paddr_i),
+        .apb_pwdata_i(apb_pwdata_i),
+        .apb_prdata_o(apb_prdata_o),
+        .apb_pslverr_o(apb_pslverr_o),
+        .apb_pready_o(apb_pready_o),
+        .int_o(int_o));

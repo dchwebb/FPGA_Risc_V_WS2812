@@ -1,0 +1,5 @@
+Hello World Project. Components included:
+	a) Processor - RISC-V MC w/ PIC/TIMER/Debug
+	b) GPIO
+	c) ASRAM - Asynchronous SRAM
+	d) UART - Serial port

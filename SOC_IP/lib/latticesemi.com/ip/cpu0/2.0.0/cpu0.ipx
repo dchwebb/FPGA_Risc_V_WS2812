@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3LF" date="2021 06 12 12:14:04" device="LCMXO3LF-6900C" generator="ipgen" library="ip" module="riscv_mc" name="cpu0" package="CABGA256" source_format="Verilog" speed="6" vendor="latticesemi.com" version="2.0.0">
+ <Package>
+  <File modified="2021 06 12 12:14:03" name="rtl/cpu0_bb.v" type="black_box_verilog"/>
+  <File modified="2021 06 12 12:14:03" name="cpu0.cfg" type="cfg"/>
+  <File modified="2021 06 12 12:14:03" name="misc/cpu0_tmpl.v" type="template_verilog"/>
+  <File modified="2021 06 12 12:14:03" name="misc/cpu0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 06 12 12:14:04" name="rtl/cpu0.v" type="top_level_verilog"/>
+  <File modified="2021 06 12 12:14:04" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2021 06 12 12:14:04" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2021 06 12 12:14:04" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 06 12 12:14:04" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 05 07 14:49:11" name="testbench/bht_ini.bin" type="testbench"/>
+  <File modified="2021 05 07 14:49:11" name="testbench/cpu0.yaml" type="testbench"/>
+  <File modified="2021 05 07 14:49:11" name="testbench/VexRiscv.v_toplevel_RegFilePlugin_regFile.bin" type="testbench"/>
+  <File modified="2021 05 07 14:49:11" name="driver/crt0.S" type="driver"/>
+  <File modified="2021 05 07 14:49:11" name="driver/hal.h" type="driver_header"/>
+  <File modified="2021 05 07 14:49:11" name="driver/interrupt.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/interrupt.h" type="driver_header"/>
+  <File modified="2021 05 07 14:49:11" name="driver/pic.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/pic.h" type="driver_header"/>
+  <File modified="2021 05 07 14:49:11" name="driver/reg_access.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/reg_access.h" type="driver_header"/>
+  <File modified="2021 05 07 14:49:11" name="driver/stdlib.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/timer.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/timer.h" type="driver_header"/>
+  <File modified="2021 05 07 14:49:11" name="driver/util.c" type="driver_source"/>
+  <File modified="2021 05 07 14:49:11" name="driver/util.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

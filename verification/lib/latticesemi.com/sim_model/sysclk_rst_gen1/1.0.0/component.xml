@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>sim_model</ipxact:library>
+    <ipxact:name>sysclk_rst_gen1</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:model>
+        <ipxact:instantiations>
+            <ipxact:componentInstantiation>
+                <ipxact:name>sysclk_rst_gen1</ipxact:name>
+            </ipxact:componentInstantiation>
+            <ipxact:designInstantiation>
+                <ipxact:name>sysclk_rst_gen1_design</ipxact:name>
+                <ipxact:designRef library="sim_model" name="sysclk_rst_gen1" vendor="latticesemi.com" version="1.0.0"/>
+            </ipxact:designInstantiation>
+        </ipxact:instantiations>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>dut_clk_i</ipxact:name>
+                <ipxact:displayName>dut_clk_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>dut_rst_i</ipxact:name>
+                <ipxact:displayName>dut_rst_i</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>dut_clk_o</ipxact:name>
+                <ipxact:displayName>dut_clk_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>dut_rst_o</ipxact:name>
+                <ipxact:displayName>dut_rst_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>tb_rst_o</ipxact:name>
+                <ipxact:displayName>tb_rst_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isRst>true</lsccip:isRst>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+            <ipxact:port>
+                <ipxact:name>tb_clk_o</ipxact:name>
+                <ipxact:displayName>tb_clk_o</ipxact:displayName>
+                <ipxact:wire>
+                    <ipxact:direction>out</ipxact:direction>
+                </ipxact:wire>
+                <ipxact:vendorExtensions>
+                    <lsccip:isClk>true</lsccip:isClk>
+                </ipxact:vendorExtensions>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    <ipxact:fileSets>
+        <ipxact:fileSet>
+            <ipxact:name>ipx_file_list</ipxact:name>
+            <ipxact:file>
+                <ipxact:name>rtl/sysclk_rst_gen1_bb.v</ipxact:name>
+                <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>sysclk_rst_gen1.cfg</ipxact:name>
+                <ipxact:fileType user="cfg">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/sysclk_rst_gen1_tmpl.v</ipxact:name>
+                <ipxact:fileType user="template_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>misc/sysclk_rst_gen1_tmpl.vhd</ipxact:name>
+                <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/sysclk_rst_gen1.v</ipxact:name>
+                <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>design.xml</ipxact:name>
+                <ipxact:fileType user="IP-XACT_design">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>rtl/SysClk_Rst_GenMon.sv</ipxact:name>
+                <ipxact:fileType user="core_system_verilog">user</ipxact:fileType>
+            </ipxact:file>
+            <ipxact:file>
+                <ipxact:name>testbench/apis.svh</ipxact:name>
+                <ipxact:fileType user="testbench_system_verilog">user</ipxact:fileType>
+            </ipxact:file>
+        </ipxact:fileSet>
+    </ipxact:fileSets>
+    <ipxact:vendorExtensions>
+        <lsccip:moduleRef lsccip:library="sim_model" lsccip:name="Clock_Reset_Generator" lsccip:vendor="latticesemi.com" lsccip:version="1.0.0"/>
+        <lsccip:deviceInfo>
+            <lsccip:architecture>MachXO3L</lsccip:architecture>
+            <lsccip:device>LCMXO3L-9400C</lsccip:device>
+            <lsccip:package>CABGA256</lsccip:package>
+            <lsccip:performanceGrade>5</lsccip:performanceGrade>
+        </lsccip:deviceInfo>
+        <lsccip:generationInfo>
+            <lsccip:fileVersion>20180929</lsccip:fileVersion>
+            <lsccip:createdTimestamp>2021 03 26 11:48:51</lsccip:createdTimestamp>
+            <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2.0.2103172220</lsccip:radiantBuild>
+        </lsccip:generationInfo>
+    </ipxact:vendorExtensions>
+</ipxact:component>

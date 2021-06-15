@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SOC_IP_impl1.log"
+-o "SOC_IP_impl1.csv"
+-pr "SOC_IP_impl1.prf"

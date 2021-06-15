@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3L" date="2021 03 26 11:48:51" device="LCMXO3L-9400C" generator="ipgen" library="sim_model" module="Clock_Reset_Generator" name="sysclk_rst_gen1" package="CABGA256" source_format="Verilog" speed="5" vendor="latticesemi.com" version="1.0.0">
+ <Package>
+  <File modified="2021 03 26 11:48:51" name="rtl/sysclk_rst_gen1_bb.v" type="black_box_verilog"/>
+  <File modified="2021 03 26 11:48:51" name="sysclk_rst_gen1.cfg" type="cfg"/>
+  <File modified="2021 03 26 11:48:51" name="misc/sysclk_rst_gen1_tmpl.v" type="template_verilog"/>
+  <File modified="2021 03 26 11:48:51" name="misc/sysclk_rst_gen1_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 03 26 11:48:51" name="rtl/sysclk_rst_gen1.v" type="top_level_verilog"/>
+  <File modified="2021 03 26 11:48:51" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 03 26 11:48:51" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 03 26 11:48:51" name="rtl/SysClk_Rst_GenMon.sv" type="core_system_verilog"/>
+  <File modified="2021 03 26 11:48:51" name="testbench/apis.svh" type="testbench_system_verilog"/>
+ </Package>
+</RadiantModule>

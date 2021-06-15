@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>sim_model</ipxact:library>
+    <ipxact:name>uart_model1</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>uart_model_inst</ipxact:instanceName>
+            <ipxact:componentRef library="sim_model" name="UART_Model" vendor="latticesemi.com" version="1.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="CLK_MHZ">50</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BIT_RATE">115200</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PAYLOAD_BITS">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="STACK_DEPTH">128</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="STIMULUS_GEN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DEBUG_PINS_EN">True</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="clk"/>
+                <ipxact:externalPortReference portRef="clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.rstn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="rstn"/>
+                <ipxact:externalPortReference portRef="rstn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_rxd</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_rxd"/>
+                <ipxact:externalPortReference portRef="uart_rxd"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_txd</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_txd"/>
+                <ipxact:externalPortReference portRef="uart_txd"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_rx_data_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_rx_data_debug"/>
+                <ipxact:externalPortReference portRef="uart_rx_data_debug">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_rx_valid_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_rx_valid_debug"/>
+                <ipxact:externalPortReference portRef="uart_rx_valid_debug"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_rx_break_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_rx_break_debug"/>
+                <ipxact:externalPortReference portRef="uart_rx_break_debug"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_tx_data_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_tx_data_debug"/>
+                <ipxact:externalPortReference portRef="uart_tx_data_debug">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_tx_en_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_tx_en_debug"/>
+                <ipxact:externalPortReference portRef="uart_tx_en_debug"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>uart_model1.uart_tx_busy_debug</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_model1" portRef="uart_tx_busy_debug"/>
+                <ipxact:externalPortReference portRef="uart_tx_busy_debug"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

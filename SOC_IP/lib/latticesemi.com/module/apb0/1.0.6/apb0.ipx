@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3LF" date="2021 06 09 22:49:12" device="LCMXO3LF-6900C" generator="ipgen" library="module" module="apb_interconnect" name="apb0" package="CABGA256" source_format="Verilog" speed="6" vendor="latticesemi.com" version="1.0.6">
+ <Package>
+  <File modified="2021 06 09 22:49:12" name="rtl/apb0_bb.v" type="black_box_verilog"/>
+  <File modified="2021 06 09 22:49:12" name="apb0.cfg" type="cfg"/>
+  <File modified="2021 06 09 22:49:12" name="misc/apb0_tmpl.v" type="template_verilog"/>
+  <File modified="2021 06 09 22:49:12" name="misc/apb0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 06 09 22:49:12" name="rtl/apb0.v" type="top_level_verilog"/>
+  <File modified="2021 06 09 22:49:12" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2021 06 09 22:49:12" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2021 06 09 22:49:12" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 06 09 22:49:12" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/create_apb_interconnect_top.py" type="testbench"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_apb_master_dummy.v" type="testbench_verilog"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_apb_slave_dummy.v" type="testbench_verilog"/>
+  <File modified="2019 12 20 02:26:39" name="testbench/lscc_dummy_model_lfsr.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

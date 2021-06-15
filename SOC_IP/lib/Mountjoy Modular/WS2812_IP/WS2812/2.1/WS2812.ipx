@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3LF" date="2021 06 14 15:12:54" device="LCMXO3LF-6900C" generator="ipgen" library="WS2812_IP" module="WS2812_IP" name="WS2812" package="CABGA256" source_format="Verilog" speed="6" vendor="Mountjoy Modular" version="2.1">
+ <Package>
+  <File modified="2021 06 14 15:12:54" name="rtl/WS2812_bb.v" type="black_box_verilog"/>
+  <File modified="2021 06 14 15:12:54" name="WS2812.cfg" type="cfg"/>
+  <File modified="2021 06 14 15:12:54" name="misc/WS2812_tmpl.v" type="template_verilog"/>
+  <File modified="2021 06 14 15:12:54" name="misc/WS2812_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 06 14 15:12:54" name="rtl/WS2812.v" type="top_level_verilog"/>
+  <File modified="2021 06 14 15:12:54" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 06 14 15:12:54" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 06 14 14:11:45" name="driver/WS2812.c" type="driver_source"/>
+  <File modified="2021 06 14 14:11:45" name="driver/WS2812.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

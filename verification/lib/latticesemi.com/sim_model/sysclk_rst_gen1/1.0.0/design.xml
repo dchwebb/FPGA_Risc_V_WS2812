@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>sim_model</ipxact:library>
+    <ipxact:name>sysclk_rst_gen1</ipxact:name>
+    <ipxact:version>1.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>SysClk_Rst_GenMon_inst</ipxact:instanceName>
+            <ipxact:componentRef library="sim_model" name="Clock_Reset_Generator" vendor="latticesemi.com" version="1.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="DUT_CLK_IN_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUT_RST_IN_EN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TB_CLK_PERIOD">10</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TB_CLK_DUTY">50</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TB_RST_POL">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TB_RST_PERIOD">50</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_RST">1</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.dut_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="dut_clk_i"/>
+                <ipxact:externalPortReference portRef="dut_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.dut_rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="dut_rst_i"/>
+                <ipxact:externalPortReference portRef="dut_rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.dut_clk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="dut_clk_o"/>
+                <ipxact:externalPortReference portRef="dut_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.dut_rst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="dut_rst_o"/>
+                <ipxact:externalPortReference portRef="dut_rst_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.tb_rst_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="tb_rst_o"/>
+                <ipxact:externalPortReference portRef="tb_rst_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>sysclk_rst_gen1.tb_clk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="sysclk_rst_gen1" portRef="tb_clk_o"/>
+                <ipxact:externalPortReference portRef="tb_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

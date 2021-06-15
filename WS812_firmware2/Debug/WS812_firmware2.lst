@@ -1,0 +1,1243 @@
+
+WS812_firmware2.elf:     file format elf32-littleriscv
+WS812_firmware2.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x0000052a memsz 0x00000fd8 flags rwx
+
+Sections:
+Idx Name           Size      VMA       LMA       File off  Algn  Flags
+  0 .text          000004e0  00000000  00000000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .ctors         00000000  000004e0  000004e0  0000152c  2**2  CONTENTS
+  2 .rodata        0000004a  000004e0  000004e0  000014e0  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .data          00000000  0000052c  0000052c  0000152c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .bss           000000a8  0000052c  0000052c  0000152a  2**2  ALLOC
+  5 .heap          00000000  000005d4  000005d4  0000152c  2**2  CONTENTS
+  6 .stack         00000a00  000005d8  000005d8  0000152a  2**3  ALLOC
+  7 .debug_info    00001580  00000000  00000000  0000152c  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_abbrev  0000091b  00000000  00000000  00002aac  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_loc     0000089a  00000000  00000000  000033c7  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_aranges 00000170  00000000  00000000  00003c68  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_ranges  00000208  00000000  00000000  00003dd8  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_macro   0000239e  00000000  00000000  00003fe0  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_line    000024e4  00000000  00000000  0000637e  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_str     00007acc  00000000  00000000  00008862  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .comment       00000034  00000000  00000000  0001032e  2**0  CONTENTS, READONLY
+ 16 .debug_frame   00000288  00000000  00000000  00010364  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+000004e0 l    d  .ctors	00000000 .ctors
+000004e0 l    d  .rodata	00000000 .rodata
+0000052c l    d  .data	00000000 .data
+0000052c l    d  .bss	00000000 .bss
+000005d4 l    d  .heap	00000000 .heap
+000005d8 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./src/bsp/driver/riscv_mc/crt0.o
+000000c6 l       .text	00000000 crtInit
+0000006a l       .text	00000000 __handle_isr
+0000005c l       .text	00000000 __handle_esr
+0000006c l       .text	00000000 __handle_exit
+000000e2 l       .text	00000000 bss_init
+000000ea l       .text	00000000 bss_loop
+000000f6 l       .text	00000000 bss_done
+000000f8 l       .text	00000000 infinitLoop
+00000000 l    df *ABS*	00000000 uart.c
+00000000 l    df *ABS*	00000000 interrupt.c
+00000000 l    df *ABS*	00000000 pic.c
+00000000 l    df *ABS*	00000000 stdlib.c
+00000000 l    df *ABS*	00000000 main.c
+00000530 l     O .bss	00000001 idx.0
+00000000 l    df *ABS*	00000000 utils.c
+000001ac  w    F .text	00000016 putchar
+000001c2  w    F .text	0000017c printf
+00000d2c g       .data	00000000 __global_pointer$
+000004e0 g       .text	00000000 _etext
+00000198 g     F .text	00000014 pic_int_pending
+000004e0 g       .ctors	00000000 _ctors_end
+00000100 g     F .text	0000005c irq_callback
+0000015c g     F .text	0000002c esr_callback
+00000434 g     F .text	00000048 .hidden __udivsi3
+0000052c g       .bss	00000000 _bss_start
+0000052c g     O .bss	00000004 pic_dev
+000005d4 g       .bss	00000000 _bss_end
+0000047c g     F .text	00000010 .hidden __umodsi3
+0000057c g     O .bss	00000058 uart_core_uart
+00000000 g       .text	00000000 _ftext
+00000000 g       .text	00000000 _start
+000004e0 g       .ctors	00000000 _ctors_start
+00000a00 g       *ABS*	00000000 _STACK_SIZE
+000003f8 g     F .text	00000032 delayMS
+0000033e g     F .text	00000096 main
+00000012 g       .text	00000000 trap_entry
+00000000 g       *ABS*	00000000 _HEAP_SIZE
+00000092 g     F .text	00000034 uart_putc
+00000188 g     F .text	00000010 pic_int_clear
+0000042c g     F .text	00000084 .hidden __divsi3
+00000fd8 g       .stack	00000000 _stack_start
+00000534 g     O .bss	00000048 int_table
+000004b0 g     F .text	00000030 .hidden __modsi3
+000003d4 g     F .text	00000024 uartPutS
+000004e0 g       .ctors	00000000 _dtors_start
+
+
+
+Disassembly of section .text:
+
+00000000 <_ftext>:
+_ftext():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:8
+.global main
+.weak   irq_callback
+.weak   esr_callback
+
+_start:
+  j crtInit
+   0:	0c60006f          	j	c6 <crtInit>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:9
+  nop
+   4:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:10
+  nop
+   6:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:11
+  nop
+   8:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:12
+  nop
+   a:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:13
+  nop
+   c:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:14
+  nop
+   e:	0001                	nop
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:15
+  nop
+  10:	0001                	nop
+
+00000012 <trap_entry>:
+trap_entry():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:19
+
+.global  trap_entry
+trap_entry:
+  sw x1,  - 1*4(sp)
+  12:	fe112e23          	sw	ra,-4(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:20
+  sw x5,  - 2*4(sp)
+  16:	fe512c23          	sw	t0,-8(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:21
+  sw x6,  - 3*4(sp)
+  1a:	fe612a23          	sw	t1,-12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:22
+  sw x7,  - 4*4(sp)
+  1e:	fe712823          	sw	t2,-16(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:23
+  sw x10, - 5*4(sp)
+  22:	fea12623          	sw	a0,-20(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:24
+  sw x11, - 6*4(sp)
+  26:	feb12423          	sw	a1,-24(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:25
+  sw x12, - 7*4(sp)
+  2a:	fec12223          	sw	a2,-28(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:26
+  sw x13, - 8*4(sp)
+  2e:	fed12023          	sw	a3,-32(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:27
+  sw x14, - 9*4(sp)
+  32:	fce12e23          	sw	a4,-36(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:28
+  sw x15, -10*4(sp)
+  36:	fcf12c23          	sw	a5,-40(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:29
+  sw x16, -11*4(sp)
+  3a:	fd012a23          	sw	a6,-44(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:30
+  sw x17, -12*4(sp)
+  3e:	fd112823          	sw	a7,-48(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:31
+  sw x28, -13*4(sp)
+  42:	fdc12623          	sw	t3,-52(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:32
+  sw x29, -14*4(sp)
+  46:	fdd12423          	sw	t4,-56(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:33
+  sw x30, -15*4(sp)
+  4a:	fde12223          	sw	t5,-60(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:34
+  sw x31, -16*4(sp)
+  4e:	fdf12023          	sw	t6,-64(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:35
+  addi sp,sp,-16*4
+  52:	7139                	addi	sp,sp,-64
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:36
+  csrr a0, mcause    // load mcause value as parameter
+  54:	34202573          	csrr	a0,mcause
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:37
+  bltz a0, __handle_isr
+  58:	00054963          	bltz	a0,6a <__handle_isr>
+
+0000005c <__handle_esr>:
+__handle_esr():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:39
+__handle_esr:
+  csrr a1, mepc
+  5c:	341025f3          	csrr	a1,mepc
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:40
+  mv   a2, sp
+  60:	860a                	mv	a2,sp
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:41
+  call esr_callback
+  62:	28ed                	jal	15c <esr_callback>
+  64:	34151073          	csrw	mepc,a0
+  68:	a011                	j	6c <__handle_exit>
+
+0000006a <__handle_isr>:
+__handle_isr():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:42
+  csrw mepc, a0
+  6a:	2859                	jal	100 <irq_callback>
+
+0000006c <__handle_exit>:
+__handle_exit():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:42
+  6c:	50f2                	lw	ra,60(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:43
+  j    __handle_exit
+  6e:	52e2                	lw	t0,56(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:45
+__handle_isr:
+  call irq_callback
+  70:	5352                	lw	t1,52(sp)
+  72:	53c2                	lw	t2,48(sp)
+  74:	5532                	lw	a0,44(sp)
+  76:	55a2                	lw	a1,40(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:47
+__handle_exit:
+  lw x1 , 15*4(sp)
+  78:	5612                	lw	a2,36(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:48
+  lw x5,  14*4(sp)
+  7a:	5682                	lw	a3,32(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:49
+  lw x6,  13*4(sp)
+  7c:	4772                	lw	a4,28(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:50
+  lw x7,  12*4(sp)
+  7e:	47e2                	lw	a5,24(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:51
+  lw x10, 11*4(sp)
+  80:	4852                	lw	a6,20(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:52
+  lw x11, 10*4(sp)
+  82:	48c2                	lw	a7,16(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:53
+  lw x12,  9*4(sp)
+  84:	4e32                	lw	t3,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:54
+  lw x13,  8*4(sp)
+  86:	4ea2                	lw	t4,8(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:55
+  lw x14,  7*4(sp)
+  88:	4f12                	lw	t5,4(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:56
+  lw x15,  6*4(sp)
+  8a:	4f82                	lw	t6,0(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:57
+  lw x16,  5*4(sp)
+  8c:	6121                	addi	sp,sp,64
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:58
+  lw x17,  4*4(sp)
+  8e:	30200073          	mret
+
+00000092 <uart_putc>:
+uart_putc():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:294
+unsigned char uart_putc(struct uart_instance *this_uart,
+			unsigned char ucChar)
+{
+	volatile unsigned char uiValue;
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+  92:	c905                	beqz	a0,c2 <uart_putc+0x30>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:297
+		return 1;
+	}
+	dev = (volatile struct uart_dev *) (this_uart->base);
+  94:	4158                	lw	a4,4(a0)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:291
+{
+  96:	1141                	addi	sp,sp,-16
+  98:	a021                	j	a0 <uart_putc+0xe>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:336
+				dev->rxtx = ucChar;
+				return (0);
+			}
+
+			/* if non-blocking tx, return immediately */
+			if (this_uart->blockingTx == 0)
+  9a:	01e54783          	lbu	a5,30(a0)
+  9e:	cf99                	beqz	a5,bc <uart_putc+0x2a>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:329
+			uiValue = dev->lsr;
+  a0:	4b5c                	lw	a5,20(a4)
+  a2:	0ff7f793          	andi	a5,a5,255
+  a6:	00f107a3          	sb	a5,15(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:330
+			if (uiValue & UART_LSR_TX_RDY_MASK) {
+  aa:	00f14783          	lbu	a5,15(sp)
+  ae:	0207f793          	andi	a5,a5,32
+  b2:	d7e5                	beqz	a5,9a <uart_putc+0x8>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:331
+				dev->rxtx = ucChar;
+  b4:	c30c                	sw	a1,0(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:332
+				return (0);
+  b6:	4501                	li	a0,0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:344
+		} while (1);
+	}
+
+	/* all done */
+	return 0;
+}
+  b8:	0141                	addi	sp,sp,16
+  ba:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:295
+		return 1;
+  bc:	4505                	li	a0,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:344
+}
+  be:	0141                	addi	sp,sp,16
+  c0:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:295
+		return 1;
+  c2:	4505                	li	a0,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/uart/uart.c:344
+}
+  c4:	8082                	ret
+
+000000c6 <crtInit>:
+crtInit():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:69
+  mret
+  .text
+
+
+crtInit:
+  la t0, trap_entry
+  c6:	01200293          	li	t0,18
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:70
+  csrw mtvec, t0
+  ca:	30529073          	csrw	mtvec,t0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:71
+  csrwi mstatus, 0
+  ce:	30005073          	csrwi	mstatus,0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:72
+  csrwi mie, 0
+  d2:	30405073          	csrwi	mie,0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:76
+
+  .option push
+  .option norelax
+  la gp, __global_pointer$
+  d6:	00001197          	auipc	gp,0x1
+  da:	c5618193          	addi	gp,gp,-938 # d2c <__global_pointer$>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:78
+  .option pop
+  la sp, _stack_start
+  de:	2ac18113          	addi	sp,gp,684 # fd8 <_stack_start>
+
+000000e2 <bss_init>:
+bss_init():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:81
+
+bss_init:
+  la a0, _bss_start
+  e2:	52c00513          	li	a0,1324
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:82
+  la a1, _bss_end
+  e6:	5d400593          	li	a1,1492
+
+000000ea <bss_loop>:
+bss_loop():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:84
+bss_loop:
+  beq a0,a1,bss_done
+  ea:	00b50663          	beq	a0,a1,f6 <bss_done>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:85
+  sw zero,0(a0)
+  ee:	00052023          	sw	zero,0(a0)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:86
+  add a0,a0,4
+  f2:	0511                	addi	a0,a0,4
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:87
+  j bss_loop
+  f4:	bfdd                	j	ea <bss_loop>
+
+000000f6 <bss_done>:
+bss_done():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:111
+//  li a0, 0x880     //880 enable timer + external interrupts
+//  csrw mie,a0
+//  li a0, 0x1808     //1808 enable interrupts
+//  csrw mstatus,a0
+
+  call main
+  f6:	24a1                	jal	33e <main>
+
+000000f8 <infinitLoop>:
+infinitLoop():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:113
+infinitLoop:
+  j infinitLoop
+  f8:	a001                	j	f8 <infinitLoop>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:116
+
+irq_callback:
+  ret
+  fa:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/crt0.S:119
+
+esr_callback:
+  j esr_callback
+  fc:	0600006f          	j	15c <esr_callback>
+
+00000100 <irq_callback>:
+irq_callback():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:59
+extern struct interrupt_entry int_table[S_INT_NUM];
+
+void irq_callback(unsigned int mcause)
+{
+
+	if ((mcause & MCAUSE_VAL_MASK) == MCAUSE_VAL_MTIP) {
+ 100:	893d                	andi	a0,a0,15
+ 102:	479d                	li	a5,7
+ 104:	04f50663          	beq	a0,a5,150 <irq_callback+0x50>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:64
+		if (int_table[S_INT_TIMER].isr) {
+			int_table[S_INT_TIMER].isr(int_table[S_INT_TIMER].
+						   context);
+		}
+	} else if ((mcause & MCAUSE_VAL_MASK) == MCASUE_VAL_MEIP) {
+ 108:	47ad                	li	a5,11
+ 10a:	00f50363          	beq	a0,a5,110 <irq_callback+0x10>
+ 10e:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:57
+{
+ 110:	1101                	addi	sp,sp,-32
+ 112:	ca26                	sw	s1,20(sp)
+ 114:	cc22                	sw	s0,24(sp)
+ 116:	c64e                	sw	s3,12(sp)
+ 118:	ce06                	sw	ra,28(sp)
+ 11a:	c84a                	sw	s2,16(sp)
+ 11c:	53400493          	li	s1,1332
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66
+		int idx;
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+ 120:	4401                	li	s0,0
+ 122:	49a5                	li	s3,9
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:67
+			if (pic_int_pending(idx)) {
+ 124:	0ff47913          	andi	s2,s0,255
+ 128:	854a                	mv	a0,s2
+ 12a:	20bd                	jal	198 <pic_int_pending>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+ 12c:	0405                	addi	s0,s0,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:67
+			if (pic_int_pending(idx)) {
+ 12e:	c519                	beqz	a0,13c <irq_callback+0x3c>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:68
+				if (int_table[idx].isr) {
+ 130:	409c                	lw	a5,0(s1)
+ 132:	c399                	beqz	a5,138 <irq_callback+0x38>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:69
+					int_table[idx].isr(int_table[idx].
+ 134:	40c8                	lw	a0,4(s1)
+ 136:	9782                	jalr	a5
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:72
+							   context);
+				}
+				pic_int_clear(idx);
+ 138:	854a                	mv	a0,s2
+ 13a:	20b9                	jal	188 <pic_int_clear>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66 (discriminator 2)
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+ 13c:	04a1                	addi	s1,s1,8
+ 13e:	ff3413e3          	bne	s0,s3,124 <irq_callback+0x24>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:76
+			}
+		}
+	}
+}
+ 142:	40f2                	lw	ra,28(sp)
+ 144:	4462                	lw	s0,24(sp)
+ 146:	44d2                	lw	s1,20(sp)
+ 148:	4942                	lw	s2,16(sp)
+ 14a:	49b2                	lw	s3,12(sp)
+ 14c:	6105                	addi	sp,sp,32
+ 14e:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:60
+		if (int_table[S_INT_TIMER].isr) {
+ 150:	53400793          	li	a5,1332
+ 154:	43b8                	lw	a4,64(a5)
+ 156:	df45                	beqz	a4,10e <irq_callback+0xe>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:61
+			int_table[S_INT_TIMER].isr(int_table[S_INT_TIMER].
+ 158:	43e8                	lw	a0,68(a5)
+ 15a:	8702                	jr	a4
+
+0000015c <esr_callback>:
+esr_callback():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:80
+
+unsigned int esr_callback(unsigned int mcause, unsigned int mepc,
+			  unsigned int sp)
+{
+ 15c:	1141                	addi	sp,sp,-16
+ 15e:	c422                	sw	s0,8(sp)
+ 160:	842e                	mv	s0,a1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:82
+
+	printf("Exception caught: mcause=%d ,", mcause);
+ 162:	85aa                	mv	a1,a0
+ 164:	4e000513          	li	a0,1248
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:80
+{
+ 168:	c606                	sw	ra,12(sp)
+ 16a:	c226                	sw	s1,4(sp)
+ 16c:	84b2                	mv	s1,a2
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:82
+	printf("Exception caught: mcause=%d ,", mcause);
+ 16e:	2891                	jal	1c2 <printf>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:83
+	printf("mepc=%x, sp=%x \r\n", mepc, sp);
+ 170:	8626                	mv	a2,s1
+ 172:	85a2                	mv	a1,s0
+ 174:	50000513          	li	a0,1280
+ 178:	20a9                	jal	1c2 <printf>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/interrupt.c:108
+	}
+
+	printf("\r\n");
+#endif
+	return mepc + 4;
+}
+ 17a:	40b2                	lw	ra,12(sp)
+ 17c:	00440513          	addi	a0,s0,4
+ 180:	4422                	lw	s0,8(sp)
+ 182:	4492                	lw	s1,4(sp)
+ 184:	0141                	addi	sp,sp,16
+ 186:	8082                	ret
+
+00000188 <pic_int_clear>:
+pic_int_clear():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/pic.c:95
+	return 0;
+}
+
+unsigned char pic_int_clear(unsigned char src)
+{
+	pic_dev->pic_status = 1 << (src);
+ 188:	52c02703          	lw	a4,1324(zero) # 52c <pic_dev>
+ 18c:	4785                	li	a5,1
+ 18e:	00a797b3          	sll	a5,a5,a0
+ 192:	c31c                	sw	a5,0(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/pic.c:97
+	return 0;
+}
+ 194:	4501                	li	a0,0
+ 196:	8082                	ret
+
+00000198 <pic_int_pending>:
+pic_int_pending():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/pic.c:101
+
+unsigned char pic_int_pending(unsigned char src)
+{
+	unsigned int ifr = pic_dev->pic_status;
+ 198:	52c02783          	lw	a5,1324(zero) # 52c <pic_dev>
+ 19c:	4398                	lw	a4,0(a5)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/pic.c:103
+
+	if (ifr & (1 << src)) {
+ 19e:	4785                	li	a5,1
+ 1a0:	00a79533          	sll	a0,a5,a0
+ 1a4:	8d79                	and	a0,a0,a4
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/pic.c:108
+		return 1;
+	}
+
+	return 0;
+}
+ 1a6:	00a03533          	snez	a0,a0
+ 1aa:	8082                	ret
+
+000001ac <putchar>:
+putchar():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:81
+
+int __attribute__((weak)) putchar(int c)
+{
+#ifdef LSCC_STDIO_UART_APB
+	//Initialize the uart driver if it is the first time this function is called
+	uart_putc(&uart_core_uart, c);
+ 1ac:	0ff57593          	andi	a1,a0,255
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:78
+{
+ 1b0:	1141                	addi	sp,sp,-16
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:81
+	uart_putc(&uart_core_uart, c);
+ 1b2:	57c00513          	li	a0,1404
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:78
+{
+ 1b6:	c606                	sw	ra,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:81
+	uart_putc(&uart_core_uart, c);
+ 1b8:	3de9                	jal	92 <uart_putc>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:84
+#endif
+	return 0;
+}
+ 1ba:	40b2                	lw	ra,12(sp)
+ 1bc:	4501                	li	a0,0
+ 1be:	0141                	addi	sp,sp,16
+ 1c0:	8082                	ret
+
+000001c2 <printf>:
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:131
+	while (p != buffer)
+		printf_c(*(--p));
+}
+
+int __attribute__((weak)) printf(const char *format, ...)
+{
+ 1c2:	7119                	addi	sp,sp,-128
+ 1c4:	c6ce                	sw	s3,76(sp)
+ 1c6:	ce86                	sw	ra,92(sp)
+ 1c8:	cca2                	sw	s0,88(sp)
+ 1ca:	caa6                	sw	s1,84(sp)
+ 1cc:	c8ca                	sw	s2,80(sp)
+ 1ce:	c4d2                	sw	s4,72(sp)
+ 1d0:	c2d6                	sw	s5,68(sp)
+ 1d2:	c0da                	sw	s6,64(sp)
+ 1d4:	de5e                	sw	s7,60(sp)
+ 1d6:	dc62                	sw	s8,56(sp)
+ 1d8:	89aa                	mv	s3,a0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137
+	int i;
+	va_list ap;		// @suppress("Type cannot be resolved")
+
+	va_start(ap, format);
+
+	for (i = 0; format[i]; i++)
+ 1da:	00050503          	lb	a0,0(a0)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:131
+{
+ 1de:	dabe                	sw	a5,116(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:135
+	va_start(ap, format);
+ 1e0:	10dc                	addi	a5,sp,100
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:131
+{
+ 1e2:	d2ae                	sw	a1,100(sp)
+ 1e4:	d4b2                	sw	a2,104(sp)
+ 1e6:	d6b6                	sw	a3,108(sp)
+ 1e8:	d8ba                	sw	a4,112(sp)
+ 1ea:	dcc2                	sw	a6,120(sp)
+ 1ec:	dec6                	sw	a7,124(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:135
+	va_start(ap, format);
+ 1ee:	c63e                	sw	a5,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137
+	for (i = 0; format[i]; i++)
+ 1f0:	c125                	beqz	a0,250 <printf+0x8e>
+ 1f2:	4401                	li	s0,0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:140
+		if (format[i] == '%') {
+			while (format[++i]) {
+				if (format[i] == 'c') {
+ 1f4:	06300a13          	li	s4,99
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:144
+					printf_c(va_arg(ap, int));
+					break;
+				}
+				if (format[i] == 's') {
+ 1f8:	07300a93          	li	s5,115
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:148
+					printf_s(va_arg(ap, char *));
+					break;
+				}
+				if (format[i] == 'd') {
+ 1fc:	06400b13          	li	s6,100
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:152
+					printf_d(va_arg(ap, int));
+					break;
+				}
+				if (format[i] == 'x') {
+ 200:	07800b93          	li	s7,120
+ 204:	a801                	j	214 <printf+0x52>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 206:	375d                	jal	1ac <putchar>
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137 (discriminator 2)
+	for (i = 0; format[i]; i++)
+ 208:	0405                	addi	s0,s0,1
+ 20a:	008987b3          	add	a5,s3,s0
+ 20e:	00078503          	lb	a0,0(a5)
+ 212:	cd1d                	beqz	a0,250 <printf+0x8e>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:138
+		if (format[i] == '%') {
+ 214:	02500793          	li	a5,37
+ 218:	fef517e3          	bne	a0,a5,206 <printf+0x44>
+ 21c:	a039                	j	22a <printf+0x68>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:144
+				if (format[i] == 's') {
+ 21e:	05578663          	beq	a5,s5,26a <printf+0xa8>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:148
+				if (format[i] == 'd') {
+ 222:	07678163          	beq	a5,s6,284 <printf+0xc2>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:152
+				if (format[i] == 'x') {
+ 226:	0b778563          	beq	a5,s7,2d0 <printf+0x10e>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:139
+			while (format[++i]) {
+ 22a:	0405                	addi	s0,s0,1
+ 22c:	008987b3          	add	a5,s3,s0
+ 230:	00078783          	lb	a5,0(a5)
+ 234:	dbf1                	beqz	a5,208 <printf+0x46>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:140
+				if (format[i] == 'c') {
+ 236:	ff4794e3          	bne	a5,s4,21e <printf+0x5c>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:141
+					printf_c(va_arg(ap, int));
+ 23a:	47b2                	lw	a5,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137
+	for (i = 0; format[i]; i++)
+ 23c:	0405                	addi	s0,s0,1
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 23e:	4388                	lw	a0,0(a5)
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:141
+					printf_c(va_arg(ap, int));
+ 240:	0791                	addi	a5,a5,4
+ 242:	c63e                	sw	a5,12(sp)
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 244:	37a5                	jal	1ac <putchar>
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137
+	for (i = 0; format[i]; i++)
+ 246:	008987b3          	add	a5,s3,s0
+ 24a:	00078503          	lb	a0,0(a5)
+ 24e:	f179                	bnez	a0,214 <printf+0x52>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:163
+			printf_c(format[i]);
+
+	va_end(ap);
+
+	return 0;
+}
+ 250:	40f6                	lw	ra,92(sp)
+ 252:	4466                	lw	s0,88(sp)
+ 254:	44d6                	lw	s1,84(sp)
+ 256:	4946                	lw	s2,80(sp)
+ 258:	49b6                	lw	s3,76(sp)
+ 25a:	4a26                	lw	s4,72(sp)
+ 25c:	4a96                	lw	s5,68(sp)
+ 25e:	4b06                	lw	s6,64(sp)
+ 260:	5bf2                	lw	s7,60(sp)
+ 262:	5c62                	lw	s8,56(sp)
+ 264:	4501                	li	a0,0
+ 266:	6109                	addi	sp,sp,128
+ 268:	8082                	ret
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:145
+					printf_s(va_arg(ap, char *));
+ 26a:	47b2                	lw	a5,12(sp)
+ 26c:	4384                	lw	s1,0(a5)
+ 26e:	0791                	addi	a5,a5,4
+ 270:	c63e                	sw	a5,12(sp)
+printf_s():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:93
+	while (*p)
+ 272:	00048503          	lb	a0,0(s1)
+ 276:	d949                	beqz	a0,208 <printf+0x46>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:94
+		putchar(*(p++));
+ 278:	0485                	addi	s1,s1,1
+ 27a:	3f0d                	jal	1ac <putchar>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:93
+	while (*p)
+ 27c:	00048503          	lb	a0,0(s1)
+ 280:	fd65                	bnez	a0,278 <printf+0xb6>
+ 282:	b759                	j	208 <printf+0x46>
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:149
+					printf_d(va_arg(ap, int));
+ 284:	47b2                	lw	a5,12(sp)
+ 286:	4384                	lw	s1,0(a5)
+ 288:	0791                	addi	a5,a5,4
+ 28a:	c63e                	sw	a5,12(sp)
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:101
+	if (val < 0) {
+ 28c:	0a04c363          	bltz	s1,332 <printf+0x170>
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:137
+	for (i = 0; format[i]; i++)
+ 290:	01010c13          	addi	s8,sp,16
+ 294:	8962                	mv	s2,s8
+ 296:	a819                	j	2ac <printf+0xea>
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:106
+		*(p++) = '0' + val % 10;
+ 298:	2c21                	jal	4b0 <__modsi3>
+ 29a:	03050793          	addi	a5,a0,48
+ 29e:	00f90023          	sb	a5,0(s2)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:107
+		val = val / 10;
+ 2a2:	8526                	mv	a0,s1
+ 2a4:	45a9                	li	a1,10
+ 2a6:	2259                	jal	42c <__divsi3>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:106
+		*(p++) = '0' + val % 10;
+ 2a8:	0905                	addi	s2,s2,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:107
+		val = val / 10;
+ 2aa:	84aa                	mv	s1,a0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:106
+		*(p++) = '0' + val % 10;
+ 2ac:	45a9                	li	a1,10
+ 2ae:	8526                	mv	a0,s1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:105
+	while (val || p == buffer) {
+ 2b0:	f4e5                	bnez	s1,298 <printf+0xd6>
+ 2b2:	ff8903e3          	beq	s2,s8,298 <printf+0xd6>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 2b6:	fff90503          	lb	a0,-1(s2)
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:110
+		printf_c(*(--p));
+ 2ba:	197d                	addi	s2,s2,-1
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 2bc:	3dc5                	jal	1ac <putchar>
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:109
+	while (p != buffer)
+ 2be:	f58905e3          	beq	s2,s8,208 <printf+0x46>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 2c2:	fff90503          	lb	a0,-1(s2)
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:110
+		printf_c(*(--p));
+ 2c6:	197d                	addi	s2,s2,-1
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 2c8:	35d5                	jal	1ac <putchar>
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:109
+	while (p != buffer)
+ 2ca:	ff8916e3          	bne	s2,s8,2b6 <printf+0xf4>
+ 2ce:	bf2d                	j	208 <printf+0x46>
+printf():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:153
+					printf_x(va_arg(ap, int));
+ 2d0:	47b2                	lw	a5,12(sp)
+ 2d2:	01010c13          	addi	s8,sp,16
+ 2d6:	8762                	mv	a4,s8
+ 2d8:	00478693          	addi	a3,a5,4
+ 2dc:	439c                	lw	a5,0(a5)
+ 2de:	c636                	sw	a3,12(sp)
+printf_x():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:119
+		if ((val % 16) > 9) {
+ 2e0:	4525                	li	a0,9
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:120
+			*(p++) = 'a' + val % 16 - 10;
+ 2e2:	00f7f613          	andi	a2,a5,15
+ 2e6:	84ba                	mv	s1,a4
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:118
+	while (val || p == buffer) {
+ 2e8:	ef91                	bnez	a5,304 <printf+0x142>
+ 2ea:	02ec1763          	bne	s8,a4,318 <printf+0x156>
+ 2ee:	4681                	li	a3,0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:122
+			*(p++) = '0' + val % 16;
+ 2f0:	03068693          	addi	a3,a3,48
+ 2f4:	00d70023          	sb	a3,0(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:124
+		val = val / 16;
+ 2f8:	8391                	srli	a5,a5,0x4
+ 2fa:	0705                	addi	a4,a4,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:120
+			*(p++) = 'a' + val % 16 - 10;
+ 2fc:	00f7f613          	andi	a2,a5,15
+ 300:	84ba                	mv	s1,a4
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:118
+	while (val || p == buffer) {
+ 302:	d7e5                	beqz	a5,2ea <printf+0x128>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:120
+			*(p++) = 'a' + val % 16 - 10;
+ 304:	00f7f693          	andi	a3,a5,15
+ 308:	05768593          	addi	a1,a3,87
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:119
+		if ((val % 16) > 9) {
+ 30c:	fec572e3          	bgeu	a0,a2,2f0 <printf+0x12e>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:120
+			*(p++) = 'a' + val % 16 - 10;
+ 310:	01859693          	slli	a3,a1,0x18
+ 314:	86e1                	srai	a3,a3,0x18
+ 316:	bff9                	j	2f4 <printf+0x132>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 318:	fff48503          	lb	a0,-1(s1)
+printf_x():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:127
+		printf_c(*(--p));
+ 31c:	14fd                	addi	s1,s1,-1
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 31e:	3579                	jal	1ac <putchar>
+printf_x():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:126
+	while (p != buffer)
+ 320:	ef8484e3          	beq	s1,s8,208 <printf+0x46>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 324:	fff48503          	lb	a0,-1(s1)
+printf_x():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:127
+		printf_c(*(--p));
+ 328:	14fd                	addi	s1,s1,-1
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 32a:	3549                	jal	1ac <putchar>
+printf_x():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:126
+	while (p != buffer)
+ 32c:	ff8496e3          	bne	s1,s8,318 <printf+0x156>
+ 330:	bde1                	j	208 <printf+0x46>
+printf_c():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:88
+	putchar(c);
+ 332:	02d00513          	li	a0,45
+ 336:	3d9d                	jal	1ac <putchar>
+printf_d():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/bsp/driver/riscv_mc/stdlib.c:103
+		val = -val;
+ 338:	409004b3          	neg	s1,s1
+ 33c:	bf91                	j	290 <printf+0xce>
+
+0000033e <main>:
+main():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:14
+
+
+
+int main(void) {
+	volatile int status, control;
+	status = WS2812->STATUS;
+ 33e:	6725                	lui	a4,0x9
+ 340:	80072683          	lw	a3,-2048(a4) # 8800 <_stack_start+0x7828>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:12
+int main(void) {
+ 344:	7179                	addi	sp,sp,-48
+ 346:	d422                	sw	s0,40(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:14
+	status = WS2812->STATUS;
+ 348:	c436                	sw	a3,8(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:15
+	control = WS2812->CONTROL;
+ 34a:	80472683          	lw	a3,-2044(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:12
+int main(void) {
+ 34e:	d226                	sw	s1,36(sp)
+ 350:	d04a                	sw	s2,32(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:15
+	control = WS2812->CONTROL;
+ 352:	c636                	sw	a3,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:12
+int main(void) {
+ 354:	ce4e                	sw	s3,28(sp)
+ 356:	cc52                	sw	s4,24(sp)
+ 358:	d606                	sw	ra,44(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:17
+
+	WS2812->COLOUR = 0xFF0000;
+ 35a:	00ff06b7          	lui	a3,0xff0
+ 35e:	80d72423          	sw	a3,-2040(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:18
+	status = WS2812->STATUS;
+ 362:	80072683          	lw	a3,-2048(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:14
+	status = WS2812->STATUS;
+ 366:	80070793          	addi	a5,a4,-2048
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:18
+	status = WS2812->STATUS;
+ 36a:	c436                	sw	a3,8(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:19
+	control = WS2812->CONTROL;
+ 36c:	80472683          	lw	a3,-2044(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:28
+	control = WS2812->CONTROL;
+
+
+
+	static uint8_t idx = 0;
+	DEBUG_PRINTF("Hello RISC-V world!\r\n");
+ 370:	51400513          	li	a0,1300
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:19
+	control = WS2812->CONTROL;
+ 374:	c636                	sw	a3,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:21
+	WS2812->COLOUR = 0x0100FF00;
+ 376:	010106b7          	lui	a3,0x1010
+ 37a:	f0068693          	addi	a3,a3,-256 # 100ff00 <_stack_start+0x100ef28>
+ 37e:	80d72423          	sw	a3,-2040(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:22
+	status = WS2812->STATUS;
+ 382:	80072703          	lw	a4,-2048(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:32
+	LED_SET(ALL_OFF);
+
+	while (true) {
+		LED_SET(LED_ON(idx));
+ 386:	4a05                	li	s4,1
+ 388:	0ff00993          	li	s3,255
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:22
+	status = WS2812->STATUS;
+ 38c:	c43a                	sw	a4,8(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:23
+	control = WS2812->CONTROL;
+ 38e:	43dc                	lw	a5,4(a5)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:32
+		LED_SET(LED_ON(idx));
+ 390:	6921                	lui	s2,0x8
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:34
+
+		if (++idx == LED_COUNT) {
+ 392:	44a1                	li	s1,8
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:23
+	control = WS2812->CONTROL;
+ 394:	c63e                	sw	a5,12(sp)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:28
+	DEBUG_PRINTF("Hello RISC-V world!\r\n");
+ 396:	283d                	jal	3d4 <uartPutS>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:29
+	LED_SET(ALL_OFF);
+ 398:	67a1                	lui	a5,0x8
+ 39a:	0ff00713          	li	a4,255
+ 39e:	c3d8                	sw	a4,4(a5)
+ 3a0:	53000413          	li	s0,1328
+ 3a4:	a031                	j	3b0 <main+0x72>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:34
+		if (++idx == LED_COUNT) {
+ 3a6:	00f40023          	sb	a5,0(s0)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:41
+		}
+
+		if (RTL_SIM) {
+			delayMS(1);
+		} else {
+			delayMS(500);
+ 3aa:	1f400513          	li	a0,500
+ 3ae:	20a9                	jal	3f8 <delayMS>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:32
+		LED_SET(LED_ON(idx));
+ 3b0:	00044783          	lbu	a5,0(s0)
+ 3b4:	00fa17b3          	sll	a5,s4,a5
+ 3b8:	40f987b3          	sub	a5,s3,a5
+ 3bc:	00f92223          	sw	a5,4(s2) # 8004 <_stack_start+0x702c>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:34
+		if (++idx == LED_COUNT) {
+ 3c0:	00044783          	lbu	a5,0(s0)
+ 3c4:	0785                	addi	a5,a5,1
+ 3c6:	0ff7f793          	andi	a5,a5,255
+ 3ca:	fc979ee3          	bne	a5,s1,3a6 <main+0x68>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/main.c:35
+			idx = 0;
+ 3ce:	00040023          	sb	zero,0(s0)
+ 3d2:	bfe1                	j	3aa <main+0x6c>
+
+000003d4 <uartPutS>:
+uartPutS():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:60
+		}
+	} while (true);
+}
+
+void uartPutS(char *s) {
+	while(*s != '\0') {
+ 3d4:	00050783          	lb	a5,0(a0)
+ 3d8:	cf99                	beqz	a5,3f6 <uartPutS+0x22>
+uartPutC():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:52
+		if (base->lsr & UART_LSR_TX_RDY_MASK) {
+ 3da:	6721                	lui	a4,0x8
+uartPutS():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:61
+		uartPutC(*s++);
+ 3dc:	0505                	addi	a0,a0,1
+ 3de:	0ff7f613          	andi	a2,a5,255
+uartPutC():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:52
+		if (base->lsr & UART_LSR_TX_RDY_MASK) {
+ 3e2:	41472783          	lw	a5,1044(a4) # 8414 <_stack_start+0x743c>
+ 3e6:	0207f793          	andi	a5,a5,32
+ 3ea:	dfe5                	beqz	a5,3e2 <uartPutS+0xe>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:53
+			base->rxtx = ch;
+ 3ec:	40c72023          	sw	a2,1024(a4)
+uartPutS():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:60
+	while(*s != '\0') {
+ 3f0:	00050783          	lb	a5,0(a0)
+ 3f4:	f7e5                	bnez	a5,3dc <uartPutS+0x8>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:63
+	}
+}
+ 3f6:	8082                	ret
+
+000003f8 <delayMS>:
+delayMS():
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:69
+
+void delayMS(uint32_t ms) {
+	uint32_t val, count;
+	timer_p base = (timer_p) TIMER0_INST_BASE_ADDR;
+
+	count = 1 + ms * SYSCLK_KHZ;	// to avoid overflow, dont allow delay too long time
+ 3f8:	00251713          	slli	a4,a0,0x2
+ 3fc:	972a                	add	a4,a4,a0
+ 3fe:	00471793          	slli	a5,a4,0x4
+ 402:	97ba                	add	a5,a5,a4
+ 404:	078a                	slli	a5,a5,0x2
+ 406:	97aa                	add	a5,a5,a0
+ 408:	00679693          	slli	a3,a5,0x6
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:71
+
+	base->cnt_l = 1;
+ 40c:	7741                	lui	a4,0xffff0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:69
+	count = 1 + ms * SYSCLK_KHZ;	// to avoid overflow, dont allow delay too long time
+ 40e:	97b6                	add	a5,a5,a3
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:71
+	base->cnt_l = 1;
+ 410:	4605                	li	a2,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:69
+	count = 1 + ms * SYSCLK_KHZ;	// to avoid overflow, dont allow delay too long time
+ 412:	0786                	slli	a5,a5,0x1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:71
+	base->cnt_l = 1;
+ 414:	40c72023          	sw	a2,1024(a4) # ffff0400 <_stack_start+0xfffef428>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:69
+	count = 1 + ms * SYSCLK_KHZ;	// to avoid overflow, dont allow delay too long time
+ 418:	0785                	addi	a5,a5,1
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:72
+	base->cnt_h = 0;
+ 41a:	40072223          	sw	zero,1028(a4)
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:77
+//	base->cmp_l = count + 1;
+//	base->cmp_h = 0;
+
+	do {
+		val = base->cnt_l;
+ 41e:	76c1                	lui	a3,0xffff0
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:77 (discriminator 1)
+ 420:	4006a703          	lw	a4,1024(a3) # ffff0400 <_stack_start+0xfffef428>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:78 (discriminator 1)
+	} while (val < count);
+ 424:	fef76ee3          	bltu	a4,a5,420 <delayMS+0x28>
+D:\docs\FPGA\SOC_IP\WS812_firmware2\Debug/../src/utils.c:79
+}
+ 428:	8082                	ret
+	...
+
+0000042c <__divsi3>:
+__divsi3():
+ 42c:	06054063          	bltz	a0,48c <__umodsi3+0x10>
+ 430:	0605c663          	bltz	a1,49c <__umodsi3+0x20>
+
+00000434 <__udivsi3>:
+ 434:	00058613          	mv	a2,a1
+ 438:	00050593          	mv	a1,a0
+ 43c:	fff00513          	li	a0,-1
+ 440:	02060c63          	beqz	a2,478 <__udivsi3+0x44>
+ 444:	00100693          	li	a3,1
+ 448:	00b67a63          	bgeu	a2,a1,45c <__udivsi3+0x28>
+ 44c:	00c05863          	blez	a2,45c <__udivsi3+0x28>
+ 450:	00161613          	slli	a2,a2,0x1
+ 454:	00169693          	slli	a3,a3,0x1
+ 458:	feb66ae3          	bltu	a2,a1,44c <__udivsi3+0x18>
+ 45c:	00000513          	li	a0,0
+ 460:	00c5e663          	bltu	a1,a2,46c <__udivsi3+0x38>
+ 464:	40c585b3          	sub	a1,a1,a2
+ 468:	00d56533          	or	a0,a0,a3
+ 46c:	0016d693          	srli	a3,a3,0x1
+ 470:	00165613          	srli	a2,a2,0x1
+ 474:	fe0696e3          	bnez	a3,460 <__udivsi3+0x2c>
+ 478:	00008067          	ret
+
+0000047c <__umodsi3>:
+ 47c:	00008293          	mv	t0,ra
+ 480:	fb5ff0ef          	jal	ra,434 <__udivsi3>
+ 484:	00058513          	mv	a0,a1
+ 488:	00028067          	jr	t0
+ 48c:	40a00533          	neg	a0,a0
+ 490:	00b04863          	bgtz	a1,4a0 <__umodsi3+0x24>
+ 494:	40b005b3          	neg	a1,a1
+ 498:	f9dff06f          	j	434 <__udivsi3>
+ 49c:	40b005b3          	neg	a1,a1
+ 4a0:	00008293          	mv	t0,ra
+ 4a4:	f91ff0ef          	jal	ra,434 <__udivsi3>
+ 4a8:	40a00533          	neg	a0,a0
+ 4ac:	00028067          	jr	t0
+
+000004b0 <__modsi3>:
+__modsi3():
+ 4b0:	00008293          	mv	t0,ra
+ 4b4:	0005ca63          	bltz	a1,4c8 <__modsi3+0x18>
+ 4b8:	00054c63          	bltz	a0,4d0 <__modsi3+0x20>
+ 4bc:	f79ff0ef          	jal	ra,434 <__udivsi3>
+ 4c0:	00058513          	mv	a0,a1
+ 4c4:	00028067          	jr	t0
+ 4c8:	40b005b3          	neg	a1,a1
+ 4cc:	fe0558e3          	bgez	a0,4bc <__modsi3+0xc>
+ 4d0:	40a00533          	neg	a0,a0
+ 4d4:	f61ff0ef          	jal	ra,434 <__udivsi3>
+ 4d8:	40b00533          	neg	a0,a1
+ 4dc:	00028067          	jr	t0

@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/docs/FPGA/SOC_IP/testbench
+vtestbench
+Z1 !s110 1623675801
+!i10b 1
+!s100 B4Z<bb4=LWnKBAfHCT4TO0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_ODQQY?o<_iDE`IDgNb9J2
+R0
+w1623675541
+8D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v
+FD:/docs/FPGA/SOC_IP/SOC_IP/testbench.v
+!i122 72
+L0 3 168
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2020.3;71
+r1
+!s85 0
+31
+Z5 !s108 1623675801.000000
+!s107 D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/docs/FPGA/SOC_IP/SOC_IP/testbench.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -O0
+Z7 tCvgOpt 0
+vWS2812_module
+R1
+!i10b 1
+!s100 F`G]f08;zzfA5oLzc<=UH2
+R2
+I26JceMAFiCJnNdi5IF4g]3
+R0
+w1623663135
+8D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v
+FD:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v
+!i122 71
+L0 1 209
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v|
+!s101 -O0
+!i113 1
+R6
+R7
+n@w@s2812_module

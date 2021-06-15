@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="MachXO3LF" date="2021 06 10 11:27:31" device="LCMXO3LF-6900C" generator="ipgen" library="ip" module="system_memory" name="sysmem0" package="CABGA256" source_format="Verilog" speed="6" vendor="latticesemi.com" version="1.0.2">
+ <Package>
+  <File modified="2021 06 10 11:27:30" name="rtl/sysmem0_bb.v" type="black_box_verilog"/>
+  <File modified="2021 06 10 11:27:30" name="sysmem0.cfg" type="cfg"/>
+  <File modified="2021 06 10 11:27:30" name="misc/sysmem0_tmpl.v" type="template_verilog"/>
+  <File modified="2021 06 10 11:27:30" name="misc/sysmem0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2021 06 10 11:27:31" name="rtl/sysmem0.v" type="top_level_verilog"/>
+  <File modified="2021 06 10 11:27:31" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2021 06 10 11:27:31" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2021 06 10 11:27:31" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2021 06 10 11:27:31" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2020 08 17 02:01:15" name="testbench/lscc_ahblmem_master.v" type="testbench_verilog"/>
+  <File modified="2020 08 19 05:50:28" name="testbench/lscc_data_checker.v" type="testbench_verilog"/>
+  <File modified="2020 08 19 08:03:38" name="testbench/lscc_fifo_master.v" type="testbench_verilog"/>
+  <File modified="2020 11 17 07:42:52" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

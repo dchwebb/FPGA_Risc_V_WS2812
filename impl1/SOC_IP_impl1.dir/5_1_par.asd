@@ -1,0 +1,87 @@
+[ActiveSupport PAR]
+; Global primary clocks
+GLOBAL_PRIMARY_USED = 3;
+; Global primary clock #0
+GLOBAL_PRIMARY_0_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/TCK;
+GLOBAL_PRIMARY_0_DRIVERTYPE = DCC;
+GLOBAL_PRIMARY_0_LOADNUM = 44;
+; Global primary clock #1
+GLOBAL_PRIMARY_1_SIGNALNAME = sys_clk;
+GLOBAL_PRIMARY_1_DRIVERTYPE = OSC;
+GLOBAL_PRIMARY_1_LOADNUM = 1085;
+; Global primary clock #2
+GLOBAL_PRIMARY_2_SIGNALNAME = jtaghub16_jtck;
+GLOBAL_PRIMARY_2_DRIVERTYPE = JTAG;
+GLOBAL_PRIMARY_2_LOADNUM = 35;
+; # of global secondary clocks
+GLOBAL_SECONDARY_USED = 8;
+; Global secondary clock #0
+GLOBAL_SECONDARY_0_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/mem1_req_arb_w;
+GLOBAL_SECONDARY_0_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_0_LOADNUM = 35;
+GLOBAL_SECONDARY_0_SIGTYPE = CE;
+; Global secondary clock #1
+GLOBAL_SECONDARY_1_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/N_222_i;
+GLOBAL_SECONDARY_1_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_1_LOADNUM = 34;
+GLOBAL_SECONDARY_1_SIGTYPE = CE;
+; Global secondary clock #2
+GLOBAL_SECONDARY_2_SIGNALNAME = HelloWorld_inst/cpu0_inst_system_resetn_o_net;
+GLOBAL_SECONDARY_2_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_2_LOADNUM = 425;
+GLOBAL_SECONDARY_2_SIGTYPE = RST;
+; Global secondary clock #3
+GLOBAL_SECONDARY_3_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset;
+GLOBAL_SECONDARY_3_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_3_LOADNUM = 134;
+GLOBAL_SECONDARY_3_SIGTYPE = RST;
+; Global secondary clock #4
+GLOBAL_SECONDARY_4_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_arbitration_isStuck_i;
+GLOBAL_SECONDARY_4_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_4_LOADNUM = 105;
+GLOBAL_SECONDARY_4_SIGTYPE = CE;
+; Global secondary clock #5
+GLOBAL_SECONDARY_5_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory_arbitration_haltItself4_i;
+GLOBAL_SECONDARY_5_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_5_LOADNUM = 43;
+GLOBAL_SECONDARY_5_SIGTYPE = CE;
+; Global secondary clock #6
+GLOBAL_SECONDARY_6_SIGNALNAME = jtaghub16_jrstn;
+GLOBAL_SECONDARY_6_DRIVERTYPE = JTAG;
+GLOBAL_SECONDARY_6_LOADNUM = 35;
+GLOBAL_SECONDARY_6_SIGTYPE = RST;
+; Global secondary clock #7
+GLOBAL_SECONDARY_7_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_reg_2_sqmuxa_i;
+GLOBAL_SECONDARY_7_DRIVERTYPE = SLICE;
+GLOBAL_SECONDARY_7_LOADNUM = 33;
+GLOBAL_SECONDARY_7_SIGTYPE = CE;
+; I/O Bank 0 Usage
+BANK_0_USED = 4;
+BANK_0_AVAIL = 51;
+BANK_0_VCCIO = 3.3V;
+BANK_0_VREF1 = NA;
+; I/O Bank 1 Usage
+BANK_1_USED = 8;
+BANK_1_AVAIL = 52;
+BANK_1_VCCIO = 3.3V;
+BANK_1_VREF1 = NA;
+; I/O Bank 2 Usage
+BANK_2_USED = 1;
+BANK_2_AVAIL = 52;
+BANK_2_VCCIO = 3.3V;
+BANK_2_VREF1 = NA;
+; I/O Bank 3 Usage
+BANK_3_USED = 0;
+BANK_3_AVAIL = 16;
+BANK_3_VCCIO = NA;
+BANK_3_VREF1 = NA;
+; I/O Bank 4 Usage
+BANK_4_USED = 0;
+BANK_4_AVAIL = 16;
+BANK_4_VCCIO = NA;
+BANK_4_VREF1 = NA;
+; I/O Bank 5 Usage
+BANK_5_USED = 0;
+BANK_5_AVAIL = 20;
+BANK_5_VCCIO = NA;
+BANK_5_VREF1 = NA;
