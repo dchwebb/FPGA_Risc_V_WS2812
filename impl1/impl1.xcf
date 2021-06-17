@@ -19,10 +19,10 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:/docs/FPGA/SOC_IP/impl1/SOC_IP_impl1.bit</File>
-			<FileTime>06/14/21 18:21:31</FileTime>
-			<JedecChecksum>0x48DD</JedecChecksum>
-			<Operation>SRAM Fast Program</Operation>
+			<File>D:/docs/FPGA/SOC_IP/impl1/SOC_IP_impl1.jed</File>
+			<FileTime>06/17/21 16:27:27</FileTime>
+			<JedecChecksum>0xC45F</JedecChecksum>
+			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
@@ -32,7 +32,7 @@
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>ispVM</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
-				<AccessMode>SRAM</AccessMode>
+				<AccessMode>FLASH</AccessMode>
 			</Option>
 		</Device>
 	</Chain>

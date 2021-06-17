@@ -2,14 +2,14 @@
 <BaliProject version="3.2" title="SOC_IP" device="LCMXO3LF-6900C-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options HDL_KEYFILE="key_data.dat" def_top="WS2812_module" top="HelloWorld_Top"/>
+        <Options HDL_KEYFILE="key_data.dat" def_top="WS2812" top="HelloWorld_Top"/>
         <Source name="SOC_IP/SOC_IP_Top.v" type="Verilog" type_short="Verilog">
             <Options top_module="HelloWorld_Top"/>
         </Source>
         <Source name="SOC_IP/SOC_IP.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="../WS2812_IP/rtl/WS2812_IP.v" type="Verilog" type_short="Verilog">
+        <Source name="../WS2812_IP/rtl/WS2812_IP.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="SOC_IP/testbench.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
