@@ -44,19 +44,19 @@
 component SOC_IP is
     port (gpio_io: inout std_logic_vector(7 downto 0);
         clk_i: in std_logic;
+        debug_o: out std_logic;
         led_ctl: out std_logic;
         rstn_i: in std_logic;
         rxd_i: in std_logic;
-        txd_o: out std_logic;
-        debug_o: out std_logic
+        txd_o: out std_logic
     );
     
 end component SOC_IP; -- sbp_module=true 
-_inst: SOC_IP port map (rxd_i => __,
+_inst: SOC_IP port map (clk_i => __,
+                        debug_o => __,
+                        led_ctl => __,
+                        rxd_i => __,
                         txd_o => __,
                         rstn_i => __,
-                        gpio_io => __,
-                        clk_i => __,
-                        led_ctl => __,
-                        debug_o => __);
+                        gpio_io => __);
                         

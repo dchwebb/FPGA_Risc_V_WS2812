@@ -41,10 +41,10 @@
 
 //Verilog instantiation template
 
-SOC_IP _inst (.rxd_i(), 
+SOC_IP _inst (.clk_i(), 
+              .debug_o(), 
+              .led_ctl(), 
+              .rxd_i(), 
               .txd_o(), 
               .rstn_i(), 
-              .gpio_io(), 
-              .clk_i(), 
-              .led_ctl(), 
-              .debug_o());
+              .gpio_io());

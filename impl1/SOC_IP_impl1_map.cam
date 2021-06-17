@@ -13,6 +13,7 @@ HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direction_r_i
 HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direction_r_i[7] HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direction_r[7]
 HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direction_r_i[6] HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direction_r[6]
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_writeBack_i HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/CsrPlugin_exceptionPortCtrl_exceptionValidsRegs_writeBack
+HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_/CN HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/TCK
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/bscan_DRCK_i_0 jtaghub16_jtck
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/shift_delay_reg/RST_i jtaghub16_jrstn
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/shift_delay2_reg/RST_i jtaghub16_jrstn
@@ -22,7 +23,6 @@ HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TM
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TDI_reg/RST_i jtaghub16_jrstn
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TDI_reg2/RST_i jtaghub16_jrstn
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK_counter_reg/RST_i jtaghub16_jrstn
-HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_/CN HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/TCK
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/system_resetn_o_i HelloWorld_inst/cpu0_inst_system_resetn_o_net
 xo2chub/cdn.CN jtaghub16_jtck
 xo2chub/jrstn_i jtaghub16_jrstn
@@ -32,7 +32,7 @@ xo2chub/GND
 GND
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/GND
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/GND
-HelloWorld_inst/WS2812_inst/GND
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/GND
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/VCC
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/GND
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp_true_be.u_mem/wren0_inv
@@ -347,16 +347,16 @@ HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimplePlugi
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimplePlugin_fetchPc_pc_7[16]
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimplePlugin_fetchPc_pcReg[15]
 HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimplePlugin_fetchPc_pc_7[15]
-HelloWorld_inst/WS2812_inst/led_bit_counter_cry_0_COUT[7]
-HelloWorld_inst/WS2812_inst/led_counter_cry_0_S0[0]
-HelloWorld_inst/WS2812_inst/N_7
-HelloWorld_inst/WS2812_inst/led_counter_cry_0_COUT[7]
-HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_0_0_S1
-HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_0_0_S0
-HelloWorld_inst/WS2812_inst/N_8
-HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_7_0_COUT
-HelloWorld_inst/WS2812_inst/led_bit_counter_cry_0_S0[0]
-HelloWorld_inst/WS2812_inst/N_6
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_bit_counter_cry_0_COUT[7]
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_counter_cry_0_S0[0]
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_7
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_counter_cry_0_COUT[7]
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_0_0_S1
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_0_0_S0
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_8
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_7_0_COUT
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_bit_counter_cry_0_S0[0]
+HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_6
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp_true_be.u_mem/scuba_vhi
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp_true_be.u_mem/mdout1_3_26
 HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp_true_be.u_mem/mdout0_3_26
@@ -416,7 +416,7 @@ sys_clk 38.00
 [ END OSC ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Mon Jun 14 18:20:59 2021
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Thu Jun 17 16:23:38 2021
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "txd_o" SITE "C11" ;

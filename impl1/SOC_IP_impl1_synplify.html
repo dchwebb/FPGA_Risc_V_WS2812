@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-F9DG68B
 
-# Mon Jun 14 18:19:47 2021
+# Thu Jun 17 16:22:43 2021
 
 #Implementation: impl1
 
@@ -61,6 +61,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v" (library work)
 @N: CG334 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":42:13:42:25|Read directive translate_off.
 @N: CG333 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":44:13:44:24|Read directive translate_on.
+@I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v" (library work)
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/cpu0/2.0.0/rtl\cpu0.v" (library work)
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v" (library work)
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v" (library work)
@@ -68,21 +69,47 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v" (library work)
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v" (library work)
 @I:"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v" (library work)
-@W: CG289 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":1315:42:1315:54|Specified digits overflow the number's size
-@W: CG289 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":1318:42:1318:54|Specified digits overflow the number's size
-@I::"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v" (library work)
+@W: CG289 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":1317:42:1317:54|Specified digits overflow the number's size
+@W: CG289 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":1320:42:1320:54|Specified digits overflow the number's size
 Verilog syntax check successful!
-File D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.1/rtl/WS2812.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/cpu0/2.0.0/rtl/cpu0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl/gpio0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl/sysmem0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl/uart0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl/ahbl0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl/ahbl2apb0.v changed - recompiling
+File D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl/apb0.v changed - recompiling
 Selecting top level module HelloWorld_Top
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v":494:7:494:9|Synthesizing module GSR in library work.
 Running optimization stage 1 on GSR .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
 Running optimization stage 1 on OSCH .......
-@N: CG364 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":1:7:1:19|Synthesizing module WS2812_module in library work.
-@W: CG133 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":31:11:31:21|Object clk_counter is declared but not assigned. Either assign a value or remove the declaration.
-Running optimization stage 1 on WS2812_module .......
-@N: CL134 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":51:0:51:5|Found RAM led_colour, depth=3, width=24
-@N: CL134 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":51:0:51:5|Found RAM led_colour, depth=3, width=24
+@N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":54:7:54:32|Synthesizing module WS2812_ipgen_WS2812_module in library work.
+
+	FAMILY=40'b0100110001001001010001100100001101001100
+	LED_COUNT=32'b00000000000000000000000000000011
+	CLOCK_FREQUENCY=32'b00000010010000111101010110000000
+	STATUS_REG=6'b000000
+	CONTROL_REG=6'b000100
+	COLOUR_WR_REG=6'b001000
+	COLOUR_RD_REG=6'b001100
+	CLOCK_DIVIDER=9'b000001111
+	sm_idle=2'b00
+	sm_access=2'b01
+	sm_led_idle=3'b000
+	sm_led_phase1=3'b001
+	sm_led_phase2=3'b010
+	sm_led_phase3=3'b011
+	sm_led_reset=3'b100
+   Generated name = WS2812_ipgen_WS2812_module_Z1
+@W: CG133 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":76:14:76:24|Object clk_counter is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on WS2812_ipgen_WS2812_module_Z1 .......
+@N: CL134 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":91:4:91:9|Found RAM led_colour, depth=3, width=24
+@N: CL134 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":91:4:91:9|Found RAM led_colour, depth=3, width=24
+@N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":11:7:11:12|Synthesizing module WS2812 in library work.
+Running optimization stage 1 on WS2812 .......
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":10163:36:10163:62|Type of parameter S0_BASE_ADDR on the instance lscc_ahbl_interconnect_inst is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":10163:36:10163:62|Type of parameter S0_ADDR_RANGE on the instance lscc_ahbl_interconnect_inst is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":10163:36:10163:62|Type of parameter S0_M_PRIO_IDX on the instance lscc_ahbl_interconnect_inst is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
@@ -1438,7 +1465,7 @@ Running optimization stage 1 on WS2812_module .......
 	M29_CONNECT_EN=32'b11111111111111111111111111111111
 	M30_CONNECT_EN=32'b11111111111111111111111111111111
 	M31_CONNECT_EN=32'b11111111111111111111111111111111
-   Generated name = ahbl0_ipgen_lscc_ahbl_interconnect_Z1
+   Generated name = ahbl0_ipgen_lscc_ahbl_interconnect_Z2
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":7394:75:7394:89|Type of parameter S0_BASE_ADDR on the instance u_lscc_ahbl_bus is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":7394:75:7394:89|Type of parameter S0_ADDR_RANGE on the instance u_lscc_ahbl_bus is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
 @W: CG1283 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":7394:75:7394:89|Type of parameter S1_BASE_ADDR on the instance u_lscc_ahbl_bus is not in accordance with the type of parameter on corresponding module. Please update RTL with correct parameter type 
@@ -1552,7 +1579,7 @@ Only the first 100 messages of id 'CG1283' are reported. To see all messages use
 	FRAGMENT_EN=64'b0000000000000000000000000000000100000000000000000000000000000001
 	BASE_ADDR=512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 	ADDR_RANGE=512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
-   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_Z2
+   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_Z3
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":2883:7:2883:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_prim in library work.
 
 	F=32'b00000000000000000000000000001000
@@ -1561,7 +1588,7 @@ Only the first 100 messages of id 'CG1283' are reported. To see all messages use
 	FRAGMENT_EN=32'b00000000000000000000000000000001
 	BASE_ADDR=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 	ADDR_RANGE=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
-   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3
+   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":2953:7:2953:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_comp in library work.
 
 	FULL_DECODE_EN=32'b00000000000000000000000000000001
@@ -1572,7 +1599,7 @@ Only the first 100 messages of id 'CG1283' are reported. To see all messages use
 	RANGE_WIDTH=32'b00000000000000000000000000001110
    Generated name = ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s
 Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s .......
-Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3 .......
+Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":2883:7:2883:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_prim in library work.
 
 	F=32'b00000000000000000000000000001000
@@ -1581,7 +1608,7 @@ Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z
 	FRAGMENT_EN=32'b00000000000000000000000000000001
 	BASE_ADDR=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000
 	ADDR_RANGE=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000
-   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4
+   Generated name = ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":2953:7:2953:40|Synthesizing module ahbl0_ipgen_lscc_ahbl_decoder_comp in library work.
 
 	FULL_DECODE_EN=32'b00000000000000000000000000000001
@@ -1592,8 +1619,8 @@ Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z
 	RANGE_WIDTH=32'b00000000000000000000000000001100
    Generated name = ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s
 Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s .......
-Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4 .......
-Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_Z2 .......
+Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5 .......
+Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_decoder_Z3 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":3856:7:3856:39|Synthesizing module ahbl0_ipgen_lscc_ahbl_multiplexor in library work.
 
 	M_ADDR_WIDTH=32'b00000000000000000000000000100000
@@ -1723,9 +1750,9 @@ Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2
 	S31_BASE_ADDR=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000
 	S31_ADDR_RANGE=256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000
 	IDLE=2'b00
-   Generated name = ahbl0_ipgen_lscc_ahbl_bus_Z5
-Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_bus_Z5 .......
-Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_interconnect_Z1 .......
+   Generated name = ahbl0_ipgen_lscc_ahbl_bus_Z6
+Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_bus_Z6 .......
+Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_interconnect_Z2 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":7827:7:7827:11|Synthesizing module ahbl0 in library work.
 
 	M_ADDR_WIDTH=32'b00000000000000000000000000100000
@@ -2760,8 +2787,8 @@ Running optimization stage 1 on ahbl0_ipgen_lscc_ahbl_interconnect_Z1 .......
 	S1_FRAGMENT_EN=32'b00000000000000000000000000000001
 	S1_BASE_ADDR=32'b00000000000000001000000000000000
 	S1_ADDR_RANGE=32'b00000000000000000000110000000000
-   Generated name = ahbl0_Z6
-Running optimization stage 1 on ahbl0_Z6 .......
+   Generated name = ahbl0_Z7
+Running optimization stage 1 on ahbl0_Z7 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":36:7:36:35|Synthesizing module ahbl2apb0_ipgen_lscc_ahbl2apb in library work.
 
 	DATA_WIDTH=32'b00000000000000000000000000100000
@@ -2786,8 +2813,8 @@ Running optimization stage 1 on ahbl0_Z6 .......
 	ST_APB_IDLE=3'b001
 	ST_APB_SETUP=3'b010
 	ST_APB_ACCESS=3'b100
-   Generated name = ahbl2apb0_ipgen_lscc_ahbl2apb_Z7
-Running optimization stage 1 on ahbl2apb0_ipgen_lscc_ahbl2apb_Z7 .......
+   Generated name = ahbl2apb0_ipgen_lscc_ahbl2apb_Z8
+Running optimization stage 1 on ahbl2apb0_ipgen_lscc_ahbl2apb_Z8 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":529:7:529:15|Synthesizing module ahbl2apb0 in library work.
 
 	ADDR_WIDTH=32'b00000000000000000000000000100000
@@ -2871,7 +2898,7 @@ Running optimization stage 1 on ahbl2apb0_32s .......
 	S30_ADDR_RANGE=32'b00000000000000000000010000000000
 	S31_BASE_ADDR=32'b00000000000000000111110000000000
 	S31_ADDR_RANGE=32'b00000000000000000000010000000000
-   Generated name = apb0_ipgen_lscc_apb_interconnect_Z8
+   Generated name = apb0_ipgen_lscc_apb_interconnect_Z9
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v":1724:7:1724:33|Synthesizing module apb0_ipgen_lscc_apb_decoder in library work.
 
 	K=32'b00000000000000000000000000100000
@@ -2979,7 +3006,7 @@ Running optimization stage 1 on ahbl2apb0_32s .......
 	FRAGMENT_EN=12'b000100010001
 	BASE_ADDR=96'b000000000000000010001000000000000000000000000000100000000000000000000000000000001000010000000000
 	ADDR_RANGE=96'b000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000
-   Generated name = apb0_ipgen_lscc_apb_decoder_Z9
+   Generated name = apb0_ipgen_lscc_apb_decoder_Z10
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v":2422:7:2422:38|Synthesizing module apb0_ipgen_lscc_apb_decoder_prim in library work.
 
 	K=32'b00000000000000000000000000100000
@@ -3046,7 +3073,7 @@ Running optimization stage 1 on apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1
    Generated name = apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s
 Running optimization stage 1 on apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s .......
 Running optimization stage 1 on apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024 .......
-Running optimization stage 1 on apb0_ipgen_lscc_apb_decoder_Z9 .......
+Running optimization stage 1 on apb0_ipgen_lscc_apb_decoder_Z10 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v":2794:7:2794:37|Synthesizing module apb0_ipgen_lscc_apb_multiplexor in library work.
 
 	K=32'b00000000000000000000000000100000
@@ -3162,10 +3189,10 @@ Running optimization stage 1 on apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0
 	S29_FRAGMENT_EN=4'b0001
 	S30_FRAGMENT_EN=4'b0001
 	S31_FRAGMENT_EN=4'b0001
-   Generated name = apb0_ipgen_lscc_apb_bus_Z10
+   Generated name = apb0_ipgen_lscc_apb_bus_Z11
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v":1218:30:1218:50|Removing wire apb_prdata_def_mstr_w, as there is no assignment to it.
-Running optimization stage 1 on apb0_ipgen_lscc_apb_bus_Z10 .......
-Running optimization stage 1 on apb0_ipgen_lscc_apb_interconnect_Z8 .......
+Running optimization stage 1 on apb0_ipgen_lscc_apb_bus_Z11 .......
+Running optimization stage 1 on apb0_ipgen_lscc_apb_interconnect_Z9 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/apb0/1.0.6/rtl\apb0.v":11:7:11:10|Synthesizing module apb0 in library work.
 
 	M_ADDR_WIDTH=32'b00000000000000000000000000100000
@@ -3195,8 +3222,8 @@ Running optimization stage 1 on cpu0_ipgen_vex_debug_0s_MachXO3LF_14s .......
 Running optimization stage 1 on cpu0_ipgen_StreamFifoLowLatency_Dbg_IC .......
 Opening data file VexRiscv.v_toplevel_RegFilePlugin_regFile.bin from directory D:\docs\FPGA\SOC_IP
 Running optimization stage 1 on cpu0_ipgen_Riscv_Dbg_IC .......
-Running optimization stage 1 on cpu0_ipgen_riscvsmall_Z11 .......
-Running optimization stage 1 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z12 .......
+Running optimization stage 1 on cpu0_ipgen_riscvsmall_Z12 .......
+Running optimization stage 1 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z13 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":431:7:431:27|Synthesizing module gpio0_ipgen_lscc_gpio in library work.
 
 	FAMILY=64'b0100110101100001011000110110100001011000010011110011001101001100
@@ -3210,7 +3237,7 @@ Running optimization stage 1 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_
 	EXTERNAL_BUF=32'b00000000000000000000000000000000
 	IF_USER_INTF=24'b010000010101000001000010
 	ADDR_WIDTH=32'b00000000000000000000000000000110
-   Generated name = gpio0_ipgen_lscc_gpio_Z13
+   Generated name = gpio0_ipgen_lscc_gpio_Z14
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":664:7:664:32|Synthesizing module gpio0_ipgen_lscc_gpio_lmmi in library work.
 
 	FAMILY=64'b0100110101100001011000110110100001011000010011110011001101001100
@@ -3235,12 +3262,12 @@ Running optimization stage 1 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_
 	INT_STATUS_REG_ADDR=4'b0111
 	INT_ENABLE_REG_ADDR=4'b1000
 	INT_SET_REG_ADDR=4'b1001
-   Generated name = gpio0_ipgen_lscc_gpio_lmmi_Z14
+   Generated name = gpio0_ipgen_lscc_gpio_lmmi_Z15
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3lf.v":82:7:82:8|Synthesizing module BB in library work.
 Running optimization stage 1 on BB .......
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|Removing wire gpio_o, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Removing wire gpio_en_o, as there is no assignment to it.
-Running optimization stage 1 on gpio0_ipgen_lscc_gpio_lmmi_Z14 .......
+Running optimization stage 1 on gpio0_ipgen_lscc_gpio_lmmi_Z15 .......
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|*Output gpio_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|*Output gpio_en_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL118 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":943:20:943:21|Latch generated from always block for signal lmmi_rdata_r[7:0]; possible missing assignment in an if or case statement.
@@ -3259,7 +3286,7 @@ Running optimization stage 1 on gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s ..
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Removing wire lmmi_rdata_o, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":454:11:454:28|Removing wire lmmi_rdata_valid_o, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":455:11:455:22|Removing wire lmmi_ready_o, as there is no assignment to it.
-Running optimization stage 1 on gpio0_ipgen_lscc_gpio_Z13 .......
+Running optimization stage 1 on gpio0_ipgen_lscc_gpio_Z14 .......
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|*Output lmmi_rdata_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":454:11:454:28|*Output lmmi_rdata_valid_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":455:11:455:22|*Output lmmi_ready_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
@@ -3281,8 +3308,8 @@ Running optimization stage 1 on gpio0 .......
 	ACCESS_TYPE_S0=24'b010100100010111101010111
 	ACCESS_TYPE_S1=24'b010100100010111101010111
 	UNALIGNED_ACCESS_ENABLE=1'b0
-	INIT_FILE=32'b01101110011011110110111001100101
-	INIT_FILE_FORMAT=32'b01101110011011110110111001100101
+	INIT_FILE=488'b01000100001110100010111101100100011011110110001101110011001011110100011001010000010001110100000100101111010100110100111101000011010111110100100101010000001011110101011101010011001110000011000100110010010111110110011001101001011100100110110101110111011000010111001001100101001101000010111101000100011001010110001001110101011001110010111101010111010100110011100000110001001100100101111101100110011010010111001001101101011101110110000101110010011001010011010000101110011011010110010101101101
+	INIT_FILE_FORMAT=24'b011010000110010101111000
 	FAMILY=72'b010011010110000101100011011010000101100001001111001100110100110001000110
 	BYTE_WIDTH=32'b00000000000000000000000000000100
 	MEM_SIZE=56'b00110011001100100010110000110100001100000011100100110110
@@ -3421,7 +3448,7 @@ Running optimization stage 1 on gpio0 .......
 	DEVICE=72'b010011010110000101100011011010000101100001001111001100110100110001000110
 	PORT_TYPE=24'b000000000110010001110000
 	PDP_REGMODE=24'b011100100110010101100111
-   Generated name = sysmem0_ipgen_lscc_mem_Z15
+   Generated name = sysmem0_ipgen_lscc_mem_Z16
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v":391:7:391:24|Synthesizing module pmi_ram_dp_true_be in library work.
 
 	pmi_addr_depth_a=32'b00000000000000000001000000000000
@@ -3435,15 +3462,15 @@ Running optimization stage 1 on gpio0 .......
 	pmi_gsr=56'b01100100011010010111001101100001011000100110110001100101
 	pmi_resetmode=32'b01110011011110010110111001100011
 	pmi_optimization=40'b0111001101110000011001010110010101100100
-	pmi_init_file=32'b01101110011011110110111001100101
-	pmi_init_file_format=32'b01101110011011110110111001100101
+	pmi_init_file=488'b01000100001110100010111101100100011011110110001101110011001011110100011001010000010001110100000100101111010100110100111101000011010111110100100101010000001011110101011101010011001110000011000100110010010111110110011001101001011100100110110101110111011000010111001001100101001101000010111101000100011001010110001001110101011001110010111101010111010100110011100000110001001100100101111101100110011010010111001001101101011101110110000101110010011001010011010000101110011011010110010101101101
+	pmi_init_file_format=24'b011010000110010101111000
 	pmi_write_mode_a=48'b011011100110111101110010011011010110000101101100
 	pmi_write_mode_b=48'b011011100110111101110010011011010110000101101100
 	pmi_byte_size=32'b00000000000000000000000000001000
 	pmi_family=72'b010011010110000101100011011010000101100001001111001100110100110001000110
 	module_type=144'b011100000110110101101001010111110111001001100001011011010101111101100100011100000101111101110100011100100111010101100101010111110110001001100101
-   Generated name = pmi_ram_dp_true_be_Z16
-Running optimization stage 1 on pmi_ram_dp_true_be_Z16 .......
+   Generated name = pmi_ram_dp_true_be_Z17
+Running optimization stage 1 on pmi_ram_dp_true_be_Z17 .......
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1600:22:1600:34|Removing wire mem_error_a_o, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1612:22:1612:34|Removing wire mem_error_b_o, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1625:9:1625:16|Removing wire sp_clock, as there is no assignment to it.
@@ -3467,7 +3494,7 @@ Running optimization stage 1 on pmi_ram_dp_true_be_Z16 .......
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1643:30:1643:34|Removing wire pdp_q, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1644:30:1644:39|Removing wire pdp_byteen, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1645:15:1645:25|Removing wire pdp_err_det, as there is no assignment to it.
-Running optimization stage 1 on sysmem0_ipgen_lscc_mem_Z15 .......
+Running optimization stage 1 on sysmem0_ipgen_lscc_mem_Z16 .......
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1600:22:1600:34|*Output mem_error_a_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1612:22:1612:34|*Output mem_error_b_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":320:7:320:40|Synthesizing module sysmem0_ipgen_lscc_ahblmem_arbiter in library work.
@@ -3503,8 +3530,8 @@ Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_arbiter_R/W_R/W_12_sy
 	UNALIGNED_ACCESS_EN_S1=32'b00000000000000000000000000000000
 	SHIFT_DIRECTION_S0=32'b01101110011011110110111001100101
 	SHIFT_DIRECTION_S1=32'b01101110011011110110111001100101
-	INIT_FILE=32'b01101110011011110110111001100101
-	INIT_FILE_FORMAT=32'b01101110011011110110111001100101
+	INIT_FILE=488'b01000100001110100010111101100100011011110110001101110011001011110100011001010000010001110100000100101111010100110100111101000011010111110100100101010000001011110101011101010011001110000011000100110010010111110110011001101001011100100110110101110111011000010111001001100101001101000010111101000100011001010110001001110101011001110010111101010111010100110011100000110001001100100101111101100110011010010111001001101101011101110110000101110010011001010011010000101110011011010110010101101101
+	INIT_FILE_FORMAT=24'b011010000110010101111000
 	FAMILY=72'b010011010110000101100011011010000101100001001111001100110100110001000110
 	ARBITER_EN=32'b00000000000000000000000000000000
 	MEM_SIZE=56'b00110011001100100010110000110100001100000011100100110110
@@ -3648,7 +3675,7 @@ Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_arbiter_R/W_R/W_12_sy
 	T_BYTE_S0_EN=32'b00000000000000000000000000000001
 	T_BYTE_S1_EN=32'b00000000000000000000000000000001
 	T_ACCESS_TYPE_S1=24'b010100100010111101010111
-   Generated name = sysmem0_ipgen_lscc_sys_mem_Z17
+   Generated name = sysmem0_ipgen_lscc_sys_mem_Z18
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":446:7:446:38|Synthesizing module sysmem0_ipgen_lscc_ahblmem_slave in library work.
 
 	DATA_WIDTH=32'b00000000000000000000000000100000
@@ -3700,8 +3727,8 @@ Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_arbiter_R/W_R/W_12_sy
 	BYTE_EN_POL=1'b1
 	BYTE_EN_NEG=1'b0
 	MEM_END_ADDR_LIMIT=32'b00000000000000000000000000010000
-   Generated name = sysmem0_ipgen_lscc_ahblmem_slave_Z18
-Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_slave_Z18 .......
+   Generated name = sysmem0_ipgen_lscc_ahblmem_slave_Z19
+Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_slave_Z19 .......
 @W: CL169 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1004:20:1004:25|Pruning unused register genblk3.genblk1.ahbl_hsel_p2_r. Make sure that there are no unused intermediate registers.
 @W: CL169 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1004:20:1004:25|Pruning unused register genblk3.genblk1.ahbl_htrans_p2_r[1:0]. Make sure that there are no unused intermediate registers.
 @W: CL169 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":984:12:984:17|Pruning unused register genblk3.ahbl_hsel_p_r. Make sure that there are no unused intermediate registers.
@@ -3713,7 +3740,7 @@ Running optimization stage 1 on sysmem0_ipgen_lscc_ahblmem_slave_Z18 .......
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5048:9:5048:25|Removing wire mem_fifo_clk_en_w, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5049:30:5049:44|Removing wire mem_fifo_addr_w, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5050:30:5050:47|Removing wire mem_fifo_byte_en_w, as there is no assignment to it.
-Running optimization stage 1 on sysmem0_ipgen_lscc_sys_mem_Z17 .......
+Running optimization stage 1 on sysmem0_ipgen_lscc_sys_mem_Z18 .......
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5002:11:5002:21|*Output fifo_full_o has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":11:7:11:13|Synthesizing module sysmem0 in library work.
 
@@ -3749,7 +3776,7 @@ Running optimization stage 1 on sysmem0_1.0.2 .......
 	int1=3'b010
 	int2=3'b011
 	int3=3'b100
-   Generated name = uart0_ipgen_lscc_uart_intface_Z19
+   Generated name = uart0_ipgen_lscc_uart_intface_Z20
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":542:11:542:24|Removing wire fifo_empty_thr, as there is no assignment to it.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":543:11:543:23|Removing wire fifo_full_thr, as there is no assignment to it.
 @W: CG133 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":548:8:548:13|Object dlab_r is declared but not assigned. Either assign a value or remove the declaration.
@@ -3764,7 +3791,7 @@ Running optimization stage 1 on sysmem0_1.0.2 .......
 @W: CG133 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":648:8:648:18|Object fifo_wr_thr is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":649:8:649:20|Object fifo_wr_q_thr is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG360 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":650:9:650:25|Removing wire fifo_wr_pulse_thr, as there is no assignment to it.
-Running optimization stage 1 on uart0_ipgen_lscc_uart_intface_Z19 .......
+Running optimization stage 1 on uart0_ipgen_lscc_uart_intface_Z20 .......
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":542:11:542:24|*Output fifo_empty_thr has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL318 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":543:11:543:23|*Output fifo_full_thr has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1354:7:1354:34|Synthesizing module uart0_ipgen_lscc_uart_rxcver in library work.
@@ -3834,8 +3861,8 @@ Running optimization stage 1 on uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16
 	STDOUT_SIM=32'b00000000000000000000000000000000
 	STDOUT_SIMFAST=32'b00000000000000000000000000000000
 	MODEM_ENA=32'b00000000000000000000000000000000
-   Generated name = uart0_ipgen_lscc_uart_Z20
-Running optimization stage 1 on uart0_ipgen_lscc_uart_Z20 .......
+   Generated name = uart0_ipgen_lscc_uart_Z21
+Running optimization stage 1 on uart0_ipgen_lscc_uart_Z21 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":11:7:11:11|Synthesizing module uart0 in library work.
 Running optimization stage 1 on uart0 .......
 @N: CG364 :"D:\docs\FPGA\SOC_IP\SOC_IP\SOC_IP.v":66:7:66:12|Synthesizing module SOC_IP in library work.
@@ -3845,7 +3872,7 @@ Running optimization stage 1 on HelloWorld_Top .......
 Running optimization stage 2 on HelloWorld_Top .......
 Running optimization stage 2 on SOC_IP .......
 Running optimization stage 2 on uart0 .......
-Running optimization stage 2 on uart0_ipgen_lscc_uart_Z20 .......
+Running optimization stage 2 on uart0_ipgen_lscc_uart_Z21 .......
 @W: CL246 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":2598:16:2598:26|Input port bits 1 to 0 of apb_paddr_i[5:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":2599:17:2599:28|Input port bits 31 to 8 of apb_pwdata_i[31:0] are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":2613:10:2613:14|Input DCD_N is unused.
@@ -3874,7 +3901,7 @@ State machine has 5 reachable states with original encodings of:
    00100
    01000
    10000
-Running optimization stage 2 on uart0_ipgen_lscc_uart_intface_Z19 .......
+Running optimization stage 2 on uart0_ipgen_lscc_uart_intface_Z20 .......
 @N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1070:16:1070:21|Trying to extract state machine for register nfifo_int.cs_state.
 Extracted state machine for register nfifo_int.cs_state
 State machine has 4 reachable states with original encodings of:
@@ -3887,7 +3914,7 @@ State machine has 4 reachable states with original encodings of:
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":544:10:544:15|Input thr_rd is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":545:10:545:25|Input fifo_almost_full is unused.
 Running optimization stage 2 on sysmem0_1.0.2 .......
-Running optimization stage 2 on sysmem0_ipgen_lscc_ahblmem_slave_Z18 .......
+Running optimization stage 2 on sysmem0_ipgen_lscc_ahblmem_slave_Z19 .......
 @W: CL177 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1047:12:1047:17|Sharing sequential element genblk3.wr_addr_r. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1085:12:1085:17|Sharing sequential element genblk3.ahbl_hreadyout_r. Add a syn_preserve attribute to the element to prevent sharing.
 @N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Trying to extract state machine for register genblk3.bridge_sm_r.
@@ -3913,7 +3940,7 @@ State machine has 3 reachable states with original encodings of:
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":469:10:469:25|Input ahbl_hmastlock_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":470:16:470:27|Input ahbl_hprot_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":481:10:481:20|Input mem_error_i is unused.
-Running optimization stage 2 on sysmem0_ipgen_lscc_sys_mem_Z17 .......
+Running optimization stage 2 on sysmem0_ipgen_lscc_sys_mem_Z18 .......
 @W: CL246 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":4963:17:4963:31|Input port bits 31 to 14 of ahbl_s0_haddr_i[31:0] are unused. Assign logic for all port bits or change the input port size.
 @W: CL246 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":4981:17:4981:31|Input port bits 31 to 14 of ahbl_s1_haddr_i[31:0] are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":4997:10:4997:19|Input fifo_clk_i is unused.
@@ -3926,8 +3953,8 @@ Running optimization stage 2 on sysmem0_ipgen_lscc_ahblmem_arbiter_R/W_R/W_12_sy
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":329:10:329:14|Input rst_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":333:31:333:39|Input addr_s0_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":341:31:341:39|Input addr_s1_i is unused.
-Running optimization stage 2 on pmi_ram_dp_true_be_Z16 .......
-Running optimization stage 2 on sysmem0_ipgen_lscc_mem_Z15 .......
+Running optimization stage 2 on pmi_ram_dp_true_be_Z17 .......
+Running optimization stage 2 on sysmem0_ipgen_lscc_mem_Z16 .......
 Running optimization stage 2 on gpio0 .......
 Running optimization stage 2 on gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s .......
 @N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":244:16:244:21|Trying to extract state machine for register genblk1.bus_sm_cs.
@@ -3939,15 +3966,15 @@ State machine has 4 reachable states with original encodings of:
    1000
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":77:10:77:22|Input apb_penable_i is unused.
 Running optimization stage 2 on BB .......
-Running optimization stage 2 on gpio0_ipgen_lscc_gpio_lmmi_Z14 .......
+Running optimization stage 2 on gpio0_ipgen_lscc_gpio_lmmi_Z15 .......
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":695:35:695:40|Input gpio_i is unused.
-Running optimization stage 2 on gpio0_ipgen_lscc_gpio_Z13 .......
+Running optimization stage 2 on gpio0_ipgen_lscc_gpio_Z14 .......
 @W: CL246 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":465:17:465:28|Input port bits 31 to 8 of apb_pwdata_i[31:0] are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":452:35:452:46|Input lmmi_wdata_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":456:10:456:22|Input lmmi_wr_rdn_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":457:33:457:45|Input lmmi_offset_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":458:10:458:23|Input lmmi_request_i is unused.
-Running optimization stage 2 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z12 .......
+Running optimization stage 2 on cpu0_0s_0s_4294967295_0_4294967295_0_4294901760_Z13 .......
 Running optimization stage 2 on cpu0_ipgen_Riscv_Dbg_IC .......
 Extracted state machine for register _zz_145_
 State machine has 5 reachable states with original encodings of:
@@ -3971,9 +3998,9 @@ Running optimization stage 2 on cpu0_ipgen_d_ff_plain_rst_t_1s_0_0_0 .......
 Running optimization stage 2 on cpu0_ipgen_timer_32 .......
 Running optimization stage 2 on cpu0_ipgen_pic_3s_0_4_8_12 .......
 Running optimization stage 2 on cpu0_ipgen_lscc_cpu_ahbl_mux_4294901760 .......
-Running optimization stage 2 on cpu0_ipgen_riscvsmall_Z11 .......
+Running optimization stage 2 on cpu0_ipgen_riscvsmall_Z12 .......
 Running optimization stage 2 on apb0_32s_1s_33792_1024_32768_1024_34816_1024 .......
-Running optimization stage 2 on apb0_ipgen_lscc_apb_bus_Z10 .......
+Running optimization stage 2 on apb0_ipgen_lscc_apb_bus_Z11 .......
 Running optimization stage 2 on apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s .......
 Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s .......
 Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024 .......
@@ -3981,10 +4008,10 @@ Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_
 Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024 .......
 Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s .......
 Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024 .......
-Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_Z9 .......
-Running optimization stage 2 on apb0_ipgen_lscc_apb_interconnect_Z8 .......
+Running optimization stage 2 on apb0_ipgen_lscc_apb_decoder_Z10 .......
+Running optimization stage 2 on apb0_ipgen_lscc_apb_interconnect_Z9 .......
 Running optimization stage 2 on ahbl2apb0_32s .......
-Running optimization stage 2 on ahbl2apb0_ipgen_lscc_ahbl2apb_Z7 .......
+Running optimization stage 2 on ahbl2apb0_ipgen_lscc_ahbl2apb_Z8 .......
 @N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Trying to extract state machine for register buff_valid_r.
 Extracted state machine for register buff_valid_r
 State machine has 3 reachable states with original encodings of:
@@ -4011,8 +4038,8 @@ State machine has 9 reachable states with original encodings of:
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":59:16:59:27|Input ahbl_hsize_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":60:10:60:25|Input ahbl_hmastlock_i is unused.
 @N: CL159 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":61:16:61:27|Input ahbl_hprot_i is unused.
-Running optimization stage 2 on ahbl0_Z6 .......
-Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_bus_Z5 .......
+Running optimization stage 2 on ahbl0_Z7 .......
+Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_bus_Z6 .......
 Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3 .......
 @N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/latticesemi.com/module/ahbl0/1.1.4/rtl\ahbl0.v":3136:4:3136:9|Trying to extract state machine for register cs_sm.
 Extracted state machine for register cs_sm
@@ -4024,13 +4051,14 @@ State machine has 3 reachable states with original encodings of:
 
 Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s .......
 Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s .......
-Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4 .......
+Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5 .......
 Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s .......
-Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3 .......
-Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_Z2 .......
-Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_interconnect_Z1 .......
-Running optimization stage 2 on WS2812_module .......
-@N: CL201 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":132:0:132:5|Trying to extract state machine for register SM_Led.
+Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4 .......
+Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_decoder_Z3 .......
+Running optimization stage 2 on ahbl0_ipgen_lscc_ahbl_interconnect_Z2 .......
+Running optimization stage 2 on WS2812 .......
+Running optimization stage 2 on WS2812_ipgen_WS2812_module_Z1 .......
+@N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":176:4:176:9|Trying to extract state machine for register SM_Led.
 Extracted state machine for register SM_Led
 State machine has 5 reachable states with original encodings of:
    000
@@ -4038,7 +4066,7 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@N: CL201 :"D:\docs\FPGA\WS2812_IP\rtl\WS2812_IP.v":51:0:51:5|Trying to extract state machine for register SM_APB.
+@N: CL201 :"D:\docs\FPGA\SOC_IP\SOC_IP\./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/rtl\WS2812.v":91:4:91:9|Trying to extract state machine for register SM_APB.
 Extracted state machine for register SM_APB
 State machine has 2 reachable states with original encodings of:
    00
@@ -4051,12 +4079,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: D:\docs\FPGA\SOC_IP\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 188MB peak: 225MB)
+At c_ver Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 184MB peak: 222MB)
 
-Process took 0h:00m:15s realtime, 0h:00m:15s cputime
+Process took 0h:00m:12s realtime, 0h:00m:12s cputime
 
 Process completed successfully.
-# Mon Jun 14 18:20:04 2021
+# Thu Jun 17 16:22:56 2021
 
 ###########################################################]
 ###########################################################[
@@ -4077,14 +4105,13 @@ Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
 @N|Running in 64-bit mode
-File D:\docs\FPGA\SOC_IP\impl1\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jun 14 18:20:05 2021
+# Thu Jun 17 16:22:56 2021
 
 ###########################################################]
 
@@ -4094,12 +4121,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:15s; Memory used current: 29MB peak: 29MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 22MB peak: 23MB)
 
-Process took 0h:00m:17s realtime, 0h:00m:15s cputime
+Process took 0h:00m:13s realtime, 0h:00m:12s cputime
 
 Process completed successfully.
-# Mon Jun 14 18:20:05 2021
+# Thu Jun 17 16:22:56 2021
 
 ###########################################################]
 ###########################################################[
@@ -4122,15 +4149,15 @@ Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct
 @N|Running in 64-bit mode
 File D:\docs\FPGA\SOC_IP\impl1\synwork\SOC_IP_impl1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 107MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jun 14 18:20:07 2021
+# Thu Jun 17 16:22:58 2021
 
 ###########################################################]
-# Mon Jun 14 18:20:07 2021
+# Thu Jun 17 16:22:58 2021
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -4167,7 +4194,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 155MB peak: 155MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 155MB peak: 157MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 155MB peak: 157MB)
 
 @N: FX493 |Applying initial value "0" on instance inputArea_target.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -4177,39 +4204,39 @@ Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h
 @N: FX493 |Applying initial value "0" on instance genblk3\.ahbl_hresp_r.
 @N: FX493 |Applying initial value "1" on instance genblk3\.ahbl_hreadyout_ext_r.
 @W: BN132 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":2491:16:2491:21|Removing sequential instance HelloWorld_inst.uart0_inst.lscc_uart_inst.u_txmitt.nfifo_thrrdy.thr_ready because it is equivalent to instance HelloWorld_inst.uart0_inst.lscc_uart_inst.u_txmitt.genblk4.thr_empty. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|Tristate driver gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|Tristate driver gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) on net gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_3 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_4 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_5 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_6 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_7 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":697:36:697:44|Tristate driver gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_en_o_8 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|Tristate driver gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_o_1 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":696:36:696:41|Tristate driver gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) on net gpio_o_2 (in view: work.gpio0_ipgen_lscc_gpio_lmmi_Z15(verilog)) has its enable tied to GND.
 @W: MO129 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":984:12:984:17|Sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.bridge_s0.genblk3.ahbl_hsize_p_r[0] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":984:12:984:17|Sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.bridge_s0.genblk3.ahbl_hsize_p_r[1] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":984:12:984:17|Sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.bridge_s0.genblk3.ahbl_hsize_p_r[2] is reduced to a combinational gate by constant propagation.
 @W: MO129 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":984:12:984:17|Sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.ahbl_hsize_p_r[2] is reduced to a combinational gate by constant propagation.
-@N: BN115 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5381:37:5381:45|Removing instance u_arbiter (in view: work.sysmem0_ipgen_lscc_sys_mem_Z17(verilog)) of type view:work.sysmem0_ipgen_lscc_ahblmem_arbiter_R\/W_R\/W_12_sync_0s_0s(verilog) because it does not drive other instances.
-Encoding state machine SM_Led[4:0] (in view: work.WS2812_module(verilog))
+@N: BN115 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":5381:37:5381:45|Removing instance u_arbiter (in view: work.sysmem0_ipgen_lscc_sys_mem_Z18(verilog)) of type view:work.sysmem0_ipgen_lscc_ahblmem_arbiter_R\/W_R\/W_12_sync_0s_0s(verilog) because it does not drive other instances.
+Encoding state machine SM_Led[4:0] (in view: work.WS2812_ipgen_WS2812_module_Z1(verilog))
 original code -> new code
    000 -> 00001
    001 -> 00010
    010 -> 00100
    011 -> 01000
    100 -> 10000
-Encoding state machine SM_APB[1:0] (in view: work.WS2812_module(verilog))
+Encoding state machine SM_APB[1:0] (in view: work.WS2812_ipgen_WS2812_module_Z1(verilog))
 original code -> new code
    00 -> 0
    01 -> 1
-@N: MO225 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":51:0:51:5|There are no possible illegal states for state machine SM_APB[1:0] (in view: work.WS2812_module(verilog)); safe FSM implementation is not required.
+@N: MO225 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":91:4:91:9|There are no possible illegal states for state machine SM_APB[1:0] (in view: work.WS2812_ipgen_WS2812_module_Z1(verilog)); safe FSM implementation is not required.
 Encoding state machine cs_sm[2:0] (in view: work.ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
-Encoding state machine cs_ahbl_sm[8:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog))
+Encoding state machine cs_ahbl_sm[8:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog))
 original code -> new code
    000000001 -> 000000001
    000000010 -> 000000010
@@ -4220,7 +4247,7 @@ original code -> new code
    001000000 -> 001000000
    010000000 -> 010000000
    100000000 -> 100000000
-Encoding state machine buff_valid_r[2:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog))
+Encoding state machine buff_valid_r[2:0] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
@@ -4239,12 +4266,12 @@ original code -> new code
    0100 -> 10
    1000 -> 11
 @N: MO225 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":244:16:244:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
-Encoding state machine genblk3\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog))
+Encoding state machine genblk3\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog))
 original code -> new code
    001 -> 00
    010 -> 01
    100 -> 10
-Encoding state machine genblk3\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog))
+Encoding state machine genblk3\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog))
 original code -> new code
    000000000001 -> 000000001
    000000000010 -> 000000010
@@ -4264,12 +4291,12 @@ original code -> new code
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[6].
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[7].
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[8].
-Encoding state machine genblk3\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_0(verilog))
+Encoding state machine genblk3\.err_sm_r[2:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_0(verilog))
 original code -> new code
    001 -> 00
    010 -> 01
    100 -> 10
-Encoding state machine genblk3\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_0(verilog))
+Encoding state machine genblk3\.bridge_sm_r[8:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_0(verilog))
 original code -> new code
    000000000001 -> 000000001
    000000000010 -> 000000010
@@ -4289,13 +4316,13 @@ original code -> new code
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[6].
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[7].
 @N: FX493 |Applying initial value "0" on instance genblk3\.bridge_sm_r[8].
-Encoding state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z19(verilog))
+Encoding state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z20(verilog))
 original code -> new code
    000 -> 00
    001 -> 01
    010 -> 10
    011 -> 11
-@N: MO225 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z19(verilog)); safe FSM implementation is not required.
+@N: MO225 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_Z20(verilog)); safe FSM implementation is not required.
 Encoding state machine cs_state[4:0] (in view: work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
 original code -> new code
    00001 -> 00001
@@ -4315,28 +4342,28 @@ original code -> new code
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 194MB)
 
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[8] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[6] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[5] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[2] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1072:12:1072:17|Removing FSM register genblk3\.err_sm_r[0] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[7] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1072:12:1072:17|Removing FSM register genblk3\.err_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) because its output is a constant.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[2] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[3] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[4] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[5] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[6] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[7] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[8] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[9] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[10] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[11] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[12] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[13] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance genblk3\.genblk2\.rd_burst_r[13:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing sequential instance genblk3\.bridge_sm_r[4] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z18_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[8] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[6] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[5] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[2] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1072:12:1072:17|Removing FSM register genblk3\.err_sm_r[0] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing FSM register genblk3\.bridge_sm_r[7] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@W: MO197 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1072:12:1072:17|Removing FSM register genblk3\.err_sm_r[1] (in view view:work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) because its output is a constant.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[2] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[3] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[4] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[5] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[6] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[7] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[8] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[9] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[10] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[11] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[12] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1020:12:1020:17|Removing sequential instance genblk3\.rd_prev_r[13] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance genblk3\.genblk2\.rd_burst_r[13:0] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing sequential instance genblk3\.bridge_sm_r[4] (in view: work.sysmem0_ipgen_lscc_ahblmem_slave_Z19_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 
 Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 195MB)
@@ -4349,7 +4376,7 @@ Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist HelloWorld_Top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
 
 
 
@@ -4386,7 +4413,7 @@ cpu0_ipgen_vex_jtag_bridge_0s_MachXO3LF_14s|bscan_DRCK_inferred_clock     9     
 ============================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 @W: MT531 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":943:20:943:21|Found signal identified as System clock which controls 8 sequential elements including HelloWorld_inst.gpio0_inst.lscc_gpio_inst.genblk1\.lscc_gpio_lmmi_0.lmmi_rdata_o[7].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
-@W: MT529 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":51:0:51:5|Found inferred clock HelloWorld_Top|sys_clk which controls 1958 sequential elements including HelloWorld_inst.WS2812_inst.SM_APB[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":91:4:91:9|Found inferred clock HelloWorld_Top|sys_clk which controls 1958 sequential elements including HelloWorld_inst.WS2812_inst.WS2812_module_inst.SM_APB[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -4403,13 +4430,13 @@ Number of ICG latches not removed:	0
 1 gated/generated clock tree(s) driving 8 clock pin(s) of sequential element(s)
 0 instances converted, 8 sequential instances remain driven by gated/generated clocks
 
-====================================== Non-Gated/Non-Generated Clocks =======================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                      
--------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       OSCH_inst.OSC       OSCH                   1850       HelloWorld_inst.WS2812_inst.SM_APB[0]
-@KP:ckid0_3       ENCRYPTED           DCCA                   83         ENCRYPTED                            
-@KP:ckid0_4       ENCRYPTED           jtagconn16             9          ENCRYPTED                            
-=============================================================================================================
+==================================================== Non-Gated/Non-Generated Clocks =====================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       OSCH_inst.OSC       OSCH                   1850       HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.buff_valid_r[1]
+@KP:ckid0_3       ENCRYPTED           DCCA                   83         ENCRYPTED                                                        
+@KP:ckid0_4       ENCRYPTED           jtagconn16             9          ENCRYPTED                                                        
+=========================================================================================================================================
 =============================================================================================================================== Gated/Generated Clocks ===============================================================================================================================
 Clock Tree ID     Driving Element                                                                                Drive Element Type     Unconverted Fanout     Sample Instance                                                                         Explanation                    
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4428,17 +4455,17 @@ Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 196MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 194MB peak: 196MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 195MB peak: 196MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 108MB peak: 196MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 108MB peak: 196MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:02s cputime
-# Mon Jun 14 18:20:12 2021
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Thu Jun 17 16:23:01 2021
 
 ###########################################################]
-# Mon Jun 14 18:20:12 2021
+# Thu Jun 17 16:23:01 2021
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -4463,13 +4490,13 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 128MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
@@ -4478,16 +4505,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 179MB peak: 179MB)
 
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":455:11:455:22|Tristate driver lmmi_ready_o (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_ready_o (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":454:11:454:28|Tristate driver lmmi_rdata_valid_o (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_valid_o (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_1 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_1 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_2 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_2 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_3 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_3 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_4 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_4 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_5 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_5 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_6 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_6 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_7 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_7 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
-@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_8 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) on net lmmi_rdata_o_8 (in view: work.gpio0_ipgen_lscc_gpio_Z13(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":455:11:455:22|Tristate driver lmmi_ready_o (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_ready_o (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":454:11:454:28|Tristate driver lmmi_rdata_valid_o (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_valid_o (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_1 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_1 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_2 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_2 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_3 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_3 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_4 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_4 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_5 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_5 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_6 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_6 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_7 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_7 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
+@N: MO111 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":453:36:453:47|Tristate driver lmmi_rdata_o_8 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) on net lmmi_rdata_o_8 (in view: work.gpio0_ipgen_lscc_gpio_Z14(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -4498,29 +4525,29 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":244:16:244:21|Removing sequential instance gpio0_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.lmmi_offset_o[1] (in view: work.SOC_IP(verilog)) because it does not drive other instances.
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/gpio0/1.4.1/rtl\gpio0.v":244:16:244:21|Removing sequential instance gpio0_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.lmmi_offset_o[0] (in view: work.SOC_IP(verilog)) because it does not drive other instances.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@N: MO231 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":132:0:132:5|Found counter in view:work.WS2812_module(verilog) instance led_counter[8:0] 
-@N: MO231 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":132:0:132:5|Found counter in view:work.WS2812_module(verilog) instance led_bit_counter[8:0] 
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[9] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[8] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[7] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[6] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[9] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[8] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[7] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[6] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z7(verilog)) because it does not drive other instances.
+@N: MO231 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":176:4:176:9|Found counter in view:work.WS2812_ipgen_WS2812_module_Z1(verilog) instance led_counter[8:0] 
+@N: MO231 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":176:4:176:9|Found counter in view:work.WS2812_ipgen_WS2812_module_Z1(verilog) instance led_bit_counter[8:0] 
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[9] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[8] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[7] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance apb_paddr_r[6] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[9] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[8] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[7] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance haddr_r[6] (in view: work.ahbl2apb0_ipgen_lscc_ahbl2apb_Z8(verilog)) because it does not drive other instances.
 @N: MO231 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1590:4:1590:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog) instance databit_recved_num[3:0] 
 @N: MO231 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1590:4:1590:9|Found counter in view:work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog) instance counter[15:0] 
 @N: MF179 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":1448:31:1448:51|Found 16 by 16 bit equality operator ('==') counter_eq_div_2 (in view: work.uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
 @N: MO231 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":2253:16:2253:21|Found counter in view:work.uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64(verilog) instance nfifo_fsm\.counter[15:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:11s; Memory used current: 214MB peak: 214MB)
+Starting factoring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 214MB peak: 214MB)
 
 @W: BN132 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[8] because it is equivalent to instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[6] because it is equivalent to instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[5] because it is equivalent to instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1.genblk3.bridge_sm_r[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1060:12:1060:17|Removing sequential instance sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.bridge_sm_r[2] (in view: work.SOC_IP(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:15s; Memory used current: 242MB peak: 242MB)
+Finished factoring (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:13s; Memory used current: 242MB peak: 242MB)
 
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.genblk2\.rd_burst_r[13] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.genblk2\.rd_burst_r[12] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
@@ -4536,48 +4563,42 @@ Finished factoring (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:15s; M
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.genblk2\.rd_burst_r[2] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.genblk2\.rd_burst_r[1] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
 @N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":1034:20:1034:25|Removing sequential instance HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1\.bridge_s1.genblk3\.genblk2\.rd_burst_r[0] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.haddr_r[14] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.haddr_r[13] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":334:4:334:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.haddr_r[12] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.apb_paddr_r[14] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.apb_paddr_r[13] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
-@N: BN362 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/module/ahbl2apb0/1.0.6/rtl\ahbl2apb0.v":210:4:210:9|Removing sequential instance HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst.apb_paddr_r[12] (in view: work.HelloWorld_Top(verilog)) because it does not drive other instances.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:16s; Memory used current: 242MB peak: 252MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:14s; Memory used current: 243MB peak: 252MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:17s; Memory used current: 243MB peak: 252MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:15s; Memory used current: 244MB peak: 252MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:18s; Memory used current: 243MB peak: 252MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:16s; Memory used current: 244MB peak: 252MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:18s; Memory used current: 243MB peak: 252MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:16s; Memory used current: 245MB peak: 252MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:18s; Memory used current: 243MB peak: 252MB)
+Finished preparing to map (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:17s; Memory used current: 245MB peak: 252MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:20s; Memory used current: 278MB peak: 319MB)
+Finished technology mapping (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:19s; Memory used current: 276MB peak: 318MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:21s		     1.30ns		3054 /      1809
+   1		0h:00m:19s		     1.30ns		3060 /      1815
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:21s; Memory used current: 278MB peak: 319MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:19s; Memory used current: 276MB peak: 318MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: FO126 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":51:0:51:5|Generating RAM HelloWorld_inst.WS2812_inst.led_colour_1[23:0]
-@N: FO126 :"d:\docs\fpga\ws2812_ip\rtl\ws2812_ip.v":51:0:51:5|Generating RAM HelloWorld_inst.WS2812_inst.led_colour[23:0]
+@N: FO126 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":91:4:91:9|Generating RAM HelloWorld_inst.WS2812_inst.WS2812_module_inst.led_colour_1[23:0]
+@N: FO126 :"d:\docs\fpga\soc_ip\soc_ip\./lib/mountjoy modular/ws2812_ip/ws2812/2.2/rtl\ws2812.v":91:4:91:9|Generating RAM HelloWorld_inst.WS2812_inst.WS2812_module_inst.led_colour[23:0]
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:23s; Memory used current: 280MB peak: 319MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:21s; Memory used current: 278MB peak: 318MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:24s; Memory used current: 226MB peak: 319MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:22s; Memory used current: 223MB peak: 318MB)
 
 Writing Analyst data base D:\docs\FPGA\SOC_IP\impl1\synwork\SOC_IP_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:24s; Memory used current: 270MB peak: 319MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:22s; Memory used current: 268MB peak: 318MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: D:\docs\FPGA\SOC_IP\impl1\SOC_IP_impl1.edi
@@ -4585,12 +4606,12 @@ Writing EDIF Netlist and constraint files
 @W: BW268 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/uart0/1.2.0/rtl\uart0.v":47:27:47:40|Ignoring parameter SYS_CLOCK_FREQ with floating-point value in -edn file
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:25s; Memory used current: 277MB peak: 319MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:24s; Memory used current: 276MB peak: 318MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:26s; Memory used current: 269MB peak: 319MB)
+Start final timing analysis (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:24s; Memory used current: 268MB peak: 318MB)
 
-@W: MT246 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":2834:69:2834:73|Blackbox pmi_ram_dp_true_be_Z16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/sysmem0/1.0.2/rtl\sysmem0.v":2834:69:2834:73|Blackbox pmi_ram_dp_true_be_Z17 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/cpu0/2.0.0/rtl\cpu0.v":56739:21:56739:28|Blackbox DCCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"d:\docs\fpga\soc_ip\soc_ip\./lib/latticesemi.com/ip/cpu0/2.0.0/rtl\cpu0.v":56494:90:56494:93|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock HelloWorld_Top|sys_clk with period 26.32ns. Please declare a user-defined clock on net sys_clk.
@@ -4599,7 +4620,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Jun 14 18:20:49 2021
+# Timing report written on Thu Jun 17 16:23:31 2021
 #
 
 
@@ -4977,16 +4998,16 @@ Starting Points with Worst Slack
 Instance                                                                                         Reference     Type                       Pin           Net                                                              Time        Slack 
                                                                                                  Clock                                                                                                                                     
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z16     QA[1]         cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[1]      0.000       2.706 
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z16     QA[16]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[16]     0.000       3.306 
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z16     QA[0]         cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[0]      0.000       3.410 
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z16     QA[17]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[17]     0.000       3.755 
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z17     QA[1]         cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[1]      0.000       2.706 
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z17     QA[16]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[16]     0.000       3.306 
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z17     QA[0]         cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[0]      0.000       3.410 
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z17     QA[17]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[17]     0.000       3.755 
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.genblk1\.jtag     System        jtagconn16                 ip_enable     ip_enable                                                        0.000       7.927 
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.genblk1\.jtag     System        jtagconn16                 jce2          jce2                                                             0.000       9.894 
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.genblk1\.jtag     System        jtagconn16                 jshift        jshift                                                           0.000       9.894 
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.genblk1\.jtag     System        jtagconn16                 jtdi          bscan_TDI                                                        0.000       9.894 
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.genblk1\.jtag     System        jtagconn16                 jtck          bscan_DRCK_i                                                     0.000       10.000
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z16     QA[30]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[30]     0.000       12.747
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem      System        pmi_ram_dp_true_be_Z17     QA[30]        cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[30]     0.000       12.747
 ===========================================================================================================================================================================================================================================
 
 
@@ -4997,7 +5018,7 @@ Ending Points with Worst Slack
 Instance                                                                                                               Reference     Type                       Pin          Net         Time         Slack
                                                                                                                        Clock                                                                               
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                            System        pmi_ram_dp_true_be_Z16     ClockEnA     N_222_i     10.000       2.706
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                            System        pmi_ram_dp_true_be_Z17     ClockEnA     N_222_i     10.000       2.706
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.TCK_counter_reg.ASYNC_LOW\.Q_reg[0]     System        FD1P3DX                    SP           WE          9.528        7.927
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.TMS_reg.ASYNC_LOW\.Q_reg[0]             System        FD1P3DX                    SP           WE          9.528        7.927
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.vex_debug.vex_jtag_bridge_i.TDI_reg.ASYNC_LOW\.Q_reg[0]             System        FD1P3DX                    SP           WE          9.528        7.927
@@ -5036,7 +5057,7 @@ Path information for path number 1:
 Instance / Net                                                                                                                                                                        Pin          Pin               Arrival     No. of    
 Name                                                                                                                                                       Type                       Name         Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                                                                pmi_ram_dp_true_be_Z16     QA[1]        Out     0.000     0.000 r     -         
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                                                                pmi_ram_dp_true_be_Z17     QA[1]        Out     0.000     0.000 r     -         
 cpu0_inst_AHBL_M0_INSTR_interconnect_HRDATA_interconnect[1]                                                                                                Net                        -            -       -         -           2         
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.i_Riscv_Dbg_IC.IBusSimplePlugin_rspJoin_rspBuffer_c.io_pop_payload_inst[1]                              ORCALUT4                   A            In      0.000     0.000 r     -         
 HelloWorld_inst.cpu0_inst.riscvsmall_inst.genblk7\.i_Riscv_Dbg_IC.IBusSimplePlugin_rspJoin_rspBuffer_c.io_pop_payload_inst[1]                              ORCALUT4                   Z            Out     1.153     1.153 r     -         
@@ -5059,7 +5080,7 @@ ahbl_m_instr_htrans_o[1]                                                        
 HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.bridge_s0.genblk3\.bridge_sm_r_RNIIT9E[0]                                                        ORCALUT4                   A            In      0.000     6.845 r     -         
 HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0\.bridge_s0.genblk3\.bridge_sm_r_RNIIT9E[0]                                                        ORCALUT4                   Z            Out     0.449     7.294 r     -         
 N_222_i                                                                                                                                                    Net                        -            -       -         -           1         
-HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                                                                pmi_ram_dp_true_be_Z16     ClockEnA     In      0.000     7.294 r     -         
+HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_true_be\.u_mem                                                                pmi_ram_dp_true_be_Z17     ClockEnA     In      0.000     7.294 r     -         
 ===========================================================================================================================================================================================================================================
 
 
@@ -5068,16 +5089,16 @@ HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0.ecp_5\.dp\.ram_dp_tru
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:26s; Memory used current: 270MB peak: 319MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:24s; Memory used current: 269MB peak: 318MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:26s; Memory used current: 270MB peak: 319MB)
+Finished timing report (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:24s; Memory used current: 269MB peak: 318MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo3lf_6900c-6
 
-Register bits: 1842 of 54912 (3%)
+Register bits: 1848 of 54912 (3%)
 Latch bits:      8
 PIC Latch:       0
 I/O cells:       13
@@ -5091,14 +5112,14 @@ DCCA:           1
 DPR16X4C:       14
 FD1P3AX:        813
 FD1P3BX:        18
-FD1P3DX:        529
+FD1P3DX:        536
 FD1P3IX:        54
 FD1P3JX:        23
 FD1S1AY:        8
 FD1S3AX:        107
 FD1S3AY:        5
 FD1S3BX:        18
-FD1S3DX:        229
+FD1S3DX:        228
 FD1S3IX:        32
 FD1S3JX:        4
 GSR:            1
@@ -5109,7 +5130,7 @@ INV:            32
 L6MUX21:        1
 OB:             3
 OFS1P3DX:       1
-ORCALUT4:       2986
+ORCALUT4:       2992
 OSCH:           1
 PDPW8KC:        4
 PFUMX:          151
@@ -5120,10 +5141,10 @@ jtagconn16:     1
 pmi_ram_dp_true_be: 1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:26s; Memory used current: 103MB peak: 319MB)
+At Mapper Exit (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:24s; Memory used current: 102MB peak: 318MB)
 
-Process took 0h:00m:36s realtime, 0h:00m:26s cputime
-# Mon Jun 14 18:20:49 2021
+Process took 0h:00m:29s realtime, 0h:00m:24s cputime
+# Thu Jun 17 16:23:31 2021
 
 ###########################################################]
 

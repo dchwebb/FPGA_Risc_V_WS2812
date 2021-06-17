@@ -15,20 +15,20 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3LF-6900CCABGA256
 Target Performance:   6
 Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  06/14/21  18:20:57
+Mapped on:  06/17/21  16:23:36
 
 Design Summary
 --------------
 
-   Number of registers:   1874 out of  7485 (25%)
-      PFU registers:         1864 out of  6864 (27%)
+   Number of registers:   1880 out of  7485 (25%)
+      PFU registers:         1870 out of  6864 (27%)
       PIO registers:           10 out of   621 (2%)
-   Number of SLICEs:      1811 out of  3432 (53%)
-      SLICEs as Logic/ROM:   1769 out of  3432 (52%)
+   Number of SLICEs:      1812 out of  3432 (53%)
+      SLICEs as Logic/ROM:   1770 out of  3432 (52%)
       SLICEs as RAM:           42 out of  2574 (2%)
       SLICEs as Carry:        205 out of  3432 (6%)
-   Number of LUT4s:        3594 out of  6864 (52%)
-      Number used as logic LUTs:        3100
+   Number of LUT4s:        3600 out of  6864 (52%)
+      Number used as logic LUTs:        3106
       Number used as distributed RAM:    84
       Number used as ripple logic:      410
       Number used as shift registers:     0
@@ -58,7 +58,7 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  4
-     Net sys_clk: 1085 loads, 1085 rising, 0 falling (Driver: OSCH_inst )
+     Net sys_clk: 1087 loads, 1087 rising, 0 falling (Driver: OSCH_inst )
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/lmmi_rdata_valid_w: 4 loads,
 
                                     Page 1
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Design Summary (cont)
 ---------------------
@@ -78,7 +78,7 @@ Design Summary (cont)
      Net jtaghub16_jtck: 36 loads, 4 rising, 32 falling (Driver:
      xo2chub/genblk7.jtagf_u )
    Number of Clock Enables:  122
-     Net SM_Led_ns_0_o4_i_o2_RNIJ0E51[2]: 1 loads, 0 LSLICEs
+     Net SM_Led_ns_0_o4_i_o2_RNI8RSE[2]: 1 loads, 0 LSLICEs
      Net HelloWorld_inst/uart0_inst/lscc_uart_inst/u_txmitt/tx_state[0]: 10
      loads, 10 LSLICEs
      Net HelloWorld_inst/uart0_inst/lscc_uart_inst/u_txmitt/N_305_i: 5 loads, 5
@@ -132,13 +132,13 @@ Design Summary (cont)
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Design Summary (cont)
 ---------------------
      m_cs[1]: 2 loads, 2 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0/apb_p
-     slverr_nxt_0_sqmuxa: 4 loads, 4 LSLICEs
+     slverr_nxt_0_sqmuxa: 5 loads, 5 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0/apb_p
      ready_o_RNO: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0/bus_s
@@ -146,36 +146,45 @@ Design Summary (cont)
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/dire
      ction_r_1_sqmuxa: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_
-     method_r_1_sqmuxa: 4 loads, 4 LSLICEs
-     Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_
      type_r_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_
+     method_r_1_sqmuxa: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/int_
      enable_r_1_sqmuxa: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/un1_
      gpio_out_r21_i_a2: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/ahbl2apb0_inst_APB_M0_interconnect_PSELx_interconnect:
      2 loads, 2 LSLICEs
-     Net HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst/ahbl_req_rdy_w: 16
-     loads, 16 LSLICEs
+     Net HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst/ahbl_req_rdy_w: 17
+     loads, 17 LSLICEs
      Net HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst/un2_ns_ahbl_sm_4_0:
-     14 loads, 14 LSLICEs
+     15 loads, 15 LSLICEs
      Net HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst/un2_ns_ahbl_sm_4_0_0:
      16 loads, 16 LSLICEs
      Net HelloWorld_inst/ahbl2apb0_inst/lscc_ahbl2apb_inst/un1_ahbl_hrdata_o_0_s
      qmuxa_0: 16 loads, 16 LSLICEs
      Net HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_l
      scc_ahbl_bus/u_lscc_ahbl_multiplexor/N_62_i: 2 loads, 2 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/SM_APB[0]: 1 loads, 1 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/N_533_i: 1 loads, 1 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/auto_send_1_sqmuxa: 1 loads, 1 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/led_bit_countere: 5 loads, 5 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/led_sending_RNO_0: 1 loads, 1 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/led_number_1_sqmuxa: 4 loads, 4 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/led_countere: 5 loads, 5 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/apb_pslverr_o_1_sqmuxa_i_0_0: 1 loads, 1
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/SM_APB[0]: 1 loads, 1
      LSLICEs
-     Net HelloWorld_inst/WS2812_inst/SM_APB_tr0_i_0: 1 loads, 1 LSLICEs
-     Net HelloWorld_inst/WS2812_inst/un1_SM_APB_i_a2_0_a2: 16 loads, 16 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_533_i: 1 loads, 1
+     LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/auto_send_1_sqmuxa: 1
+     loads, 1 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_bit_countere: 5
+     loads, 5 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_sending_RNO_0: 1
+     loads, 1 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_number_1_sqmuxa: 4
+     loads, 4 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_countere: 5 loads, 5
+     LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/apb_pslverr_o_1_sqmuxa_i
+     _0_0: 1 loads, 1 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/SM_APB_tr0_i_0: 1 loads,
+     1 LSLICEs
+     Net HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_SM_APB_i_a2_0_a2: 16
+     loads, 16 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/lastSt
      ageRegFileWrite_valid: 4 loads, 0 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un1_Cs
@@ -183,6 +192,16 @@ Design Summary (cont)
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/CsrPlu
      gin_exceptionPortCtrl_exceptionContext_code_3_sqmuxa_i: 18 loads, 18
      LSLICEs
+
+                                    Page 3
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Design Summary (cont)
+---------------------
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSi
      mplePlugin_rspJoin_rspBuffer_c/pushing: 32 loads, 32 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un1_IB
@@ -192,23 +211,13 @@ Design Summary (cont)
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un1_IB
      usSimplePlugin_externalFlush_i: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/_zz_83
-
-                                    Page 3
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Design Summary (cont)
----------------------
      __1_sqmuxa_i: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
      lugin_busReadDataReg_1_sqmuxa_i: 17 loads, 17 LSLICEs
+     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/debug_bus_cmd_valid: 1 loads,
+     1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execut
      e_LightShifterPlugin_amplitudeReg_0_sqmuxa: 3 loads, 3 LSLICEs
-     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
-     lugin_haltedByBreak_1_sqmuxa_i: 1 loads, 1 LSLICEs
      Net
      HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/_zz_172_:
      3 loads, 3 LSLICEs
@@ -222,8 +231,6 @@ Design Summary (cont)
      e_arbitration_isStuck_i: 105 loads, 105 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execut
      e_arbitration_isStuckByOthers_i: 16 loads, 16 LSLICEs
-     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/debug_bus_cmd_valid: 1 loads,
-     1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory
      _arbitration_isValid4: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execut
@@ -251,6 +258,16 @@ Design Summary (cont)
      Net
      HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/_zz_189_:
      6 loads, 6 LSLICEs
+
+                                    Page 4
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Design Summary (cont)
+---------------------
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
      lugin_stepIt_0_sqmuxa: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
@@ -258,16 +275,8 @@ Design Summary (cont)
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
      lugin_hardwareBreakpoints_0_pc_1_sqmuxa: 17 loads, 17 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
-
-                                    Page 4
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Design Summary (cont)
----------------------
+     lugin_haltedByBreak_1_sqmuxa_i: 1 loads, 1 LSLICEs
+     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
      lugin_haltIt_2_sqmuxa_i: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/DebugP
      lugin_godmode_1_sqmuxa_i: 1 loads, 1 LSLICEs
@@ -313,10 +322,20 @@ Design Summary (cont)
      idge_i/TDI_reg_WE0: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_br
      idge_i/shift_enable_wire: 2 loads, 2 LSLICEs
-     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_r
-     eg_2_sqmuxa_i: 33 loads, 33 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_i
      nt_reg12_i: 1 loads, 1 LSLICEs
+
+                                    Page 5
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Design Summary (cont)
+---------------------
+     Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_r
+     eg_2_sqmuxa_i: 33 loads, 33 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cmp_r
      egce[0]: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cmp_r
@@ -324,16 +343,6 @@ Design Summary (cont)
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cmp_r
      egce[16]: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cmp_r
-
-                                    Page 5
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Design Summary (cont)
----------------------
      egce[24]: 4 loads, 4 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cmp_r
      egce[32]: 4 loads, 4 LSLICEs
@@ -356,7 +365,7 @@ Design Summary (cont)
      Net xo2chub/er1_shift_reg8: 10 loads, 10 LSLICEs
    Number of local set/reset loads for net rstn_i_c merged into GSR:  1
    Number of LSRs:  12
-     Net HelloWorld_inst/cpu0_inst_system_resetn_o_net: 394 loads, 352 LSLICEs
+     Net HelloWorld_inst/cpu0_inst_system_resetn_o_net: 396 loads, 354 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/CsrPlu
      gin_interrupt_code_0_sqmuxa: 1 loads, 1 LSLICEs
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset: 134
@@ -380,7 +389,17 @@ Design Summary (cont)
      Net jtaghub16_jrstn: 34 loads, 34 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net HelloWorld_inst/cpu0_inst_system_resetn_o_net: 425 loads
+     Net HelloWorld_inst/cpu0_inst_system_resetn_o_net: 428 loads
+
+                                    Page 6
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Design Summary (cont)
+---------------------
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset: 134
      loads
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execut
@@ -390,16 +409,6 @@ Design Summary (cont)
      Net HelloWorld_inst/ahbl0_inst_AHBL_M00_interconnect_HSIZE_interconnect[1]:
      71 loads
      Net HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/_zz_31
-
-                                    Page 6
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Design Summary (cont)
----------------------
      __6_sqmuxa: 71 loads
      Net HelloWorld_inst/ahbl0_inst_AHBL_M00_interconnect_HSIZE_interconnect[0]:
      66 loads
@@ -447,6 +456,16 @@ IO (PIO) Attributes
 | led_o[4]            | BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
 | led_o[7]            | BIDIR     | LVCMOS33  | IN         |
+
+                                    Page 7
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+IO (PIO) Attributes (cont)
+--------------------------
 +---------------------+-----------+-----------+------------+
 | led_o[6]            | BIDIR     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
@@ -456,14 +475,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | rxd_i               | INPUT     | LVCMOS33  | IN         |
 +---------------------+-----------+-----------+------------+
-
-                                    Page 7
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
 
 Removed logic
 -------------
@@ -511,6 +522,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/TDI_reg/GND_0 undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
+
+                                    Page 8
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      e_i/TMS_reg/VCC_0 undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/TMS_reg/GND_0 undriven or does not drive anything - clipped.
@@ -522,16 +543,6 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/jce_delay_reg/VCC_0 undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/jce_delay_reg/GND_0 undriven or does not drive anything - clipped.
-
-                                    Page 8
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/shift_delay2_reg/VCC_0 undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
@@ -577,6 +588,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7_cry_27_0 undriven or does not drive anything -
+
+                                    Page 9
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7_s_29_0 undriven or does not drive anything - clipped.
@@ -588,16 +609,6 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_payload_pc[15] undriven or does not drive anything -
-
-                                    Page 9
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_payload_pc[17] undriven or does not drive anything -
@@ -643,6 +654,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_payload_pc[30] undriven or does not drive anything -
+
+                                   Page 10
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7[30] undriven or does not drive anything - clipped.
@@ -654,16 +675,6 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7[27] undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7[26] undriven or does not drive anything - clipped.
-
-                                   Page 10
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pc_7[25] undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
@@ -709,6 +720,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_rData_pc[24] undriven or does not drive anything -
+
+                                   Page 11
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_rData_pc[23] undriven or does not drive anything -
@@ -720,16 +741,6 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_cmd_s2mPipe_rData_pc[21] undriven or does not drive anything -
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
-
-                                   Page 11
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      ePlugin_cmd_s2mPipe_rData_pc[20] undriven or does not drive anything -
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
@@ -775,6 +786,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pcReg[20] undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
+
+                                   Page 12
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      ePlugin_fetchPc_pcReg[19] undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pcReg[18] undriven or does not drive anything - clipped.
@@ -786,22 +807,12 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_fetchPc_pcReg[15] undriven or does not drive anything - clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_rspJoin_rspBuffer_c/VCC_0 undriven or does not drive anything -
-
-                                   Page 12
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      clipped.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimpl
      ePlugin_rspJoin_rspBuffer_c/GND_0 undriven or does not drive anything -
      clipped.
-Block HelloWorld_inst/WS2812_inst/VCC undriven or does not drive anything -
-     clipped.
+Block HelloWorld_inst/WS2812_inst/WS2812_module_inst/VCC undriven or does not
+     drive anything - clipped.
 Block HelloWorld_inst/ahbl0_inst/lscc_ahbl_interconnect_inst/ahb_lite_bus.u_lscc
      _ahbl_bus/u_lscc_ahbl_decoder/genblk1[0].genblk1.u_lscc_ahbl_decoder_sel/ge
      nblk1[0].u_lscc_ahbl_decoder_comp/GND undriven or does not drive anything -
@@ -841,6 +852,16 @@ Block HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/bridge_s0.bridge_s0/GND
      undriven or does not drive anything - clipped.
 Block HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/bridge_s1.bridge_s1/GND
      undriven or does not drive anything - clipped.
+
+                                   Page 13
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Block HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_dp
      _true_be.u_mem/scuba_vhi_inst undriven or does not drive anything -
      clipped.
@@ -852,16 +873,6 @@ Block HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/VCC undriven or does
      not drive anything - clipped.
 Block HelloWorld_inst/uart0_inst/lscc_uart_inst/u_txmitt/VCC undriven or does
      not drive anything - clipped.
-
-                                   Page 13
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal xo2chub/jrstn_i was merged into signal jtaghub16_jrstn
 Signal xo2chub/cdn.CN was merged into signal jtaghub16_jtck
 Signal HelloWorld_inst.cpu0_inst_system_resetn_o_net_i was merged into signal
@@ -907,6 +918,16 @@ Signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direct
      /genblk1.lscc_gpio_lmmi_0/direction_r[4]
 Signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direct
      ion_r_i[3] was merged into signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst
+
+                                   Page 14
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      /genblk1.lscc_gpio_lmmi_0/direction_r[3]
 Signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direct
      ion_r_i[2] was merged into signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst
@@ -918,16 +939,6 @@ Signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/direct
      ion_r_i[0] was merged into signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst
      /genblk1.lscc_gpio_lmmi_0/direction_r[0]
 Signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0/bus_sm_
-
-                                   Page 14
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      cs_i[1] was merged into signal HelloWorld_inst/gpio0_inst/lscc_gpio_inst/ge
      nblk2.lscc_apb2lmmi_0/bus_sm_cs[1]
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
@@ -945,8 +956,8 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/GND
      undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/GND
      undriven or does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/GND undriven or does not drive anything -
-     clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/GND undriven or does not
+     drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/VCC undriven
      or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/GND undriven
@@ -973,6 +984,16 @@ Signal xo2chub/jtdo2_int_prm_16_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal xo2chub/jtdo2_int_prm_16_0_0_S0 undriven or does not drive anything -
      clipped.
+
+                                   Page 15
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal xo2chub/N_3 undriven or does not drive anything - clipped.
 Signal xo2chub/er2_tdo[14] undriven or does not drive anything - clipped.
 Signal xo2chub/er2_tdo[15] undriven or does not drive anything - clipped.
@@ -984,16 +1005,6 @@ Signal xo2chub/er2_tdo[12] undriven or does not drive anything - clipped.
 Signal xo2chub/er2_tdo[13] undriven or does not drive anything - clipped.
 Signal xo2chub/jtdo2_int_prm_13_0_0_S1 undriven or does not drive anything -
      clipped.
-
-                                   Page 15
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal xo2chub/jtdo2_int_prm_13_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal xo2chub/er2_tdo[10] undriven or does not drive anything - clipped.
@@ -1039,6 +1050,16 @@ Signal xo2chub/genblk7.un1_jtagf_u undriven or does not drive anything -
 Signal xo2chub/tdoa undriven or does not drive anything - clipped.
 Signal xo2chub/tdia undriven or does not drive anything - clipped.
 Signal xo2chub/tmsa undriven or does not drive anything - clipped.
+
+                                   Page 16
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal xo2chub/tcka undriven or does not drive anything - clipped.
 Signal xo2chub/cdn undriven or does not drive anything - clipped.
 Signal xo2chub/bit_count_cry_0_S0[0] undriven or does not drive anything -
@@ -1050,16 +1071,6 @@ Signal HelloWorld_inst/ahbl_m_instr_hsize_o[1] undriven or does not drive
      anything - clipped.
 Signal HelloWorld_inst/ahbl_m_instr_haddr_o[0] undriven or does not drive
      anything - clipped.
-
-                                   Page 16
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/cnt_reg
      _cry_0_S0[0] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/N_1
@@ -1105,6 +1116,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_15_0_S1 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
+
+                                   Page 17
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      _reg_2_cry_15_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_17_0_S1 undriven or does not drive anything - clipped.
@@ -1116,16 +1137,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_19_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_21_0_S1 undriven or does not drive anything - clipped.
-
-                                   Page 17
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_21_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
@@ -1171,6 +1182,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_43_0_S1 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
+
+                                   Page 18
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      _reg_2_cry_43_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_45_0_S1 undriven or does not drive anything - clipped.
@@ -1182,16 +1203,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_47_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_49_0_S1 undriven or does not drive anything - clipped.
-
-                                   Page 18
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
      _reg_2_cry_49_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/un1_cnt
@@ -1237,6 +1248,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/systemDebugge
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/systemDebugge
      r_1_/dispatcher_dataShifter_CR0_ram_0_DO3 undriven or does not drive
      anything - clipped.
+
+                                   Page 19
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/systemDebugge
      r_1_/dispatcher_dataShifter_CR0_ram_0_DO1 undriven or does not drive
      anything - clipped.
@@ -1248,16 +1269,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/RegFileP
      anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/RegFileP
      lugin_regFile_1_RegFilePlugin_regFile_1_0_1_DO6 undriven or does not drive
-
-                                   Page 19
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/RegFileP
      lugin_regFile_1_RegFilePlugin_regFile_1_0_1_DO5 undriven or does not drive
@@ -1303,6 +1314,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_cry_14 undriven or does not drive anything - clipped.
+
+                                   Page 20
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_cry_16 undriven or does not drive anything - clipped.
@@ -1314,16 +1335,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_cry_20 undriven or does not drive anything - clipped.
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
-
-                                   Page 20
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      lePlugin_fetchPc_pc_7_cry_22 undriven or does not drive anything - clipped.
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
@@ -1369,6 +1380,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
      de_DO_EBREAK_0_I_21_0_S1 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
      de_DO_EBREAK_0_I_21_0_S0 undriven or does not drive anything - clipped.
+
+                                   Page 21
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
      de_DO_EBREAK_0_I_33_0_S1 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
@@ -1380,16 +1401,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
      de_DO_EBREAK_0_I_57_0_S1 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
-
-                                   Page 21
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      de_DO_EBREAK_0_I_57_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un7_deco
      de_DO_EBREAK_0_I_69_0_S1 undriven or does not drive anything - clipped.
@@ -1435,6 +1446,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un5_deco
      de_DO_EBREAK_0_I_69_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un5_deco
      de_DO_EBREAK_0_I_81_0_S1 undriven or does not drive anything - clipped.
+
+                                   Page 22
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un5_deco
      de_DO_EBREAK_0_I_81_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/un5_deco
@@ -1446,16 +1467,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_
      BranchPlugin_eq_0_I_1_0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/N_12
-
-                                   Page 22
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_
      BranchPlugin_eq_0_I_9_0_S1 undriven or does not drive anything - clipped.
@@ -1501,6 +1512,16 @@ Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[1
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[1
      8] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[1
+
+                                   Page 23
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      9] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[2
      0] undriven or does not drive anything - clipped.
@@ -1512,16 +1533,6 @@ Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[2
      6] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[2
      8] undriven or does not drive anything - clipped.
-
-                                   Page 23
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[2
      9] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst_AHBL_M0_INSTR_interconnect_HADDR_interconnect[1
@@ -1567,6 +1578,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_axb_19 undriven or does not drive anything - clipped.
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
+
+                                   Page 24
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      lePlugin_fetchPc_pc_7_axb_18 undriven or does not drive anything - clipped.
      
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
@@ -1578,16 +1599,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_axb_15 undriven or does not drive anything - clipped.
      
-
-                                   Page 24
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7_axb_14 undriven or does not drive anything - clipped.
      
@@ -1633,6 +1644,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_cmd_s2mPipe_rData_pc[19] undriven or does not drive anything -
      clipped.
+
+                                   Page 25
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_cmd_s2mPipe_rData_pc[18] undriven or does not drive anything -
      clipped.
@@ -1644,16 +1665,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_cmd_s2mPipe_rData_pc[15] undriven or does not drive anything -
-
-                                   Page 25
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_cmd_s2mPipe_rData_pc[14] undriven or does not drive anything -
@@ -1699,6 +1710,16 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7[22] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
+
+                                   Page 26
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
      lePlugin_fetchPc_pcReg[21] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7[21] undriven or does not drive anything - clipped.
@@ -1710,16 +1731,6 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pcReg[19] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7[19] undriven or does not drive anything - clipped.
-
-                                   Page 26
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pcReg[18] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
@@ -1736,26 +1747,27 @@ Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pcReg[15] undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/IBusSimp
      lePlugin_fetchPc_pc_7[15] undriven or does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/led_bit_counter_cry_0_COUT[7] undriven or
-     does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/led_counter_cry_0_S0[0] undriven or does not
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_bit_counter_cry_0_COUT
+     [7] undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_counter_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_7 undriven or does not
      drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/N_7 undriven or does not drive anything -
-     clipped.
-Signal HelloWorld_inst/WS2812_inst/led_counter_cry_0_COUT[7] undriven or does
-     not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_0_0_S1 undriven or
-     does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_0_0_S0 undriven or
-     does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/N_8 undriven or does not drive anything -
-     clipped.
-Signal HelloWorld_inst/WS2812_inst/un1_clock_counter_1_cry_7_0_COUT undriven or
-     does not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/led_bit_counter_cry_0_S0[0] undriven or does
-     not drive anything - clipped.
-Signal HelloWorld_inst/WS2812_inst/N_6 undriven or does not drive anything -
-     clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_counter_cry_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_0_
+     0_S1 undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_0_
+     0_S0 undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_8 undriven or does not
+     drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/un1_clock_counter_1_cry_7_
+     0_COUT undriven or does not drive anything - clipped.
+Signal
+     HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_bit_counter_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal HelloWorld_inst/WS2812_inst/WS2812_module_inst/N_6 undriven or does not
+     drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/scuba_vhi undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
@@ -1764,6 +1776,16 @@ Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_3_26 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout1_3_17 undriven or does not drive anything - clipped.
+
+                                   Page 27
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_3_17 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
@@ -1776,16 +1798,6 @@ Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_2_35 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout1_2_26 undriven or does not drive anything - clipped.
-
-                                   Page 27
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_2_26 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
@@ -1830,6 +1842,16 @@ Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_0_8 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout1_3_35 undriven or does not drive anything - clipped.
+
+                                   Page 28
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Signal HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.ram_d
      p_true_be.u_mem/mdout0_3_35 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/counter_cry_0_S0[0]
@@ -1842,16 +1864,6 @@ Signal HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/counter_s_0_COUT[15]
      undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/counter_eq_div_2_0_I_1
      _0_S1 undriven or does not drive anything - clipped.
-
-                                   Page 28
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
 Signal HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/counter_eq_div_2_0_I_1
      _0_S0 undriven or does not drive anything - clipped.
 Signal HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/N_7 undriven or does
@@ -1896,6 +1908,16 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/TDI_reg/ASYNC_LOW.Q_reg_RNO[0] was optimized away.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/TMS_reg/ASYNC_LOW.Q_reg_RNO[0] was optimized away.
+
+                                   Page 29
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Removed logic (cont)
+--------------------
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
      e_i/jce_delay2_reg/ASYNC_LOW.Q_reg_RNO[0] was optimized away.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_jtag_bridg
@@ -1908,16 +1930,6 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBridge_1_/
      jtag_tap_tdoUnbufferd_regNext.CN was optimized away.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/CsrPlugin
      _exceptionPortCtrl_exceptionValidsRegs_writeBack_RNIJMF8 was optimized
-
-                                   Page 29
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Removed logic (cont)
---------------------
      away.
 Block HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2
      [7].genblk1.genblk1.u_BB_data_RNO was optimized away.
@@ -1949,7 +1961,7 @@ Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk_timer.i_timer_32/GND_0
      was optimized away.
 Block HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/GND_0 was
      optimized away.
-Block HelloWorld_inst/WS2812_inst/GND was optimized away.
+Block HelloWorld_inst/WS2812_inst/WS2812_module_inst/GND was optimized away.
 Block HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/VCC was
      optimized away.
 Block HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/GND was
@@ -1963,6 +1975,14 @@ Block HelloWorld_inst/uart0_inst/lscc_uart_inst/u_rxcver/GND was optimized away.
 Block HelloWorld_inst/uart0_inst/lscc_uart_inst/u_txmitt/GND was optimized away.
      
 
+                                   Page 30
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+
 Memory Usage
 ------------
 
@@ -1970,72 +1990,52 @@ Memory Usage
          
     INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
          output registers except FIFO. 
-    /HelloWorld_inst/WS2812_inst:
+    /HelloWorld_inst/WS2812_inst/WS2812_module_inst:
     EBRs: 0
     RAM SLICEs: 1
-    Logic SLICEs: 66
-
-                                   Page 30
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-Memory Usage (cont)
--------------------
+    Logic SLICEs: 65
     PFU Registers: 80
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram:
     EBRs: 0
     RAM SLICEs: 2
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram_0:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram_0:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram_1:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram_1:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram_2:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram_2:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram_3:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram_3:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_1_ram_4:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_1_ram_4:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_ram:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_ram_0:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram_0:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_ram_1:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_ram_2:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-/HelloWorld_inst/WS2812_inst/led_colour_ram_3:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram_1:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
@@ -2046,11 +2046,21 @@ Memory Usage (cont)
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Memory Usage (cont)
 -------------------
-/HelloWorld_inst/WS2812_inst/led_colour_ram_4:
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram_2:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram_3:
+    EBRs: 0
+    RAM SLICEs: 3
+    Logic SLICEs: 0
+    PFU Registers: 0
+/HelloWorld_inst/WS2812_inst/WS2812_module_inst/led_colour_ram_4:
     EBRs: 0
     RAM SLICEs: 3
     Logic SLICEs: 0
@@ -2095,139 +2105,149 @@ Memory Usage (cont)
     RAM SLICEs: 0
     Logic SLICEs: 0
     PFU Registers: 0
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_3_3_0:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_0_0_15:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
 
                                    Page 32
 
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Memory Usage (cont)
 -------------------
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_0_1_14:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_0_2_13:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_0_3_12:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_1_0_11:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_1_1_10:
-         TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_1_2_9:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_1_3_8:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_2_0_7:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
+         49_3_3_0:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_0_0_15:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_0_1_14:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_0_2_13:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_0_3_12:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_1_0_11:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_1_1_10:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_1_2_9:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
 
                                    Page 33
 
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Memory Usage (cont)
 -------------------
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_2_1_6:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_2_2_5:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_2_3_4:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_3_0_3:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_3_1_2:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
-    -Contains EBR
-         pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p1981df17_3_2_1:  TYPE=
-         DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,  Depth_B= 2048,
-         REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE= SYNC,
-         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
-         GSR= ENABLED,  MEM_LPC_FILE= pmi_ram_dp_true_beM8nnnnonessdrr3212409632
-         124096p1981df17__PMIT__4096__36__36H
+         49_1_3_8:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_2_0_7:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_2_1_6:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_2_2_5:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_2_3_4:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_3_0_3:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_3_1_2:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
+    -Contains EBR pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr3212409632124096p1d
+         49_3_2_1:  TYPE= DP8KC,  Width_A= 8,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 2048,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,  RESETMODE=
+         SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B=
+         NORMAL,  GSR= ENABLED,  MEM_INIT_FILE= WS812_firmware4.mem,
+         MEM_LPC_FILE= pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096321240
+         96p1d49__PMIT__4096__36__36H
 
+
+                                   Page 34
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+Memory Usage (cont)
+-------------------
      
 
 DCC Summary
@@ -2238,16 +2258,6 @@ DCC 1:                                     Pin/Node Value
        scvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/genblk2.TCK_buff
   DCC Type:                                         DCCA
   Clock Input:                             NODE     jtaghub16_jtck
-
-                                   Page 34
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-DCC Summary (cont)
-------------------
   Clock Enable Input:                      NODE     HelloWorld_inst/cpu0_inst/ri
        scvsmall_inst/genblk7.vex_debug/vex_jtag_bridge_i/TCK_buff_CE
   Clock Output:                            NODE
@@ -2269,78 +2279,78 @@ ASIC Components
 Instance Name: OSCH_inst
          Type: OSCH
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_3_3_0
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_3_3_0
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_0_0_15
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_0_0_15
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_0_1_14
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_0_1_14
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_0_2_13
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_0_2_13
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_0_3_12
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_0_3_12
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_1_0_11
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_1_0_11
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_1_1_10
-         Type: DP8KC
-Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_1_2_9
-         Type: DP8KC
-Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_1_3_8
-         Type: DP8KC
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
 
                                    Page 35
 
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 ASIC Components (cont)
 ----------------------
-Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_2_0_7
+     32124096p1d49_1_1_10
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_2_1_6
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_1_2_9
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_2_2_5
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_1_3_8
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_2_3_4
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_2_0_7
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_3_0_3
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_2_1_6
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_3_1_2
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_2_2_5
          Type: DP8KC
 Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
-     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p19
-     81df17_3_2_1
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_2_3_4
+         Type: DP8KC
+Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_3_0_3
+         Type: DP8KC
+Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_3_1_2
+         Type: DP8KC
+Instance Name: HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.
+     dp.ram_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr32124096
+     32124096p1d49_3_2_1
          Type: DP8KC
 Instance Name: HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/
      RegFilePlugin_regFile_1_RegFilePlugin_regFile_1_0_0
@@ -2360,6 +2370,14 @@ Instance Name: HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/vex_j
 Instance Name: xo2chub/genblk7.jtagf_u
          Type: JTAGF
 
+
+                                   Page 36
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
 GSR Usage
 ---------
 
@@ -2370,16 +2388,6 @@ GSR Component:
 
      GSR Property:
    The design components with GSR property set to ENABLED will respond to global
-
-                                   Page 36
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
         set reset while the components with GSR property set to DISABLED will
         not.
         
@@ -2428,6 +2436,16 @@ GSR Usage (cont)
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /int_status_r[5]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+
+                                   Page 37
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+GSR Usage (cont)
+----------------
         /int_status_r[6]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /int_status_r[7]
@@ -2436,16 +2454,6 @@ GSR Usage (cont)
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /int_method_r[1]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
-
-                                   Page 37
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
         /int_method_r[2]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /int_method_r[3]
@@ -2494,6 +2502,16 @@ GSR Usage (cont)
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /gpio_in_r[1]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+
+                                   Page 38
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+GSR Usage (cont)
+----------------
         /gpio_in_r[2]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /gpio_in_r[3]
@@ -2502,16 +2520,6 @@ GSR Usage (cont)
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /gpio_in_r[5]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
-
-                                   Page 38
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
         /gpio_in_r[6]
    Register : HelloWorld_inst/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
         /gpio_in_r[7]
@@ -2560,6 +2568,16 @@ GSR Usage (cont)
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/m
         emory_to_writeBack_MEMORY_READ_DATA[30]
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/D
+
+                                   Page 39
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+GSR Usage (cont)
+----------------
         ebugPlugin_isPipBusy
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/C
         srPlugin_mip_MSIP
@@ -2568,16 +2586,6 @@ GSR Usage (cont)
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/resetC
         trl_systemReset
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/resetC
-
-                                   Page 39
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
         trl_systemResetN
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
         idge_1_/system_rsp_valid
@@ -2626,6 +2634,16 @@ GSR Usage (cont)
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
         idge_1_/jtag_idcodeArea_shifter[17]
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
+
+                                   Page 40
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+GSR Usage (cont)
+----------------
         idge_1_/jtag_idcodeArea_shifter[18]
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
         idge_1_/jtag_idcodeArea_shifter[19]
@@ -2634,16 +2652,6 @@ GSR Usage (cont)
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
         idge_1_/jtag_idcodeArea_shifter[21]
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
-
-                                   Page 40
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
         idge_1_/jtag_idcodeArea_shifter[22]
    Register : HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.vex_debug/jtagBr
         idge_1_/jtag_idcodeArea_shifter[23]
@@ -2692,6 +2700,16 @@ GSR Usage (cont)
    Register : xo2chub/ip_enable[0]
    Register : xo2chub/ip_enable[1]
    Register : xo2chub/ip_enable[2]
+
+                                   Page 41
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
+
+GSR Usage (cont)
+----------------
    Register : xo2chub/ip_enable[3]
    Register : xo2chub/ip_enable[4]
    Register : xo2chub/ip_enable[5]
@@ -2700,16 +2718,6 @@ GSR Usage (cont)
    Register : xo2chub/ip_enable[8]
    Register : xo2chub/ip_enable[9]
    Register : xo2chub/ip_enable[10]
-
-                                   Page 41
-
-
-
-
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
-
-GSR Usage (cont)
-----------------
    Register : xo2chub/ip_enable[11]
    Register : xo2chub/ip_enable[12]
    Register : xo2chub/ip_enable[13]
@@ -2758,65 +2766,65 @@ GSR Usage (cont)
      Type and number of components of the type: 
    DP8KC = 16
 
-     Type and instance name of component: 
-   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_3_0
-   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_0_15
-   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
 
                                    Page 42
 
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 GSR Usage (cont)
 ----------------
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_1_14
+     Type and instance name of component: 
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_2_13
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_3_0
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_3_12
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_0_15
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_0_11
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_1_14
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_1_10
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_2_13
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_2_9
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_3_12
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_3_8
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_0_11
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_0_7
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_1_10
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_1_6
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_2_9
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_2_5
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_3_8
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_3_4
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_0_7
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_0_3
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_1_6
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_1_2
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_2_5
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_2_1
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_3_4
+   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_0_3
+   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_1_2
+   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_2_1
 
      EBR components with enabled GSR
 -------------------------------
@@ -2825,81 +2833,139 @@ GSR Usage (cont)
      will respond to the asynchronous reset signal 'rstn_i_c' via the GSR
      component.
 
-     Type and number of components of the type: 
-   DP8KC = 16
-
-     Type and instance name of component: 
-   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_3_0
-
                                    Page 43
 
 
 
 
-Design:  HelloWorld_Top                                Date:  06/14/21  18:20:57
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 GSR Usage (cont)
 ----------------
+
+     Type and number of components of the type: 
+   DP8KC = 16
+
+     Type and instance name of component: 
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_0_15
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_3_0
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_1_14
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_0_15
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_2_13
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_1_14
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_0_3_12
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_2_13
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_0_11
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_0_3_12
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_1_10
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_0_11
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_2_9
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_1_10
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_1_3_8
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_2_9
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_0_7
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_1_3_8
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_1_6
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_0_7
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_2_5
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_1_6
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_2_3_4
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_2_5
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_0_3
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_2_3_4
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_1_2
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_0_3
    DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
-        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnnnonessdrr3212409632124096p198
-        1df17_3_2_1
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_1_2
+   DP8KC : HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/u_lscc_mem0/ecp_5.dp.r
+        am_dp_true_be.u_mem/pmi_ram_dp_true_beM8nnhWS812_firmware4ssdrr321240963
+        2124096p1d49_3_2_1
+
+
+
+
+                                   Page 44
+
+
+
+
+Design:  HelloWorld_Top                                Date:  06/17/21  16:23:36
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs  
    Total REAL Time: 2 secs  
-   Peak Memory Usage: 89 MB
+   Peak Memory Usage: 90 MB
         
 
 
 
 
-                                   Page 44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 45
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

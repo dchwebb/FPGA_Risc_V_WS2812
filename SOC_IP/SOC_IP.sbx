@@ -126,7 +126,7 @@
         <ipxact:componentInstances>
             <ipxact:componentInstance>
                 <ipxact:instanceName>WS2812_inst</ipxact:instanceName>
-                <ipxact:componentRef vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812" version="2.1" />
+                <ipxact:componentRef vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812" version="2.2" />
             </ipxact:componentInstance>
             <ipxact:componentInstance>
                 <ipxact:instanceName>ahbl0_inst</ipxact:instanceName>
@@ -223,9 +223,9 @@
                     <ipxact:internalPortReference componentRef="ahbl2apb0_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="gpio0_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="apb0_inst" portRef="apb_pclk_i" />
-                    <ipxact:internalPortReference componentRef="sysmem0_inst" portRef="ahbl_hclk_i" />
                     <ipxact:internalPortReference componentRef="uart0_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="cpu0_inst" portRef="clk_i" />
+                    <ipxact:internalPortReference componentRef="sysmem0_inst" portRef="ahbl_hclk_i" />
                     <ipxact:internalPortReference componentRef="WS2812_inst" portRef="clk_i" />
                     <ipxact:externalPortReference portRef="clk_i" />
                 </ipxact:portReferences>
@@ -270,9 +270,9 @@
                     <ipxact:internalPortReference componentRef="ahbl2apb0_inst" portRef="rst_n_i" />
                     <ipxact:internalPortReference componentRef="gpio0_inst" portRef="resetn_i" />
                     <ipxact:internalPortReference componentRef="apb0_inst" portRef="apb_presetn_i" />
-                    <ipxact:internalPortReference componentRef="sysmem0_inst" portRef="ahbl_hresetn_i" />
                     <ipxact:internalPortReference componentRef="uart0_inst" portRef="rst_n_i" />
                     <ipxact:internalPortReference componentRef="cpu0_inst" portRef="system_resetn_o" />
+                    <ipxact:internalPortReference componentRef="sysmem0_inst" portRef="ahbl_hresetn_i" />
                     <ipxact:internalPortReference componentRef="WS2812_inst" portRef="resetn_i" />
                 </ipxact:portReferences>
             </ipxact:adHocConnection>
@@ -312,7 +312,7 @@
         <ipxact:vendor>Mountjoy Modular</ipxact:vendor>
         <ipxact:library>WS2812_IP</ipxact:library>
         <ipxact:name>WS2812</ipxact:name>
-        <ipxact:version>2.1</ipxact:version>
+        <ipxact:version>2.2</ipxact:version>
         <ipxact:busInterfaces>
             <ipxact:busInterface>
                 <ipxact:name>APB_S0</ipxact:name>
@@ -449,7 +449,7 @@
                 </ipxact:componentInstantiation>
                 <ipxact:designInstantiation>
                     <ipxact:name>WS2812_design</ipxact:name>
-                    <ipxact:designRef vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812" version="2.1" />
+                    <ipxact:designRef vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812" version="2.2" />
                 </ipxact:designInstantiation>
             </ipxact:instantiations>
             <ipxact:ports>
@@ -575,13 +575,13 @@
                 <ipxact:name>IP</ipxact:name>
                 <ipxact:group>ip</ipxact:group>
                 <ipxact:file>
-                    <ipxact:name>./lib/Mountjoy Modular/WS2812_IP/WS2812/2.1/component.xml</ipxact:name>
+                    <ipxact:name>./lib/Mountjoy Modular/WS2812_IP/WS2812/2.2/component.xml</ipxact:name>
                     <ipxact:fileType user="xml">user</ipxact:fileType>
                 </ipxact:file>
             </ipxact:fileSet>
         </ipxact:fileSets>
         <ipxact:vendorExtensions>
-            <lsccip:moduleRef lsccip:library="WS2812_IP" lsccip:name="WS2812_IP" lsccip:vendor="Mountjoy Modular" lsccip:version="2.1" />
+            <lsccip:moduleRef lsccip:library="WS2812_IP" lsccip:name="WS2812_IP" lsccip:vendor="Mountjoy Modular" lsccip:version="2.2" />
             <lsccip:deviceInfo>
                 <lsccip:device>LCMXO3LF-6900C</lsccip:device>
                 <lsccip:architecture>MachXO3LF</lsccip:architecture>
@@ -1348,6 +1348,9 @@
             </lsccip:deviceInfo>
             <lsccip:instantiatedOnce>true</lsccip:instantiatedOnce>
             <lattice:radiant>3.0.t.50.0</lattice:radiant>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="DEBUG_ENABLE">True</lattice:attribute>
+            </lattice:attributes>
         </ipxact:vendorExtensions>
     </ipxact:component>
     <ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014">

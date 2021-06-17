@@ -48,7 +48,6 @@ set_option -seqshift_no_replicate 0
 set_option -include_path {D:/docs/FPGA/SOC_IP}
 add_file -verilog -vlog_std v2001 {D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP_Top.v}
 add_file -verilog -vlog_std v2001 {D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP.v}
-add_file -verilog -vlog_std v2001 {D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v}
 
 #-- top module name
 set_option -top_module HelloWorld_Top
@@ -63,4 +62,4 @@ project -log_file {SOC_IP_impl1.srf}
 
 
 #-- run Synplify with 'arrange HDL file'
-project -run
+project -run -clean

@@ -5,41 +5,42 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1623691291"/>
-            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1623691287"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1623943451"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1623943647"/>
             <Task name="Jedec4Xo3l" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen4Xo3l" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1623691259">
-            <Task name="Map" build_result="2" update_result="0" update_time="1623691259"/>
+        <Milestone name="Map" build_result="2" build_time="1623943418">
+            <Task name="Map" build_result="2" update_result="0" update_time="1623943418"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1623691287">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1623691287"/>
+        <Milestone name="PAR" build_result="2" build_time="1623943447">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1623943447"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1623691252">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1623691252"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1623943414">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1623943414"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1623691173"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1623691173"/>
-            <Task name="SSO" build_result="0" update_result="2" update_time="1623691257"/>
-            <Task name="PIODRC" build_result="0" update_result="2" update_time="1623691257"/>
-            <Task name="DEC" build_result="0" update_result="2" update_time="1623691257"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1623943352"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1623943352"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1623943418"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1623943418"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1623943418"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1623691257">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1623691257"/>
+        <Milestone name="Translate" build_result="2" build_time="1623943416">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1623943416"/>
         </Milestone>
-        <Report name="SOC_IP_impl1.bgn" last_build_time="1623691291" last_build_size="4172"/>
-        <Report name="SOC_IP_impl1.bit" last_build_time="1623691291" last_build_size="75771"/>
-        <Report name="SOC_IP_impl1.edi" last_build_time="1623691248" last_build_size="5744236"/>
-        <Report name="SOC_IP_impl1.jed" last_build_time="1623321075" last_build_size="1464814"/>
-        <Report name="SOC_IP_impl1.ncd" last_build_time="1623691287" last_build_size="4739460"/>
-        <Report name="SOC_IP_impl1.ngd" last_build_time="1623691257" last_build_size="3382009"/>
-        <Report name="SOC_IP_impl1_map.ncd" last_build_time="1623691259" last_build_size="3172443"/>
+        <Report name="SOC_IP_impl1.bgn" last_build_time="1623943647" last_build_size="4449"/>
+        <Report name="SOC_IP_impl1.bit" last_build_time="1623943450" last_build_size="80529"/>
+        <Report name="SOC_IP_impl1.edi" last_build_time="1623943410" last_build_size="5791000"/>
+        <Report name="SOC_IP_impl1.jed" last_build_time="1623943647" last_build_size="1464879"/>
+        <Report name="SOC_IP_impl1.ncd" last_build_time="1623943447" last_build_size="4762871"/>
+        <Report name="SOC_IP_impl1.ngd" last_build_time="1623943416" last_build_size="3407457"/>
+        <Report name="SOC_IP_impl1_map.ncd" last_build_time="1623943418" last_build_size="3192934"/>
     </Strategy>
 </BuildStatus>
+                     

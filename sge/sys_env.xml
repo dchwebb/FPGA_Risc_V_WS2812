@@ -174,7 +174,7 @@
                 </lattice:configurableParameters>
             </lattice:ipInstance>
             <lattice:ipInstance>
-                <lattice:instanceName vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812_IP" version="2.1">WS2812_inst</lattice:instanceName>
+                <lattice:instanceName vendor="Mountjoy Modular" library="WS2812_IP" name="WS2812_IP" version="2.2">WS2812_inst</lattice:instanceName>
                 <ipxact:addressSpaces>
                     <ipxact:addressSpace>
                         <ipxact:name>INTR_Address_Space</ipxact:name>
@@ -335,7 +335,7 @@
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="0">INIT_MEM</lattice:name>
-                        <lattice:value>False</lattice:value>
+                        <lattice:value>True</lattice:value>
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="0">INIT_CHK</lattice:name>
@@ -343,11 +343,11 @@
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="0">INIT_FILE_FORMAT</lattice:name>
-                        <lattice:value>none</lattice:value>
+                        <lattice:value>hex</lattice:value>
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="0">INIT_FILE</lattice:name>
-                        <lattice:value>none</lattice:value>
+                        <lattice:value>D:/docs/FPGA/SOC_IP/WS812_firmware4/Debug/WS812_firmware4.mem</lattice:value>
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="0">load_file</lattice:name>

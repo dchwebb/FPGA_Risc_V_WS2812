@@ -5,7 +5,6 @@
 #project files
 add_file -verilog -vlog_std v2001 "D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP_Top.v"
 add_file -verilog -vlog_std v2001 "D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP.v"
-add_file -verilog -vlog_std v2001 "D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v"
 
 
 #implementation: "impl1"

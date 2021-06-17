@@ -8,7 +8,7 @@ GLOBAL_PRIMARY_0_LOADNUM = 44;
 ; Global primary clock #1
 GLOBAL_PRIMARY_1_SIGNALNAME = sys_clk;
 GLOBAL_PRIMARY_1_DRIVERTYPE = OSC;
-GLOBAL_PRIMARY_1_LOADNUM = 1085;
+GLOBAL_PRIMARY_1_LOADNUM = 1087;
 ; Global primary clock #2
 GLOBAL_PRIMARY_2_SIGNALNAME = jtaghub16_jtck;
 GLOBAL_PRIMARY_2_DRIVERTYPE = JTAG;
@@ -16,19 +16,19 @@ GLOBAL_PRIMARY_2_LOADNUM = 35;
 ; # of global secondary clocks
 GLOBAL_SECONDARY_USED = 8;
 ; Global secondary clock #0
-GLOBAL_SECONDARY_0_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/mem1_req_arb_w;
+GLOBAL_SECONDARY_0_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/N_222_i;
 GLOBAL_SECONDARY_0_DRIVERTYPE = SLICE;
-GLOBAL_SECONDARY_0_LOADNUM = 35;
+GLOBAL_SECONDARY_0_LOADNUM = 34;
 GLOBAL_SECONDARY_0_SIGTYPE = CE;
 ; Global secondary clock #1
-GLOBAL_SECONDARY_1_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/N_222_i;
+GLOBAL_SECONDARY_1_SIGNALNAME = HelloWorld_inst/sysmem0_inst/lscc_sys_mem_inst/mem1_req_arb_w;
 GLOBAL_SECONDARY_1_DRIVERTYPE = SLICE;
-GLOBAL_SECONDARY_1_LOADNUM = 34;
+GLOBAL_SECONDARY_1_LOADNUM = 35;
 GLOBAL_SECONDARY_1_SIGTYPE = CE;
 ; Global secondary clock #2
 GLOBAL_SECONDARY_2_SIGNALNAME = HelloWorld_inst/cpu0_inst_system_resetn_o_net;
 GLOBAL_SECONDARY_2_DRIVERTYPE = SLICE;
-GLOBAL_SECONDARY_2_LOADNUM = 425;
+GLOBAL_SECONDARY_2_LOADNUM = 428;
 GLOBAL_SECONDARY_2_SIGTYPE = RST;
 ; Global secondary clock #3
 GLOBAL_SECONDARY_3_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/resetCtrl_systemReset;
@@ -36,14 +36,14 @@ GLOBAL_SECONDARY_3_DRIVERTYPE = SLICE;
 GLOBAL_SECONDARY_3_LOADNUM = 134;
 GLOBAL_SECONDARY_3_SIGTYPE = RST;
 ; Global secondary clock #4
-GLOBAL_SECONDARY_4_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_arbitration_isStuck_i;
+GLOBAL_SECONDARY_4_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory_arbitration_haltItself4_i;
 GLOBAL_SECONDARY_4_DRIVERTYPE = SLICE;
-GLOBAL_SECONDARY_4_LOADNUM = 105;
+GLOBAL_SECONDARY_4_LOADNUM = 43;
 GLOBAL_SECONDARY_4_SIGTYPE = CE;
 ; Global secondary clock #5
-GLOBAL_SECONDARY_5_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/memory_arbitration_haltItself4_i;
+GLOBAL_SECONDARY_5_SIGNALNAME = HelloWorld_inst/cpu0_inst/riscvsmall_inst/genblk7.i_Riscv_Dbg_IC/execute_arbitration_isStuck_i;
 GLOBAL_SECONDARY_5_DRIVERTYPE = SLICE;
-GLOBAL_SECONDARY_5_LOADNUM = 43;
+GLOBAL_SECONDARY_5_LOADNUM = 105;
 GLOBAL_SECONDARY_5_SIGTYPE = CE;
 ; Global secondary clock #6
 GLOBAL_SECONDARY_6_SIGNALNAME = jtaghub16_jrstn;

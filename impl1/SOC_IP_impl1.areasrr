@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell HelloWorld_Top.verilog
 
-Register bits: 1842 of 54912 (3%)
+Register bits: 1848 of 54912 (3%)
 Latch bits:      8
 PIC Latch:       0
 I/O cells:       13
@@ -13,14 +13,14 @@ I/O cells:       13
                            DPR16X4C       14       100.0
                             FD1P3AX      813       100.0
                             FD1P3BX       18       100.0
-                            FD1P3DX      529       100.0
+                            FD1P3DX      536       100.0
                             FD1P3IX       54       100.0
                             FD1P3JX       23       100.0
                             FD1S1AY        8       100.0
                             FD1S3AX      107       100.0
                             FD1S3AY        5       100.0
                             FD1S3BX       18       100.0
-                            FD1S3DX      229       100.0
+                            FD1S3DX      228       100.0
                             FD1S3IX       32       100.0
                             FD1S3JX        4       100.0
                                 GSR        1       100.0
@@ -31,7 +31,7 @@ I/O cells:       13
                             L6MUX21        1       100.0
                                  OB        3       100.0
                            OFS1P3DX        1       100.0
-                           ORCALUT4     2986       100.0
+                           ORCALUT4     2992       100.0
                                OSCH        1       100.0
                             PDPW8KC        4       100.0
                               PFUMX      151       100.0
@@ -39,49 +39,50 @@ I/O cells:       13
                                 VHI       29       100.0
                                 VLO       36       100.0
                          jtagconn16        1       100.0
-             pmi_ram_dp_true_be_Z16        1       100.0
+             pmi_ram_dp_true_be_Z17        1       100.0
 SUB MODULES 
                              SOC_IP        1       100.0
-                      WS2812_module        1       100.0
-                           ahbl0_Z6        1       100.0
-          ahbl0_ipgen_lscc_ahbl_bus_Z5        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_Z2        1       100.0
+                             WS2812        1       100.0
+          WS2812_ipgen_WS2812_module_Z1        1       100.0
+                           ahbl0_Z7        1       100.0
+          ahbl0_ipgen_lscc_ahbl_bus_Z6        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
           ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3        1       100.0
-          ahbl0_ipgen_lscc_ahbl_interconnect_Z1        1       100.0
+          ahbl0_ipgen_lscc_ahbl_interconnect_Z2        1       100.0
           ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s        1       100.0
                       ahbl2apb0_32s        1       100.0
-          ahbl2apb0_ipgen_lscc_ahbl2apb_Z7        1       100.0
+          ahbl2apb0_ipgen_lscc_ahbl2apb_Z8        1       100.0
           apb0_32s_1s_33792_1024_32768_1024_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_bus_Z10        1       100.0
-          apb0_ipgen_lscc_apb_decoder_Z9        1       100.0
+          apb0_ipgen_lscc_apb_bus_Z11        1       100.0
+          apb0_ipgen_lscc_apb_decoder_Z10        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_interconnect_Z8        1       100.0
+          apb0_ipgen_lscc_apb_interconnect_Z9        1       100.0
           apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
                               gpio0        1       100.0
           gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s        1       100.0
-          gpio0_ipgen_lscc_gpio_Z13        1       100.0
-          gpio0_ipgen_lscc_gpio_lmmi_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_lmmi_Z15        1       100.0
                       sysmem0_1.0.2        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_0        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_1        1       100.0
-          sysmem0_ipgen_lscc_mem_Z15        1       100.0
-          sysmem0_ipgen_lscc_sys_mem_Z17        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_0        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_1        1       100.0
+          sysmem0_ipgen_lscc_mem_Z16        1       100.0
+          sysmem0_ipgen_lscc_sys_mem_Z18        1       100.0
                               uart0        1       100.0
-          uart0_ipgen_lscc_uart_Z20        1       100.0
-          uart0_ipgen_lscc_uart_intface_Z19        1       100.0
+          uart0_ipgen_lscc_uart_Z21        1       100.0
+          uart0_ipgen_lscc_uart_intface_Z20        1       100.0
           uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D        1       100.0
           uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64        1       100.0
                             
-                         TOTAL          5358           
+                         TOTAL          5371           
 ----------------------------------------------------------------------
 Report for cell SOC_IP.netlist
      Instance path:  HelloWorld_inst
@@ -93,66 +94,67 @@ Report for cell SOC_IP.netlist
                            DPR16X4C       14       100.0
                             FD1P3AX      813       100.0
                             FD1P3BX       18       100.0
-                            FD1P3DX      529       100.0
+                            FD1P3DX      536       100.0
                             FD1P3IX       54       100.0
                             FD1P3JX       23       100.0
                             FD1S1AY        8       100.0
                             FD1S3AX      107       100.0
                             FD1S3AY        5       100.0
                             FD1S3BX       18       100.0
-                            FD1S3DX      229       100.0
+                            FD1S3DX      228       100.0
                             FD1S3IX       32       100.0
                             FD1S3JX        4       100.0
                                 INV       32       100.0
                             L6MUX21        1       100.0
-                           ORCALUT4     2986       100.0
+                           ORCALUT4     2992       100.0
                             PDPW8KC        4       100.0
                               PFUMX      151       100.0
                                 VHI       28        96.6
                                 VLO       35        97.2
                          jtagconn16        1       100.0
-             pmi_ram_dp_true_be_Z16        1       100.0
+             pmi_ram_dp_true_be_Z17        1       100.0
 SUB MODULES 
-                      WS2812_module        1       100.0
-                           ahbl0_Z6        1       100.0
-          ahbl0_ipgen_lscc_ahbl_bus_Z5        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_Z2        1       100.0
+                             WS2812        1       100.0
+          WS2812_ipgen_WS2812_module_Z1        1       100.0
+                           ahbl0_Z7        1       100.0
+          ahbl0_ipgen_lscc_ahbl_bus_Z6        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
           ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3        1       100.0
-          ahbl0_ipgen_lscc_ahbl_interconnect_Z1        1       100.0
+          ahbl0_ipgen_lscc_ahbl_interconnect_Z2        1       100.0
           ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s        1       100.0
                       ahbl2apb0_32s        1       100.0
-          ahbl2apb0_ipgen_lscc_ahbl2apb_Z7        1       100.0
+          ahbl2apb0_ipgen_lscc_ahbl2apb_Z8        1       100.0
           apb0_32s_1s_33792_1024_32768_1024_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_bus_Z10        1       100.0
-          apb0_ipgen_lscc_apb_decoder_Z9        1       100.0
+          apb0_ipgen_lscc_apb_bus_Z11        1       100.0
+          apb0_ipgen_lscc_apb_decoder_Z10        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_interconnect_Z8        1       100.0
+          apb0_ipgen_lscc_apb_interconnect_Z9        1       100.0
           apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
                               gpio0        1       100.0
           gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s        1       100.0
-          gpio0_ipgen_lscc_gpio_Z13        1       100.0
-          gpio0_ipgen_lscc_gpio_lmmi_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_lmmi_Z15        1       100.0
                       sysmem0_1.0.2        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_0        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_1        1       100.0
-          sysmem0_ipgen_lscc_mem_Z15        1       100.0
-          sysmem0_ipgen_lscc_sys_mem_Z17        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_0        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_1        1       100.0
+          sysmem0_ipgen_lscc_mem_Z16        1       100.0
+          sysmem0_ipgen_lscc_sys_mem_Z18        1       100.0
                               uart0        1       100.0
-          uart0_ipgen_lscc_uart_Z20        1       100.0
-          uart0_ipgen_lscc_uart_intface_Z19        1       100.0
+          uart0_ipgen_lscc_uart_Z21        1       100.0
+          uart0_ipgen_lscc_uart_intface_Z20        1       100.0
           uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D        1       100.0
           uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64        1       100.0
                             
-                         TOTAL          5337           
+                         TOTAL          5350           
 ----------------------------------------------------------------------
 Report for cell uart0.netlist
      Instance path:  HelloWorld_inst.uart0_inst
@@ -160,42 +162,42 @@ Report for cell uart0.netlist
                                cell       count    Res Usage(%)
                               CCU2D       23        11.7
                             FD1P3BX       12        66.7
-                            FD1P3DX       87        16.4
+                            FD1P3DX       87        16.2
                             FD1S3BX        7        38.9
                             FD1S3DX       40        17.5
                                 INV        4        12.5
-                           ORCALUT4      189         6.3
+                           ORCALUT4      190         6.4
                               PFUMX       11         7.3
                                 VHI        3        10.3
                                 VLO        3         8.3
 SUB MODULES 
-          uart0_ipgen_lscc_uart_Z20        1       100.0
-          uart0_ipgen_lscc_uart_intface_Z19        1       100.0
+          uart0_ipgen_lscc_uart_Z21        1       100.0
+          uart0_ipgen_lscc_uart_intface_Z20        1       100.0
           uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D        1       100.0
           uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64        1       100.0
                             
-                         TOTAL           383           
+                         TOTAL           384           
 ----------------------------------------------------------------------
-Report for cell uart0_ipgen_lscc_uart_Z20.netlist
+Report for cell uart0_ipgen_lscc_uart_Z21.netlist
      Instance path:  HelloWorld_inst.uart0_inst.lscc_uart_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       23        11.7
                             FD1P3BX       12        66.7
-                            FD1P3DX       87        16.4
+                            FD1P3DX       87        16.2
                             FD1S3BX        7        38.9
                             FD1S3DX       40        17.5
                                 INV        4        12.5
-                           ORCALUT4      189         6.3
+                           ORCALUT4      190         6.4
                               PFUMX       11         7.3
                                 VHI        3        10.3
                                 VLO        3         8.3
 SUB MODULES 
-          uart0_ipgen_lscc_uart_intface_Z19        1       100.0
+          uart0_ipgen_lscc_uart_intface_Z20        1       100.0
           uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D        1       100.0
           uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64        1       100.0
                             
-                         TOTAL           382           
+                         TOTAL           383           
 ----------------------------------------------------------------------
 Report for cell uart0_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64.netlist
      Instance path:  HelloWorld_inst.uart0_inst.lscc_uart_inst.u_txmitt
@@ -219,7 +221,7 @@ Report for cell uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D.netlis
                                cell       count    Res Usage(%)
                               CCU2D       14         7.1
                             FD1P3BX        1         5.6
-                            FD1P3DX       28         5.3
+                            FD1P3DX       28         5.2
                             FD1S3BX        6        33.3
                             FD1S3DX       21         9.2
                                 INV        1         3.1
@@ -230,20 +232,20 @@ Report for cell uart0_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D.netlis
                             
                          TOTAL           148           
 ----------------------------------------------------------------------
-Report for cell uart0_ipgen_lscc_uart_intface_Z19.netlist
+Report for cell uart0_ipgen_lscc_uart_intface_Z20.netlist
      Instance path:  HelloWorld_inst.uart0_inst.lscc_uart_inst.u_intface
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3BX        7        38.9
-                            FD1P3DX       35         6.6
+                            FD1P3DX       35         6.5
                             FD1S3DX        6         2.6
                                 INV        2         6.3
-                           ORCALUT4       54         1.8
+                           ORCALUT4       55         1.8
                               PFUMX        6         4.0
                                 VHI        1         3.4
                                 VLO        1         2.8
                             
-                         TOTAL           112           
+                         TOTAL           113           
 ----------------------------------------------------------------------
 Report for cell sysmem0_1.0.2.netlist
      Instance path:  HelloWorld_inst.sysmem0_inst
@@ -254,16 +256,16 @@ Report for cell sysmem0_1.0.2.netlist
                            ORCALUT4       62         2.1
                                 VHI        1         3.4
                                 VLO        3         8.3
-             pmi_ram_dp_true_be_Z16        1       100.0
+             pmi_ram_dp_true_be_Z17        1       100.0
 SUB MODULES 
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_0        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_1        1       100.0
-          sysmem0_ipgen_lscc_mem_Z15        1       100.0
-          sysmem0_ipgen_lscc_sys_mem_Z17        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_0        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_1        1       100.0
+          sysmem0_ipgen_lscc_mem_Z16        1       100.0
+          sysmem0_ipgen_lscc_sys_mem_Z18        1       100.0
                             
                          TOTAL            99           
 ----------------------------------------------------------------------
-Report for cell sysmem0_ipgen_lscc_sys_mem_Z17.netlist
+Report for cell sysmem0_ipgen_lscc_sys_mem_Z18.netlist
      Instance path:  HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -272,27 +274,27 @@ Report for cell sysmem0_ipgen_lscc_sys_mem_Z17.netlist
                            ORCALUT4       62         2.1
                                 VHI        1         3.4
                                 VLO        3         8.3
-             pmi_ram_dp_true_be_Z16        1       100.0
+             pmi_ram_dp_true_be_Z17        1       100.0
 SUB MODULES 
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_0        1       100.0
-          sysmem0_ipgen_lscc_ahblmem_slave_Z18_1        1       100.0
-          sysmem0_ipgen_lscc_mem_Z15        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_0        1       100.0
+          sysmem0_ipgen_lscc_ahblmem_slave_Z19_1        1       100.0
+          sysmem0_ipgen_lscc_mem_Z16        1       100.0
                             
                          TOTAL            98           
 ----------------------------------------------------------------------
-Report for cell sysmem0_ipgen_lscc_mem_Z15.netlist
+Report for cell sysmem0_ipgen_lscc_mem_Z16.netlist
      Instance path:  HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.u_lscc_mem0
                                           Cell usage:
                                cell       count    Res Usage(%)
                            ORCALUT4        1         0.0
                                 VHI        1         3.4
                                 VLO        1         2.8
-             pmi_ram_dp_true_be_Z16        1       100.0
+             pmi_ram_dp_true_be_Z17        1       100.0
                             
                          TOTAL             4           
 ----------------------------------------------------------------------
-Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z18_0.netlist
-  Original Cell name sysmem0_ipgen_lscc_ahblmem_slave_Z18
+Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z19_0.netlist
+  Original Cell name sysmem0_ipgen_lscc_ahblmem_slave_Z19
      Instance path:  HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s1.bridge_s1
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -303,8 +305,8 @@ Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z18_0.netlist
                             
                          TOTAL            82           
 ----------------------------------------------------------------------
-Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z18_1.netlist
-  Original Cell name sysmem0_ipgen_lscc_ahblmem_slave_Z18
+Report for cell sysmem0_ipgen_lscc_ahblmem_slave_Z19_1.netlist
+  Original Cell name sysmem0_ipgen_lscc_ahblmem_slave_Z19
      Instance path:  HelloWorld_inst.sysmem0_inst.lscc_sys_mem_inst.bridge_s0.bridge_s0
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -327,17 +329,17 @@ Report for cell gpio0.netlist
                             FD1S3DX        2         0.9
                             FD1S3IX       24        75.0
                                 INV        9        28.1
-                           ORCALUT4      102         3.4
+                           ORCALUT4      103         3.4
                                 VHI        1         3.4
                                 VLO        2         5.6
 SUB MODULES 
           gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s        1       100.0
-          gpio0_ipgen_lscc_gpio_Z13        1       100.0
-          gpio0_ipgen_lscc_gpio_lmmi_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_lmmi_Z15        1       100.0
                             
-                         TOTAL           222           
+                         TOTAL           223           
 ----------------------------------------------------------------------
-Report for cell gpio0_ipgen_lscc_gpio_Z13.netlist
+Report for cell gpio0_ipgen_lscc_gpio_Z14.netlist
      Instance path:  HelloWorld_inst.gpio0_inst.lscc_gpio_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -349,14 +351,14 @@ Report for cell gpio0_ipgen_lscc_gpio_Z13.netlist
                             FD1S3DX        2         0.9
                             FD1S3IX       24        75.0
                                 INV        9        28.1
-                           ORCALUT4      102         3.4
+                           ORCALUT4      103         3.4
                                 VHI        1         3.4
                                 VLO        2         5.6
 SUB MODULES 
           gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s        1       100.0
-          gpio0_ipgen_lscc_gpio_lmmi_Z14        1       100.0
+          gpio0_ipgen_lscc_gpio_lmmi_Z15        1       100.0
                             
-                         TOTAL           221           
+                         TOTAL           222           
 ----------------------------------------------------------------------
 Report for cell gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s.netlist
      Instance path:  HelloWorld_inst.gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0
@@ -371,7 +373,7 @@ Report for cell gpio0_ipgen_lscc_apb2lmmi_8s_6s_1s_1_2_4_8_4s.netlist
                             
                          TOTAL            37           
 ----------------------------------------------------------------------
-Report for cell gpio0_ipgen_lscc_gpio_lmmi_Z14.netlist
+Report for cell gpio0_ipgen_lscc_gpio_lmmi_Z15.netlist
      Instance path:  HelloWorld_inst.gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -381,10 +383,10 @@ Report for cell gpio0_ipgen_lscc_gpio_lmmi_Z14.netlist
                             FD1S1AY        8       100.0
                             FD1S3IX       24        75.0
                                 INV        8        25.0
-                           ORCALUT4       93         3.1
+                           ORCALUT4       94         3.1
                                 VLO        1         2.8
                             
-                         TOTAL           182           
+                         TOTAL           183           
 ----------------------------------------------------------------------
 Report for cell apb0_32s_1s_33792_1024_32768_1024_34816_1024.netlist
      Instance path:  HelloWorld_inst.apb0_inst
@@ -392,35 +394,56 @@ Report for cell apb0_32s_1s_33792_1024_32768_1024_34816_1024.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX        3         0.6
                             FD1S3DX        1         0.4
-                           ORCALUT4       14         0.5
+                           ORCALUT4       15         0.5
                                 VHI        1         3.4
                                 VLO        2         5.6
 SUB MODULES 
-          apb0_ipgen_lscc_apb_bus_Z10        1       100.0
-          apb0_ipgen_lscc_apb_decoder_Z9        1       100.0
+          apb0_ipgen_lscc_apb_bus_Z11        1       100.0
+          apb0_ipgen_lscc_apb_decoder_Z10        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_interconnect_Z8        1       100.0
+          apb0_ipgen_lscc_apb_interconnect_Z9        1       100.0
           apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
                             
-                         TOTAL            31           
+                         TOTAL            32           
 ----------------------------------------------------------------------
-Report for cell apb0_ipgen_lscc_apb_interconnect_Z8.netlist
+Report for cell apb0_ipgen_lscc_apb_interconnect_Z9.netlist
      Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX        3         0.6
                             FD1S3DX        1         0.4
-                           ORCALUT4       14         0.5
+                           ORCALUT4       15         0.5
                                 VHI        1         3.4
                                 VLO        2         5.6
 SUB MODULES 
-          apb0_ipgen_lscc_apb_bus_Z10        1       100.0
-          apb0_ipgen_lscc_apb_decoder_Z9        1       100.0
+          apb0_ipgen_lscc_apb_bus_Z11        1       100.0
+          apb0_ipgen_lscc_apb_decoder_Z10        1       100.0
+          apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
+          apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
+          apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
+          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024        1       100.0
+          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
+          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
+          apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
+                            
+                         TOTAL            31           
+----------------------------------------------------------------------
+Report for cell apb0_ipgen_lscc_apb_bus_Z11.netlist
+     Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst.apb_bus.u_lscc_apb_bus
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX        3         0.6
+                            FD1S3DX        1         0.4
+                           ORCALUT4       15         0.5
+                                VHI        1         3.4
+                                VLO        2         5.6
+SUB MODULES 
+          apb0_ipgen_lscc_apb_decoder_Z10        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
           apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
@@ -430,27 +453,6 @@ SUB MODULES
           apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
                             
                          TOTAL            30           
-----------------------------------------------------------------------
-Report for cell apb0_ipgen_lscc_apb_bus_Z10.netlist
-     Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst.apb_bus.u_lscc_apb_bus
-                                          Cell usage:
-                               cell       count    Res Usage(%)
-                            FD1P3DX        3         0.6
-                            FD1S3DX        1         0.4
-                           ORCALUT4       14         0.5
-                                VHI        1         3.4
-                                VLO        2         5.6
-SUB MODULES 
-          apb0_ipgen_lscc_apb_decoder_Z9        1       100.0
-          apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
-          apb0_ipgen_lscc_apb_decoder_comp_32s_33792_1024_32s_1s_34815_10s        1       100.0
-          apb0_ipgen_lscc_apb_decoder_comp_32s_34816_1024_32s_1s_35839_10s        1       100.0
-          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_32768_1024        1       100.0
-          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
-          apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
-          apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s        1       100.0
-                            
-                         TOTAL            29           
 ----------------------------------------------------------------------
 Report for cell apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s.netlist
      Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst.apb_bus.u_lscc_apb_bus.u_lscc_apb_multiplexor
@@ -464,11 +466,11 @@ Report for cell apb0_ipgen_lscc_apb_multiplexor_32s_32s_32s_3s_0s.netlist
                             
                          TOTAL             9           
 ----------------------------------------------------------------------
-Report for cell apb0_ipgen_lscc_apb_decoder_Z9.netlist
+Report for cell apb0_ipgen_lscc_apb_decoder_Z10.netlist
      Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst.apb_bus.u_lscc_apb_bus.u_lscc_apb_decoder
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       11         0.4
+                           ORCALUT4       12         0.4
                                 VLO        1         2.8
 SUB MODULES 
           apb0_ipgen_lscc_apb_decoder_comp_32s_32768_1024_32s_1s_33791_10s        1       100.0
@@ -478,7 +480,7 @@ SUB MODULES
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_33792_1024        1       100.0
           apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024        1       100.0
                             
-                         TOTAL            18           
+                         TOTAL            19           
 ----------------------------------------------------------------------
 Report for cell apb0_ipgen_lscc_apb_decoder_prim_32s_1s_32s_1s_1_34816_1024.netlist
      Instance path:  HelloWorld_inst.apb0_inst.lscc_apb_interconnect_inst.apb_bus.u_lscc_apb_bus.u_lscc_apb_decoder.genblk1[2].u_lscc_apb_decoder_sel
@@ -538,98 +540,98 @@ Report for cell ahbl2apb0_32s.netlist
      Instance path:  HelloWorld_inst.ahbl2apb0_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX      115        21.7
+                            FD1P3DX      122        22.8
                             FD1S3BX        2        11.1
-                            FD1S3DX       14         6.1
-                           ORCALUT4      173         5.8
+                            FD1S3DX       13         5.7
+                           ORCALUT4      175         5.8
                                 VHI        1         3.4
                                 VLO        1         2.8
 SUB MODULES 
-          ahbl2apb0_ipgen_lscc_ahbl2apb_Z7        1       100.0
+          ahbl2apb0_ipgen_lscc_ahbl2apb_Z8        1       100.0
                             
-                         TOTAL           307           
+                         TOTAL           315           
 ----------------------------------------------------------------------
-Report for cell ahbl2apb0_ipgen_lscc_ahbl2apb_Z7.netlist
+Report for cell ahbl2apb0_ipgen_lscc_ahbl2apb_Z8.netlist
      Instance path:  HelloWorld_inst.ahbl2apb0_inst.lscc_ahbl2apb_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX      115        21.7
+                            FD1P3DX      122        22.8
                             FD1S3BX        2        11.1
-                            FD1S3DX       14         6.1
-                           ORCALUT4      173         5.8
+                            FD1S3DX       13         5.7
+                           ORCALUT4      175         5.8
                                 VHI        1         3.4
                                 VLO        1         2.8
                             
-                         TOTAL           306           
+                         TOTAL           314           
 ----------------------------------------------------------------------
-Report for cell ahbl0_Z6.netlist
+Report for cell ahbl0_Z7.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3BX        1         5.6
                             FD1P3DX        3         0.6
                             FD1S3DX        2         0.9
-                           ORCALUT4       86         2.9
+                           ORCALUT4       87         2.9
                               PFUMX        1         0.7
                                 VHI        2         6.9
                                 VLO        3         8.3
 SUB MODULES 
-          ahbl0_ipgen_lscc_ahbl_bus_Z5        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_Z2        1       100.0
+          ahbl0_ipgen_lscc_ahbl_bus_Z6        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
           ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3        1       100.0
-          ahbl0_ipgen_lscc_ahbl_interconnect_Z1        1       100.0
+          ahbl0_ipgen_lscc_ahbl_interconnect_Z2        1       100.0
           ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s        1       100.0
                             
-                         TOTAL           107           
+                         TOTAL           108           
 ----------------------------------------------------------------------
-Report for cell ahbl0_ipgen_lscc_ahbl_interconnect_Z1.netlist
+Report for cell ahbl0_ipgen_lscc_ahbl_interconnect_Z2.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3BX        1         5.6
                             FD1P3DX        3         0.6
                             FD1S3DX        2         0.9
-                           ORCALUT4       86         2.9
+                           ORCALUT4       87         2.9
                               PFUMX        1         0.7
                                 VHI        2         6.9
                                 VLO        3         8.3
 SUB MODULES 
-          ahbl0_ipgen_lscc_ahbl_bus_Z5        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_Z2        1       100.0
+          ahbl0_ipgen_lscc_ahbl_bus_Z6        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
           ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3        1       100.0
           ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s        1       100.0
                             
-                         TOTAL           106           
+                         TOTAL           107           
 ----------------------------------------------------------------------
-Report for cell ahbl0_ipgen_lscc_ahbl_bus_Z5.netlist
+Report for cell ahbl0_ipgen_lscc_ahbl_bus_Z6.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus.u_lscc_ahbl_bus
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3BX        1         5.6
                             FD1P3DX        3         0.6
                             FD1S3DX        2         0.9
-                           ORCALUT4       86         2.9
+                           ORCALUT4       87         2.9
                               PFUMX        1         0.7
                                 VHI        2         6.9
                                 VLO        3         8.3
 SUB MODULES 
-          ahbl0_ipgen_lscc_ahbl_decoder_Z2        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
           ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3        1       100.0
           ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s        1       100.0
                             
-                         TOTAL           105           
+                         TOTAL           106           
 ----------------------------------------------------------------------
 Report for cell ahbl0_ipgen_lscc_ahbl_default_slv_32s_2s_0s_1s_2s_0_1_2_3.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus.u_lscc_ahbl_bus.u_lscc_ahbl_default_slv
@@ -647,14 +649,14 @@ Report for cell ahbl0_ipgen_lscc_ahbl_multiplexor_32s_32s_2s_0s.netlist
                                cell       count    Res Usage(%)
                             FD1P3BX        1         5.6
                             FD1P3DX        3         0.6
-                           ORCALUT4       72         2.4
+                           ORCALUT4       73         2.4
                               PFUMX        1         0.7
                                 VHI        1         3.4
                                 VLO        1         2.8
                             
-                         TOTAL            79           
+                         TOTAL            80           
 ----------------------------------------------------------------------
-Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z2.netlist
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z3.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus.u_lscc_ahbl_bus.u_lscc_ahbl_decoder
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -663,12 +665,12 @@ Report for cell ahbl0_ipgen_lscc_ahbl_decoder_Z2.netlist
 SUB MODULES 
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s        1       100.0
-          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3        1       100.0
           ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4        1       100.0
+          ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5        1       100.0
                             
                          TOTAL            18           
 ----------------------------------------------------------------------
-Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4.netlist
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z5.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus.u_lscc_ahbl_bus.u_lscc_ahbl_decoder.genblk1[1].genblk1.u_lscc_ahbl_decoder_sel
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -688,7 +690,7 @@ Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_32768_3072_32s_35839_12s.n
                             
                          TOTAL             4           
 ----------------------------------------------------------------------
-Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z3.netlist
+Report for cell ahbl0_ipgen_lscc_ahbl_decoder_prim_8s_32s_1s_1_Z4.netlist
      Instance path:  HelloWorld_inst.ahbl0_inst.lscc_ahbl_interconnect_inst.ahb_lite_bus.u_lscc_ahbl_bus.u_lscc_ahbl_decoder.genblk1[0].genblk1.u_lscc_ahbl_decoder_sel
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -708,14 +710,35 @@ Report for cell ahbl0_ipgen_lscc_ahbl_decoder_comp_1s_0_16384_32s_16383_14s.netl
                             
                          TOTAL            10           
 ----------------------------------------------------------------------
-Report for cell WS2812_module.netlist
+Report for cell WS2812.netlist
      Instance path:  HelloWorld_inst.WS2812_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       15         7.6
                            DPR16X4C       12        85.7
                             FD1P3BX        1         5.6
-                            FD1P3DX       64        12.1
+                            FD1P3DX       64        11.9
+                            FD1S3BX        5        27.8
+                            FD1S3DX       10         4.4
+                                INV        1         3.1
+                            L6MUX21        1       100.0
+                           ORCALUT4      116         3.9
+                              PFUMX        4         2.6
+                                VHI        1         3.4
+                                VLO        1         2.8
+SUB MODULES 
+          WS2812_ipgen_WS2812_module_Z1        1       100.0
+                            
+                         TOTAL           232           
+----------------------------------------------------------------------
+Report for cell WS2812_ipgen_WS2812_module_Z1.netlist
+     Instance path:  HelloWorld_inst.WS2812_inst.WS2812_module_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       15         7.6
+                           DPR16X4C       12        85.7
+                            FD1P3BX        1         5.6
+                            FD1P3DX       64        11.9
                             FD1S3BX        5        27.8
                             FD1S3DX       10         4.4
                                 INV        1         3.1

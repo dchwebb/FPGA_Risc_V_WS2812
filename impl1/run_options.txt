@@ -1,13 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file D:\docs\FPGA\SOC_IP\impl1\run_options.txt
-#--  Written on Mon Jun 14 18:19:47 2021
+#--  Written on Thu Jun 17 16:22:43 2021
 
 
 #project files
 add_file -verilog -vlog_std v2001 "D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP_Top.v"
 add_file -verilog -vlog_std v2001 "D:/docs/FPGA/SOC_IP/SOC_IP/SOC_IP.v"
-add_file -verilog -vlog_std v2001 "D:/docs/FPGA/WS2812_IP/rtl/WS2812_IP.v"
 
 
 #implementation: "impl1"

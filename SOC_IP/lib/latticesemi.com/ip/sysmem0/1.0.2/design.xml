@@ -25,10 +25,10 @@
                     <ipxact:configurableElementValue referenceId="FIFO_STREAMER_EN">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FIFO_CLK_BYPASS">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="FIFO_START_ADDR">0</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="INIT_MEM">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_MEM">True</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="INIT_CHK">hex</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="INIT_FILE_FORMAT">none</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="INIT_FILE">none</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_FILE_FORMAT">hex</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_FILE">D:/docs/FPGA/SOC_IP/WS812_firmware4/Debug/WS812_firmware4.mem</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="load_file">EBR</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="INIT_VALUE_00">0</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="INIT_VALUE_01">0</ipxact:configurableElementValue>
