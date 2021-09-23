@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/24/2021 12:08:53
+#Project Location: D:/docs/FPGA/SOC_IP; Project name: SOC_IP
+prj_project open "D:/docs/FPGA/SOC_IP/SOC_IP.ldf"
+prj_project close
+#Stop recording: 6/24/2021 12:10:34
